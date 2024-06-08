@@ -43,5 +43,38 @@ namespace DataStoreDesktop
         {
 
         }
+
+        private void pannelSideBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        bool sidebarExpandida = true;
+        private void sideBarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpandida)
+            {
+                pannelSideBar.Width -= 10;
+                if (pannelSideBar.Width <= 37)
+                {
+                    sidebarExpandida = false;
+                    sideBarTransition.Stop();
+                }
+            }
+            else
+            {
+                pannelSideBar.Width += 10;
+                if (pannelSideBar.Width >= 167)
+                {
+                    sidebarExpandida = true;
+                    sideBarTransition.Stop();
+                }
+            }
+        }
+
+        private void btnSideBarExpand_Click(object sender, EventArgs e)
+        {
+            sideBarTransition.Start();
+        }
     }
 }

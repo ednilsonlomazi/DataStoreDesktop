@@ -30,8 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            label1 = new Label();
+            btnSideBarExpand = new PictureBox();
+            pannelSideBar = new FlowLayoutPanel();
             menuHomeContainer = new FlowLayoutPanel();
             btnMenuHome = new Button();
             button4 = new Button();
@@ -40,43 +41,59 @@
             button3 = new Button();
             button6 = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
+            sideBarTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
+            pannelSideBar.SuspendLayout();
             menuHomeContainer.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btnSideBarExpand);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // label1
             // 
-            pictureBox1.Image = Properties.Resources.menu_16;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 25);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.ForeColor = Color.FromArgb(23, 24, 29);
+            label1.Location = new Point(37, 0);
+            label1.Margin = new Padding(0);
+            label1.Name = "label1";
+            label1.Size = new Size(103, 28);
+            label1.TabIndex = 1;
+            label1.Text = "Data Sore Desktop";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel1
+            // btnSideBarExpand
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(23, 24, 29);
-            flowLayoutPanel1.Controls.Add(menuHomeContainer);
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button3);
-            flowLayoutPanel1.Controls.Add(button6);
-            flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 28);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(200, 422);
-            flowLayoutPanel1.TabIndex = 1;
+            btnSideBarExpand.Image = Properties.Resources.menu_16;
+            btnSideBarExpand.Location = new Point(0, 0);
+            btnSideBarExpand.Name = "btnSideBarExpand";
+            btnSideBarExpand.Size = new Size(37, 28);
+            btnSideBarExpand.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnSideBarExpand.TabIndex = 0;
+            btnSideBarExpand.TabStop = false;
+            btnSideBarExpand.Click += btnSideBarExpand_Click;
+            // 
+            // pannelSideBar
+            // 
+            pannelSideBar.BackColor = Color.FromArgb(23, 24, 29);
+            pannelSideBar.Controls.Add(menuHomeContainer);
+            pannelSideBar.Controls.Add(button1);
+            pannelSideBar.Controls.Add(button3);
+            pannelSideBar.Controls.Add(button6);
+            pannelSideBar.Dock = DockStyle.Left;
+            pannelSideBar.Location = new Point(0, 28);
+            pannelSideBar.Name = "pannelSideBar";
+            pannelSideBar.Size = new Size(167, 422);
+            pannelSideBar.TabIndex = 1;
+            pannelSideBar.Paint += pannelSideBar_Paint;
             // 
             // menuHomeContainer
             // 
@@ -102,7 +119,7 @@
             btnMenuHome.Name = "btnMenuHome";
             btnMenuHome.Size = new Size(167, 42);
             btnMenuHome.TabIndex = 3;
-            btnMenuHome.Text = "        Home";
+            btnMenuHome.Text = "          Home";
             btnMenuHome.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuHome.UseVisualStyleBackColor = false;
             btnMenuHome.Click += btnMenuHome_Click;
@@ -120,7 +137,7 @@
             button4.Name = "button4";
             button4.Size = new Size(167, 42);
             button4.TabIndex = 5;
-            button4.Text = "        Meus objetos";
+            button4.Text = "          Meus objetos";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
             // 
@@ -137,7 +154,7 @@
             button5.Name = "button5";
             button5.Size = new Size(167, 42);
             button5.TabIndex = 6;
-            button5.Text = "        Histórico de solicitações";
+            button5.Text = "          Solicitações realizadas";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = false;
             // 
@@ -153,7 +170,7 @@
             button1.Name = "button1";
             button1.Size = new Size(167, 42);
             button1.TabIndex = 2;
-            button1.Text = "        Pesquisar";
+            button1.Text = "          Pesquisar";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -170,7 +187,7 @@
             button3.Name = "button3";
             button3.Size = new Size(167, 42);
             button3.TabIndex = 4;
-            button3.Text = "        Carrinho";
+            button3.Text = "          Carrinho";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -186,20 +203,26 @@
             button6.Name = "button6";
             button6.Size = new Size(167, 42);
             button6.TabIndex = 5;
-            button6.Text = "        Sair";
+            button6.Text = "          Sair";
             button6.TextAlign = ContentAlignment.MiddleLeft;
             button6.UseVisualStyleBackColor = false;
             // 
             // timerMenuTransition
             // 
+            timerMenuTransition.Interval = 10;
             timerMenuTransition.Tick += timerMenuTransition_Tick;
+            // 
+            // sideBarTransition
+            // 
+            sideBarTransition.Interval = 10;
+            sideBarTransition.Tick += sideBarTransition_Tick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(pannelSideBar);
             Controls.Add(panel1);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
@@ -207,8 +230,8 @@
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).EndInit();
+            pannelSideBar.ResumeLayout(false);
             menuHomeContainer.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -216,8 +239,7 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox1;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel pannelSideBar;
         private Button button1;
         private Button btnMenuHome;
         private Button button3;
@@ -226,5 +248,8 @@
         private Button button5;
         private Button button6;
         private System.Windows.Forms.Timer timerMenuTransition;
+        private System.Windows.Forms.Timer sideBarTransition;
+        private PictureBox btnSideBarExpand;
+        private Label label1;
     }
 }
