@@ -35,17 +35,23 @@
             pannelSideBar = new FlowLayoutPanel();
             menuHomeContainer = new FlowLayoutPanel();
             btnMenuHome = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            btnHomeMeusObjetos = new Button();
+            btnHomeSolicitacoes = new Button();
+            pnPesquisar = new FlowLayoutPanel();
             button1 = new Button();
-            button3 = new Button();
-            button6 = new Button();
+            pnCarrinho = new FlowLayoutPanel();
+            button4 = new Button();
+            pnSair = new FlowLayoutPanel();
+            button7 = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
             menuHomeContainer.SuspendLayout();
+            pnPesquisar.SuspendLayout();
+            pnCarrinho.SuspendLayout();
+            pnSair.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -85,9 +91,9 @@
             // 
             pannelSideBar.BackColor = Color.FromArgb(23, 24, 29);
             pannelSideBar.Controls.Add(menuHomeContainer);
-            pannelSideBar.Controls.Add(button1);
-            pannelSideBar.Controls.Add(button3);
-            pannelSideBar.Controls.Add(button6);
+            pannelSideBar.Controls.Add(pnPesquisar);
+            pannelSideBar.Controls.Add(pnCarrinho);
+            pannelSideBar.Controls.Add(pnSair);
             pannelSideBar.Dock = DockStyle.Left;
             pannelSideBar.Location = new Point(0, 28);
             pannelSideBar.Name = "pannelSideBar";
@@ -99,8 +105,8 @@
             // 
             menuHomeContainer.BackColor = Color.FromArgb(32, 33, 36);
             menuHomeContainer.Controls.Add(btnMenuHome);
-            menuHomeContainer.Controls.Add(button4);
-            menuHomeContainer.Controls.Add(button5);
+            menuHomeContainer.Controls.Add(btnHomeMeusObjetos);
+            menuHomeContainer.Controls.Add(btnHomeSolicitacoes);
             menuHomeContainer.Location = new Point(3, 3);
             menuHomeContainer.Name = "menuHomeContainer";
             menuHomeContainer.Size = new Size(167, 42);
@@ -124,39 +130,48 @@
             btnMenuHome.UseVisualStyleBackColor = false;
             btnMenuHome.Click += btnMenuHome_Click;
             // 
-            // button4
+            // btnHomeMeusObjetos
             // 
-            button4.BackColor = Color.FromArgb(32, 33, 36);
-            button4.BackgroundImageLayout = ImageLayout.Center;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = Properties.Resources.círculo_preenchido_12;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(0, 42);
-            button4.Margin = new Padding(0);
-            button4.Name = "button4";
-            button4.Size = new Size(167, 42);
-            button4.TabIndex = 5;
-            button4.Text = "          Meus objetos";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = false;
+            btnHomeMeusObjetos.BackColor = Color.FromArgb(32, 33, 36);
+            btnHomeMeusObjetos.BackgroundImageLayout = ImageLayout.Center;
+            btnHomeMeusObjetos.FlatAppearance.BorderSize = 0;
+            btnHomeMeusObjetos.FlatStyle = FlatStyle.Flat;
+            btnHomeMeusObjetos.Image = Properties.Resources.círculo_preenchido_12;
+            btnHomeMeusObjetos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHomeMeusObjetos.Location = new Point(0, 42);
+            btnHomeMeusObjetos.Margin = new Padding(0);
+            btnHomeMeusObjetos.Name = "btnHomeMeusObjetos";
+            btnHomeMeusObjetos.Size = new Size(167, 42);
+            btnHomeMeusObjetos.TabIndex = 5;
+            btnHomeMeusObjetos.Text = "          Meus objetos";
+            btnHomeMeusObjetos.TextAlign = ContentAlignment.MiddleLeft;
+            btnHomeMeusObjetos.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnHomeSolicitacoes
             // 
-            button5.BackColor = Color.FromArgb(32, 33, 36);
-            button5.BackgroundImageLayout = ImageLayout.Center;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Image = Properties.Resources.círculo_preenchido_12;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(0, 84);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.Size = new Size(167, 42);
-            button5.TabIndex = 6;
-            button5.Text = "          Solicitações realizadas";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = false;
+            btnHomeSolicitacoes.BackColor = Color.FromArgb(32, 33, 36);
+            btnHomeSolicitacoes.BackgroundImageLayout = ImageLayout.Center;
+            btnHomeSolicitacoes.FlatAppearance.BorderSize = 0;
+            btnHomeSolicitacoes.FlatStyle = FlatStyle.Flat;
+            btnHomeSolicitacoes.Image = Properties.Resources.círculo_preenchido_12;
+            btnHomeSolicitacoes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHomeSolicitacoes.Location = new Point(0, 84);
+            btnHomeSolicitacoes.Margin = new Padding(0);
+            btnHomeSolicitacoes.Name = "btnHomeSolicitacoes";
+            btnHomeSolicitacoes.Size = new Size(167, 42);
+            btnHomeSolicitacoes.TabIndex = 6;
+            btnHomeSolicitacoes.Text = "          Solicitações realizadas";
+            btnHomeSolicitacoes.TextAlign = ContentAlignment.MiddleLeft;
+            btnHomeSolicitacoes.UseVisualStyleBackColor = false;
+            // 
+            // pnPesquisar
+            // 
+            pnPesquisar.BackColor = Color.FromArgb(32, 33, 36);
+            pnPesquisar.Controls.Add(button1);
+            pnPesquisar.Location = new Point(3, 51);
+            pnPesquisar.Name = "pnPesquisar";
+            pnPesquisar.Size = new Size(167, 42);
+            pnPesquisar.TabIndex = 3;
             // 
             // button1
             // 
@@ -166,46 +181,66 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Image = Properties.Resources.pesquisar_16;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(3, 51);
+            button1.Location = new Point(0, 0);
+            button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(167, 42);
-            button1.TabIndex = 2;
+            button1.TabIndex = 3;
             button1.Text = "          Pesquisar";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
-            // button3
+            // pnCarrinho
             // 
-            button3.BackColor = Color.FromArgb(23, 24, 29);
-            button3.BackgroundImageLayout = ImageLayout.Center;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Image = Properties.Resources.carrinho_16;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(3, 99);
-            button3.Name = "button3";
-            button3.Size = new Size(167, 42);
-            button3.TabIndex = 4;
-            button3.Text = "          Carrinho";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
+            pnCarrinho.BackColor = Color.FromArgb(32, 33, 36);
+            pnCarrinho.Controls.Add(button4);
+            pnCarrinho.Location = new Point(3, 99);
+            pnCarrinho.Name = "pnCarrinho";
+            pnCarrinho.Size = new Size(167, 42);
+            pnCarrinho.TabIndex = 4;
             // 
-            // button6
+            // button4
             // 
-            button6.BackColor = Color.FromArgb(23, 24, 29);
-            button6.BackgroundImageLayout = ImageLayout.Center;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Image = Properties.Resources.porta_16;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(3, 147);
-            button6.Name = "button6";
-            button6.Size = new Size(167, 42);
-            button6.TabIndex = 5;
-            button6.Text = "          Sair";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.FromArgb(23, 24, 29);
+            button4.BackgroundImageLayout = ImageLayout.Center;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = Properties.Resources.carrinho_16;
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(0, 0);
+            button4.Margin = new Padding(0);
+            button4.Name = "button4";
+            button4.Size = new Size(167, 42);
+            button4.TabIndex = 3;
+            button4.Text = "          Carrinho";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // pnSair
+            // 
+            pnSair.BackColor = Color.FromArgb(32, 33, 36);
+            pnSair.Controls.Add(button7);
+            pnSair.Location = new Point(3, 147);
+            pnSair.Name = "pnSair";
+            pnSair.Size = new Size(167, 42);
+            pnSair.TabIndex = 6;
+            // 
+            // button7
+            // 
+            button7.BackColor = Color.FromArgb(23, 24, 29);
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Image = Properties.Resources.porta_16;
+            button7.ImageAlign = ContentAlignment.MiddleLeft;
+            button7.Location = new Point(0, 0);
+            button7.Margin = new Padding(0);
+            button7.Name = "button7";
+            button7.Size = new Size(167, 42);
+            button7.TabIndex = 3;
+            button7.Text = "          Sair";
+            button7.TextAlign = ContentAlignment.MiddleLeft;
+            button7.UseVisualStyleBackColor = false;
             // 
             // timerMenuTransition
             // 
@@ -226,6 +261,7 @@
             Controls.Add(panel1);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
+            IsMdiContainer = true;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -233,6 +269,9 @@
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).EndInit();
             pannelSideBar.ResumeLayout(false);
             menuHomeContainer.ResumeLayout(false);
+            pnPesquisar.ResumeLayout(false);
+            pnCarrinho.ResumeLayout(false);
+            pnSair.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -240,16 +279,19 @@
 
         private Panel panel1;
         private FlowLayoutPanel pannelSideBar;
-        private Button button1;
         private Button btnMenuHome;
-        private Button button3;
         private FlowLayoutPanel menuHomeContainer;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button btnHomeMeusObjetos;
+        private Button btnHomeSolicitacoes;
         private System.Windows.Forms.Timer timerMenuTransition;
         private System.Windows.Forms.Timer sideBarTransition;
         private PictureBox btnSideBarExpand;
         private Label label1;
+        private FlowLayoutPanel pnPesquisar;
+        private Button button1;
+        private FlowLayoutPanel pnCarrinho;
+        private Button button4;
+        private FlowLayoutPanel pnSair;
+        private Button button7;
     }
 }

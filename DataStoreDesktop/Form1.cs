@@ -55,10 +55,16 @@ namespace DataStoreDesktop
             if (sidebarExpandida)
             {
                 pannelSideBar.Width -= 10;
-                if (pannelSideBar.Width <= 37)
+                if (pannelSideBar.Width <= 37   )
                 {
                     sidebarExpandida = false;
                     sideBarTransition.Stop();
+
+                    menuHomeContainer.Width = pannelSideBar.Width;
+                    pnPesquisar.Width = pannelSideBar.Width;
+                    pnCarrinho.Width = pannelSideBar.Width;
+                    
+                    pnSair.Width = pannelSideBar.Width;
                 }
             }
             else
@@ -68,6 +74,12 @@ namespace DataStoreDesktop
                 {
                     sidebarExpandida = true;
                     sideBarTransition.Stop();
+
+                    menuHomeContainer.Width = pannelSideBar.Width;
+                    pnPesquisar.Width = pannelSideBar.Width;
+                    pnCarrinho.Width = pannelSideBar.Width;
+                    
+                    pnSair.Width = pannelSideBar.Width;
                 }
             }
         }
