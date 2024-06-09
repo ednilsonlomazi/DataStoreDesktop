@@ -71,9 +71,9 @@
             label1.Location = new Point(37, 0);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(103, 28);
+            label1.Size = new Size(152, 28);
             label1.TabIndex = 1;
-            label1.Text = "Data Sore Desktop";
+            label1.Text = "Data Store Desktop";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSideBarExpand
