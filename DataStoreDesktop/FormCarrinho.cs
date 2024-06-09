@@ -16,5 +16,10 @@ namespace DataStoreDesktop
         {
             InitializeComponent();
         }
+
+        private void FormCarrinho_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
+        }
     }
 }

@@ -2,6 +2,14 @@ namespace DataStoreDesktop
 {
     public partial class Form1 : Form
     {
+        FormHome formHome;
+        FormPesquisar formPesquisar;
+        FormCarrinho formCarrinho;
+        FormLogout formLogout;
+        FormMeusObjetos formMeusObjetos;
+        FormSolicitacoesRealizadas formSolicitacoesRealizadas;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -55,7 +63,7 @@ namespace DataStoreDesktop
             if (sidebarExpandida)
             {
                 pannelSideBar.Width -= 10;
-                if (pannelSideBar.Width <= 37   )
+                if (pannelSideBar.Width <= 37)
                 {
                     sidebarExpandida = false;
                     sideBarTransition.Stop();
@@ -63,7 +71,7 @@ namespace DataStoreDesktop
                     menuHomeContainer.Width = pannelSideBar.Width;
                     pnPesquisar.Width = pannelSideBar.Width;
                     pnCarrinho.Width = pannelSideBar.Width;
-                    
+
                     pnSair.Width = pannelSideBar.Width;
                 }
             }
@@ -78,7 +86,7 @@ namespace DataStoreDesktop
                     menuHomeContainer.Width = pannelSideBar.Width;
                     pnPesquisar.Width = pannelSideBar.Width;
                     pnCarrinho.Width = pannelSideBar.Width;
-                    
+
                     pnSair.Width = pannelSideBar.Width;
                 }
             }
@@ -87,6 +95,92 @@ namespace DataStoreDesktop
         private void btnSideBarExpand_Click(object sender, EventArgs e)
         {
             sideBarTransition.Start();
+        }
+
+        private void btnHomeMeusObjetos_Click(object sender, EventArgs e)
+        {
+            if (formMeusObjetos == null)
+            {
+                formMeusObjetos = new FormMeusObjetos();
+                formMeusObjetos.FormClosed += FormMeusObjetos_FormClosed;
+                formMeusObjetos.MdiParent = this;
+                formMeusObjetos.Dock = DockStyle.Fill;
+                formMeusObjetos.Show();
+            }
+            else
+            {
+                formMeusObjetos.Activate();
+            }
+        }
+
+        private void FormMeusObjetos_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formMeusObjetos = null;
+        }
+
+        private void btnHomeSolicitacoes_Click(object sender, EventArgs e)
+        {
+            if (formSolicitacoesRealizadas == null)
+            {
+                formSolicitacoesRealizadas = new FormSolicitacoesRealizadas();
+                formSolicitacoesRealizadas.FormClosed += FormSolicitacoesRealizadas_FormClosed;
+                formSolicitacoesRealizadas.MdiParent = this;
+                formSolicitacoesRealizadas.Dock = DockStyle.Fill;
+                formSolicitacoesRealizadas.Show();
+            }
+            else
+            {
+                formSolicitacoesRealizadas.Activate();
+            }
+        }
+
+        private void FormSolicitacoesRealizadas_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formSolicitacoesRealizadas = null;
+        }
+
+
+
+        private void btnCarrinho_Click(object sender, EventArgs e)
+        {
+            if (formCarrinho == null)
+            {
+                formCarrinho = new FormCarrinho();
+                formCarrinho.FormClosed += FormCarrinho_FormClosed;
+                formCarrinho.MdiParent = this;
+                formCarrinho.Dock = DockStyle.Fill;
+                formCarrinho.Show();
+            }
+            else
+            {
+                formCarrinho.Activate();
+            }
+        }
+
+        private void FormCarrinho_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formCarrinho = null;
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            if (formPesquisar == null)
+            {
+                formPesquisar = new FormPesquisar();
+                formPesquisar.FormClosed += FormPesquisar_FormClosed;
+                formPesquisar.MdiParent = this;
+                formPesquisar.Dock = DockStyle.Fill;
+                formPesquisar.Show();
+            }
+            else
+            {
+                formPesquisar.Activate();
+            }
+        }
+
+        private void FormPesquisar_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formPesquisar = null;
         }
     }
 }

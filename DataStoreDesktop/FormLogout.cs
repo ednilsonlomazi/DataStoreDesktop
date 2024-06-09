@@ -16,5 +16,10 @@ namespace DataStoreDesktop
         {
             InitializeComponent();
         }
+
+        private void FormLogout_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
+        }
     }
 }
