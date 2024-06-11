@@ -182,5 +182,33 @@ namespace DataStoreDesktop
         {
             formPesquisar = null;
         }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            if (System.Windows.Forms.Application.MessageLoop)
+            {
+
+                System.Windows.Forms.Application.Exit();
+            }
+        }
+
+        private void btn_maximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+
+
+        }
+
+        private void btn_minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

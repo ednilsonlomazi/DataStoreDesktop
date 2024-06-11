@@ -30,6 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            btn_maximizar = new Button();
+            btn_sair = new Button();
             label1 = new Label();
             btnSideBarExpand = new PictureBox();
             pannelSideBar = new FlowLayoutPanel();
@@ -38,13 +40,14 @@
             btnHomeMeusObjetos = new Button();
             btnHomeSolicitacoes = new Button();
             pnPesquisar = new FlowLayoutPanel();
+            btnPesquisar = new Button();
             pnCarrinho = new FlowLayoutPanel();
             btnCarrinho = new Button();
             pnSair = new FlowLayoutPanel();
             button7 = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
-            btnPesquisar = new Button();
+            btn_minimizar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
@@ -56,6 +59,10 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(btn_minimizar);
+            panel1.Controls.Add(btn_maximizar);
+            panel1.Controls.Add(btn_sair);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btnSideBarExpand);
             panel1.Dock = DockStyle.Top;
@@ -64,9 +71,45 @@
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;
             // 
+            // btn_maximizar
+            // 
+            btn_maximizar.BackColor = Color.White;
+            btn_maximizar.BackgroundImageLayout = ImageLayout.Center;
+            btn_maximizar.Dock = DockStyle.Right;
+            btn_maximizar.FlatAppearance.BorderSize = 0;
+            btn_maximizar.FlatStyle = FlatStyle.Flat;
+            btn_maximizar.ForeColor = Color.FromArgb(23, 24, 29);
+            btn_maximizar.Image = Properties.Resources.maximizar_16;
+            btn_maximizar.Location = new Point(748, 0);
+            btn_maximizar.Margin = new Padding(0);
+            btn_maximizar.Name = "btn_maximizar";
+            btn_maximizar.Size = new Size(26, 28);
+            btn_maximizar.TabIndex = 5;
+            btn_maximizar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_maximizar.UseVisualStyleBackColor = false;
+            btn_maximizar.Click += btn_maximizar_Click;
+            // 
+            // btn_sair
+            // 
+            btn_sair.BackColor = Color.White;
+            btn_sair.BackgroundImageLayout = ImageLayout.Center;
+            btn_sair.Dock = DockStyle.Right;
+            btn_sair.FlatAppearance.BorderSize = 0;
+            btn_sair.FlatStyle = FlatStyle.Flat;
+            btn_sair.ForeColor = Color.FromArgb(23, 24, 29);
+            btn_sair.Image = Properties.Resources.x_16;
+            btn_sair.Location = new Point(774, 0);
+            btn_sair.Margin = new Padding(0);
+            btn_sair.Name = "btn_sair";
+            btn_sair.Size = new Size(26, 28);
+            btn_sair.TabIndex = 4;
+            btn_sair.TextAlign = ContentAlignment.MiddleLeft;
+            btn_sair.UseVisualStyleBackColor = false;
+            btn_sair.Click += btn_sair_Click;
+            // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.Dock = DockStyle.Left;
             label1.ForeColor = Color.FromArgb(23, 24, 29);
             label1.Location = new Point(37, 0);
             label1.Margin = new Padding(0);
@@ -78,6 +121,7 @@
             // 
             // btnSideBarExpand
             // 
+            btnSideBarExpand.Dock = DockStyle.Left;
             btnSideBarExpand.Image = Properties.Resources.menu_16;
             btnSideBarExpand.Location = new Point(0, 0);
             btnSideBarExpand.Name = "btnSideBarExpand";
@@ -175,6 +219,24 @@
             pnPesquisar.Size = new Size(167, 42);
             pnPesquisar.TabIndex = 3;
             // 
+            // btnPesquisar
+            // 
+            btnPesquisar.BackColor = Color.FromArgb(23, 24, 29);
+            btnPesquisar.BackgroundImageLayout = ImageLayout.Center;
+            btnPesquisar.FlatAppearance.BorderSize = 0;
+            btnPesquisar.FlatStyle = FlatStyle.Flat;
+            btnPesquisar.Image = Properties.Resources.pesquisar_16;
+            btnPesquisar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPesquisar.Location = new Point(0, 0);
+            btnPesquisar.Margin = new Padding(0);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(167, 42);
+            btnPesquisar.TabIndex = 4;
+            btnPesquisar.Text = "          Pesquisar";
+            btnPesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            btnPesquisar.UseVisualStyleBackColor = false;
+            btnPesquisar.Click += btnPesquisar_Click;
+            // 
             // pnCarrinho
             // 
             pnCarrinho.BackColor = Color.FromArgb(32, 33, 36);
@@ -238,23 +300,24 @@
             sideBarTransition.Interval = 10;
             sideBarTransition.Tick += sideBarTransition_Tick;
             // 
-            // btnPesquisar
+            // btn_minimizar
             // 
-            btnPesquisar.BackColor = Color.FromArgb(23, 24, 29);
-            btnPesquisar.BackgroundImageLayout = ImageLayout.Center;
-            btnPesquisar.FlatAppearance.BorderSize = 0;
-            btnPesquisar.FlatStyle = FlatStyle.Flat;
-            btnPesquisar.Image = Properties.Resources.pesquisar_16;
-            btnPesquisar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPesquisar.Location = new Point(0, 0);
-            btnPesquisar.Margin = new Padding(0);
-            btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.Size = new Size(167, 42);
-            btnPesquisar.TabIndex = 4;
-            btnPesquisar.Text = "          Pesquisar";
-            btnPesquisar.TextAlign = ContentAlignment.MiddleLeft;
-            btnPesquisar.UseVisualStyleBackColor = false;
-            btnPesquisar.Click += btnPesquisar_Click;
+            btn_minimizar.BackColor = Color.White;
+            btn_minimizar.BackgroundImageLayout = ImageLayout.Center;
+            btn_minimizar.Dock = DockStyle.Right;
+            btn_minimizar.FlatAppearance.BorderSize = 0;
+            btn_minimizar.FlatStyle = FlatStyle.Flat;
+            btn_minimizar.ForeColor = Color.FromArgb(23, 24, 29);
+            btn_minimizar.Image = Properties.Resources.minimizar_16;
+            btn_minimizar.ImageAlign = ContentAlignment.BottomCenter;
+            btn_minimizar.Location = new Point(722, 0);
+            btn_minimizar.Margin = new Padding(0);
+            btn_minimizar.Name = "btn_minimizar";
+            btn_minimizar.Size = new Size(26, 28);
+            btn_minimizar.TabIndex = 6;
+            btn_minimizar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_minimizar.UseVisualStyleBackColor = false;
+            btn_minimizar.Click += btn_minimizar_Click;
             // 
             // Form1
             // 
@@ -297,5 +360,8 @@
         private Button button7;
         private Button btnCarrinho;
         private Button btnPesquisar;
+        private Button btn_sair;
+        private Button btn_maximizar;
+        private Button btn_minimizar;
     }
 }

@@ -124,17 +124,26 @@
   <data name="círculo-preenchido-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\círculo-preenchido-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="porta-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porta-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="casa-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="círculo-preenchido-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\círculo-preenchido-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pesquisar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pesquisar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="maximizar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximizar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="x-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tabela-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabela-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="círculo-preenchido-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\círculo-preenchido-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +151,7 @@
   <data name="carrinho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carrinho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="porta-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\porta-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimizar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

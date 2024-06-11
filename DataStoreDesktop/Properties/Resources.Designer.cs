@@ -113,9 +113,29 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maximizar_16 {
+            get {
+                object obj = ResourceManager.GetObject("maximizar-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_16 {
             get {
                 object obj = ResourceManager.GetObject("menu-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar_16 {
+            get {
+                object obj = ResourceManager.GetObject("minimizar-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap tabela_16 {
             get {
                 object obj = ResourceManager.GetObject("tabela-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_16 {
+            get {
+                object obj = ResourceManager.GetObject("x-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
