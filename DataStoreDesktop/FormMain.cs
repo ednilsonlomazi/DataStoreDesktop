@@ -1,18 +1,36 @@
 namespace DataStoreDesktop
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         FormHome formHome;
         FormPesquisar formPesquisar;
         FormCarrinho formCarrinho;
-        FormLogout formLogout;
+        FormLogin formLogin;
         FormMeusObjetos formMeusObjetos;
         FormSolicitacoesRealizadas formSolicitacoesRealizadas;
+        
+        bool logado = false;
 
-
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
+            if (formHome == null)
+            {
+                formHome = new FormHome();
+                formHome.FormClosed += FormHome_FormClosed;
+                formHome.MdiParent = this;
+                formHome.Dock = DockStyle.Fill;
+                formHome.Show();
+            }
+            else
+            {
+                formHome.Activate();
+            }
+        }
+
+        private void FormHome_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formHome = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -209,6 +227,28 @@ namespace DataStoreDesktop
         private void btn_minimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Logout efetuado com sucesso!");
+            if (formLogin == null)
+            {
+                formLogin = new FormLogin();
+                formLogin.FormClosed += FormLogin_FormClosed;
+                formLogin.MdiParent = this;
+                formLogin.Dock = DockStyle.Fill;
+                formLogin.Show();
+            }
+            else
+            {
+                formLogin.Activate();
+            }
+        }
+
+        private void FormLogin_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formLogin = null;
         }
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DataStoreDesktop
 {
-    public partial class Form2 : Form
+    public partial class FormLogin : Form
     {
-        public Form2()
+        public FormLogin()
         {
             InitializeComponent();
+        }
+
+        private void FormLogout_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
         }
     }
 }

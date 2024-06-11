@@ -1,6 +1,6 @@
 ﻿namespace DataStoreDesktop
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            btn_minimizar = new Button();
             btn_maximizar = new Button();
             btn_sair = new Button();
             label1 = new Label();
@@ -44,10 +45,9 @@
             pnCarrinho = new FlowLayoutPanel();
             btnCarrinho = new Button();
             pnSair = new FlowLayoutPanel();
-            button7 = new Button();
+            btn_logout = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
-            btn_minimizar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
@@ -70,6 +70,25 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;
+            // 
+            // btn_minimizar
+            // 
+            btn_minimizar.BackColor = Color.White;
+            btn_minimizar.BackgroundImageLayout = ImageLayout.Center;
+            btn_minimizar.Dock = DockStyle.Right;
+            btn_minimizar.FlatAppearance.BorderSize = 0;
+            btn_minimizar.FlatStyle = FlatStyle.Flat;
+            btn_minimizar.ForeColor = Color.FromArgb(23, 24, 29);
+            btn_minimizar.Image = Properties.Resources.minimizar_16;
+            btn_minimizar.ImageAlign = ContentAlignment.BottomCenter;
+            btn_minimizar.Location = new Point(722, 0);
+            btn_minimizar.Margin = new Padding(0);
+            btn_minimizar.Name = "btn_minimizar";
+            btn_minimizar.Size = new Size(26, 28);
+            btn_minimizar.TabIndex = 6;
+            btn_minimizar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_minimizar.UseVisualStyleBackColor = false;
+            btn_minimizar.Click += btn_minimizar_Click;
             // 
             // btn_maximizar
             // 
@@ -267,28 +286,29 @@
             // pnSair
             // 
             pnSair.BackColor = Color.FromArgb(32, 33, 36);
-            pnSair.Controls.Add(button7);
+            pnSair.Controls.Add(btn_logout);
             pnSair.Location = new Point(3, 147);
             pnSair.Name = "pnSair";
             pnSair.Size = new Size(167, 42);
             pnSair.TabIndex = 6;
             // 
-            // button7
+            // btn_logout
             // 
-            button7.BackColor = Color.FromArgb(23, 24, 29);
-            button7.BackgroundImageLayout = ImageLayout.Center;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Image = Properties.Resources.porta_16;
-            button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(0, 0);
-            button7.Margin = new Padding(0);
-            button7.Name = "button7";
-            button7.Size = new Size(167, 42);
-            button7.TabIndex = 3;
-            button7.Text = "          Sair";
-            button7.TextAlign = ContentAlignment.MiddleLeft;
-            button7.UseVisualStyleBackColor = false;
+            btn_logout.BackColor = Color.FromArgb(23, 24, 29);
+            btn_logout.BackgroundImageLayout = ImageLayout.Center;
+            btn_logout.FlatAppearance.BorderSize = 0;
+            btn_logout.FlatStyle = FlatStyle.Flat;
+            btn_logout.Image = Properties.Resources.porta_16;
+            btn_logout.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_logout.Location = new Point(0, 0);
+            btn_logout.Margin = new Padding(0);
+            btn_logout.Name = "btn_logout";
+            btn_logout.Size = new Size(167, 42);
+            btn_logout.TabIndex = 3;
+            btn_logout.Text = "          Logout";
+            btn_logout.TextAlign = ContentAlignment.MiddleLeft;
+            btn_logout.UseVisualStyleBackColor = false;
+            btn_logout.Click += this.btn_logout_Click;
             // 
             // timerMenuTransition
             // 
@@ -300,26 +320,7 @@
             sideBarTransition.Interval = 10;
             sideBarTransition.Tick += sideBarTransition_Tick;
             // 
-            // btn_minimizar
-            // 
-            btn_minimizar.BackColor = Color.White;
-            btn_minimizar.BackgroundImageLayout = ImageLayout.Center;
-            btn_minimizar.Dock = DockStyle.Right;
-            btn_minimizar.FlatAppearance.BorderSize = 0;
-            btn_minimizar.FlatStyle = FlatStyle.Flat;
-            btn_minimizar.ForeColor = Color.FromArgb(23, 24, 29);
-            btn_minimizar.Image = Properties.Resources.minimizar_16;
-            btn_minimizar.ImageAlign = ContentAlignment.BottomCenter;
-            btn_minimizar.Location = new Point(722, 0);
-            btn_minimizar.Margin = new Padding(0);
-            btn_minimizar.Name = "btn_minimizar";
-            btn_minimizar.Size = new Size(26, 28);
-            btn_minimizar.TabIndex = 6;
-            btn_minimizar.TextAlign = ContentAlignment.MiddleLeft;
-            btn_minimizar.UseVisualStyleBackColor = false;
-            btn_minimizar.Click += btn_minimizar_Click;
-            // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -329,7 +330,7 @@
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
-            Name = "Form1";
+            Name = "FormMain";
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
@@ -357,7 +358,7 @@
         private FlowLayoutPanel pnPesquisar;
         private FlowLayoutPanel pnCarrinho;
         private FlowLayoutPanel pnSair;
-        private Button button7;
+        private Button btn_logout;
         private Button btnCarrinho;
         private Button btnPesquisar;
         private Button btn_sair;
