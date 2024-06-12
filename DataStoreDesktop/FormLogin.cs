@@ -12,6 +12,8 @@ namespace DataStoreDesktop
 {
     public partial class FormLogin : Form
     {
+        internal bool logado = false;
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -20,6 +22,12 @@ namespace DataStoreDesktop
         private void FormLogout_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            this.logado = true;
+            
         }
     }
 }

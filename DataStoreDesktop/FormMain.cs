@@ -9,24 +9,27 @@ namespace DataStoreDesktop
         FormMeusObjetos formMeusObjetos;
         FormSolicitacoesRealizadas formSolicitacoesRealizadas;
         
-        bool logado = false;
+        
 
         public FormMain()
         {
             InitializeComponent();
-            if (formHome == null)
+
+            if (formLogin == null)
             {
-                formHome = new FormHome();
-                formHome.FormClosed += FormHome_FormClosed;
-                formHome.MdiParent = this;
-                formHome.Dock = DockStyle.Fill;
-                formHome.Show();
+                formLogin = new FormLogin();
+                formLogin.FormClosed += FormLogin_FormClosed;
+                formLogin.MdiParent = this;
+                formLogin.Dock = DockStyle.Fill;
+                formLogin.Show();
             }
             else
             {
-                formHome.Activate();
+                formLogin.Activate();
             }
         }
+
+        
 
         private void FormHome_FormClosed(object? sender, FormClosedEventArgs e)
         {
@@ -161,18 +164,22 @@ namespace DataStoreDesktop
 
         private void btnCarrinho_Click(object sender, EventArgs e)
         {
-            if (formCarrinho == null)
+            if (this.formLogin.logado)
             {
-                formCarrinho = new FormCarrinho();
-                formCarrinho.FormClosed += FormCarrinho_FormClosed;
-                formCarrinho.MdiParent = this;
-                formCarrinho.Dock = DockStyle.Fill;
-                formCarrinho.Show();
+                if (formCarrinho == null)
+                {
+                    formCarrinho = new FormCarrinho();
+                    formCarrinho.FormClosed += FormCarrinho_FormClosed;
+                    formCarrinho.MdiParent = this;
+                    formCarrinho.Dock = DockStyle.Fill;
+                    formCarrinho.Show();
+                }
+                else
+                {
+                    formCarrinho.Activate();
+                }
             }
-            else
-            {
-                formCarrinho.Activate();
-            }
+
         }
 
         private void FormCarrinho_FormClosed(object? sender, FormClosedEventArgs e)
@@ -232,6 +239,8 @@ namespace DataStoreDesktop
         private void btn_logout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Logout efetuado com sucesso!");
+            formLogin.logado = false;
+            
             if (formLogin == null)
             {
                 formLogin = new FormLogin();
