@@ -159,6 +159,7 @@
             pannelSideBar.Controls.Add(pnSair);
             pannelSideBar.Dock = DockStyle.Left;
             pannelSideBar.Location = new Point(0, 28);
+            pannelSideBar.Margin = new Padding(0);
             pannelSideBar.Name = "pannelSideBar";
             pannelSideBar.Size = new Size(167, 422);
             pannelSideBar.TabIndex = 1;
@@ -308,7 +309,7 @@
             btn_logout.Text = "          Logout";
             btn_logout.TextAlign = ContentAlignment.MiddleLeft;
             btn_logout.UseVisualStyleBackColor = false;
-            btn_logout.Click += this.btn_logout_Click;
+            btn_logout.Click += btn_logout_Click;
             // 
             // timerMenuTransition
             // 
