@@ -17,7 +17,20 @@ namespace DataStoreDesktop
             this.usuario = usuario;
             this.lbInfoSession.Text = usuario;
             this.formLogin = formLogin;
-            
+
+            if (formHome == null)
+            {
+                formHome = new FormHome();
+                formHome.FormClosed += FormHome_FormClosed;
+                formHome.MdiParent = this;
+                formHome.Dock = DockStyle.Fill;
+                formHome.Show();
+            }
+            else
+            {
+                formHome.Activate();
+            }
+
         }
 
         

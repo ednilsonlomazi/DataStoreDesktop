@@ -63,6 +63,26 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banco_de_dados_100 {
+            get {
+                object obj = ResourceManager.GetObject("banco-de-dados-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banco_de_dados_16 {
+            get {
+                object obj = ResourceManager.GetObject("banco-de-dados-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrinho_16 {
             get {
                 object obj = ResourceManager.GetObject("carrinho-16", resourceCulture);
@@ -153,9 +173,29 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pesquisar_50_olive {
+            get {
+                object obj = ResourceManager.GetObject("pesquisar-50-olive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap porta_16 {
             get {
                 object obj = ResourceManager.GetObject("porta-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap retangulo_arredondado_100 {
+            get {
+                object obj = ResourceManager.GetObject("retangulo-arredondado-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

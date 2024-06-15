@@ -32,11 +32,13 @@
             btn_login = new Button();
             txtboxLoginUsuario = new TextBox();
             panel1 = new Panel();
+            btn_login_sair = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
             txtboxLoginSenha = new TextBox();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            label3 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -63,10 +65,10 @@
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.ForeColor = Color.FromArgb(23, 24, 29);
             btn_login.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_login.Location = new Point(103, 0);
+            btn_login.Location = new Point(121, 0);
             btn_login.Margin = new Padding(0);
             btn_login.Name = "btn_login";
-            btn_login.Size = new Size(103, 28);
+            btn_login.Size = new Size(85, 28);
             btn_login.TabIndex = 4;
             btn_login.Text = "Login";
             btn_login.UseVisualStyleBackColor = false;
@@ -87,19 +89,37 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
+            panel1.Controls.Add(btn_login_sair);
             panel1.Controls.Add(btn_login);
-            panel1.Location = new Point(50, 146);
+            panel1.Location = new Point(50, 236);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(206, 28);
             panel1.TabIndex = 9;
+            // 
+            // btn_login_sair
+            // 
+            btn_login_sair.BackColor = Color.White;
+            btn_login_sair.BackgroundImageLayout = ImageLayout.Center;
+            btn_login_sair.FlatAppearance.BorderSize = 0;
+            btn_login_sair.FlatStyle = FlatStyle.Flat;
+            btn_login_sair.ForeColor = Color.FromArgb(23, 24, 29);
+            btn_login_sair.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_login_sair.Location = new Point(0, -2);
+            btn_login_sair.Margin = new Padding(0);
+            btn_login_sair.Name = "btn_login_sair";
+            btn_login_sair.Size = new Size(85, 28);
+            btn_login_sair.TabIndex = 13;
+            btn_login_sair.Text = "Sair";
+            btn_login_sair.UseVisualStyleBackColor = false;
+            btn_login_sair.Click += btn_login_sair_Click;
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
             panel2.Controls.Add(txtboxLoginUsuario);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(50, 50);
+            panel2.Location = new Point(50, 140);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
             panel2.Size = new Size(206, 48);
@@ -110,7 +130,7 @@
             panel3.Anchor = AnchorStyles.None;
             panel3.Controls.Add(txtboxLoginSenha);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(50, 98);
+            panel3.Location = new Point(50, 188);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
             panel3.Size = new Size(206, 48);
@@ -150,9 +170,25 @@
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(50);
+            flowLayoutPanel1.Padding = new Padding(50, 140, 50, 50);
             flowLayoutPanel1.Size = new Size(307, 450);
             flowLayoutPanel1.TabIndex = 12;
+            // 
+            // label3
+            // 
+            label3.Dock = DockStyle.Fill;
+            label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label3.ForeColor = Color.FromArgb(23, 24, 29);
+            label3.Image = Properties.Resources.banco_de_dados_100;
+            label3.Location = new Point(307, 0);
+            label3.MaximumSize = new Size(2000, 340);
+            label3.MinimumSize = new Size(0, 40);
+            label3.Name = "label3";
+            label3.Padding = new Padding(0, 140, 0, 0);
+            label3.Size = new Size(493, 340);
+            label3.TabIndex = 13;
+            label3.Text = "Data Store Desktop";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // FormLogin
             // 
@@ -160,6 +196,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormLogin";
@@ -185,5 +222,7 @@
         private TextBox txtboxLoginSenha;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Button btn_login_sair;
+        private Label label3;
     }
 }
