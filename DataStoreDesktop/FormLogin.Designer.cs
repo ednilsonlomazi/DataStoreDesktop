@@ -30,11 +30,11 @@
         {
             label1 = new Label();
             btn_login = new Button();
-            textBox1 = new TextBox();
+            txtboxLoginUsuario = new TextBox();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            textBox2 = new TextBox();
+            txtboxLoginSenha = new TextBox();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1.SuspendLayout();
@@ -72,23 +72,24 @@
             btn_login.UseVisualStyleBackColor = false;
             btn_login.Click += btn_login_Click;
             // 
-            // textBox1
+            // txtboxLoginUsuario
             // 
-            textBox1.BackColor = Color.FromArgb(23, 24, 29);
-            textBox1.Dock = DockStyle.Top;
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(0, 15);
-            textBox1.MaximumSize = new Size(0, 42);
-            textBox1.MinimumSize = new Size(0, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(206, 28);
-            textBox1.TabIndex = 5;
+            txtboxLoginUsuario.BackColor = Color.FromArgb(23, 24, 29);
+            txtboxLoginUsuario.Dock = DockStyle.Top;
+            txtboxLoginUsuario.ForeColor = Color.White;
+            txtboxLoginUsuario.Location = new Point(0, 15);
+            txtboxLoginUsuario.MaximumSize = new Size(0, 42);
+            txtboxLoginUsuario.MinimumSize = new Size(0, 28);
+            txtboxLoginUsuario.Name = "txtboxLoginUsuario";
+            txtboxLoginUsuario.Size = new Size(206, 28);
+            txtboxLoginUsuario.TabIndex = 5;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
             panel1.Controls.Add(btn_login);
-            panel1.Location = new Point(53, 161);
+            panel1.Location = new Point(50, 146);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(206, 28);
             panel1.TabIndex = 9;
@@ -96,9 +97,10 @@
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtboxLoginUsuario);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(53, 53);
+            panel2.Location = new Point(50, 50);
+            panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
             panel2.Size = new Size(206, 48);
             panel2.TabIndex = 10;
@@ -106,24 +108,25 @@
             // panel3
             // 
             panel3.Anchor = AnchorStyles.None;
-            panel3.Controls.Add(textBox2);
+            panel3.Controls.Add(txtboxLoginSenha);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(53, 107);
+            panel3.Location = new Point(50, 98);
+            panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
             panel3.Size = new Size(206, 48);
             panel3.TabIndex = 11;
             // 
-            // textBox2
+            // txtboxLoginSenha
             // 
-            textBox2.BackColor = Color.FromArgb(23, 24, 29);
-            textBox2.Dock = DockStyle.Top;
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(0, 15);
-            textBox2.MinimumSize = new Size(0, 28);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(206, 28);
-            textBox2.TabIndex = 5;
-            textBox2.UseSystemPasswordChar = true;
+            txtboxLoginSenha.BackColor = Color.FromArgb(23, 24, 29);
+            txtboxLoginSenha.Dock = DockStyle.Top;
+            txtboxLoginSenha.ForeColor = Color.White;
+            txtboxLoginSenha.Location = new Point(0, 15);
+            txtboxLoginSenha.MinimumSize = new Size(0, 28);
+            txtboxLoginSenha.Name = "txtboxLoginSenha";
+            txtboxLoginSenha.Size = new Size(206, 28);
+            txtboxLoginSenha.TabIndex = 5;
+            txtboxLoginSenha.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -175,11 +178,11 @@
 
         private Label label1;
         private Button btn_login;
-        private TextBox textBox1;
+        private TextBox txtboxLoginUsuario;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private TextBox textBox2;
+        private TextBox txtboxLoginSenha;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
     }

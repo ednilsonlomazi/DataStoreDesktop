@@ -8,25 +8,15 @@ namespace DataStoreDesktop
         FormLogin formLogin;
         FormMeusObjetos formMeusObjetos;
         FormSolicitacoesRealizadas formSolicitacoesRealizadas;
-        
+        internal string usuario;
         
 
-        public FormMain()
+        public FormMain(string usuario)
         {
             InitializeComponent();
-
-            if (formLogin == null)
-            {
-                formLogin = new FormLogin();
-                formLogin.FormClosed += FormLogin_FormClosed;
-                formLogin.MdiParent = this;
-                formLogin.Dock = DockStyle.Fill;
-                formLogin.Show();
-            }
-            else
-            {
-                formLogin.Activate();
-            }
+            this.usuario = usuario;
+            this.lbInfoSession.Text = usuario;
+            
         }
 
         

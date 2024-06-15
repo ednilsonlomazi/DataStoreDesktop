@@ -48,6 +48,7 @@
             btn_logout = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
+            lbInfoSession = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
@@ -60,6 +61,7 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(lbInfoSession);
             panel1.Controls.Add(btn_minimizar);
             panel1.Controls.Add(btn_maximizar);
             panel1.Controls.Add(btn_sair);
@@ -321,6 +323,18 @@
             sideBarTransition.Interval = 10;
             sideBarTransition.Tick += sideBarTransition_Tick;
             // 
+            // lbInfoSession
+            // 
+            lbInfoSession.Dock = DockStyle.Right;
+            lbInfoSession.ForeColor = Color.FromArgb(23, 24, 29);
+            lbInfoSession.Location = new Point(570, 0);
+            lbInfoSession.Margin = new Padding(0);
+            lbInfoSession.Name = "lbInfoSession";
+            lbInfoSession.Size = new Size(152, 28);
+            lbInfoSession.TabIndex = 7;
+            lbInfoSession.Text = "Data Store Desktop";
+            lbInfoSession.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -365,5 +379,6 @@
         private Button btn_sair;
         private Button btn_maximizar;
         private Button btn_minimizar;
+        private Label lbInfoSession;
     }
 }

@@ -13,10 +13,15 @@ namespace DataStoreDesktop
     public partial class FormLogin : Form
     {
         internal bool logado = false;
-        
+        internal string usuario = "";
+        internal string senha = "";
+
+        internal FormMain formMain;
+
         public FormLogin()
         {
             InitializeComponent();
+            
         }
 
         private void FormLogout_Load(object sender, EventArgs e)
@@ -26,8 +31,19 @@ namespace DataStoreDesktop
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            this.logado = true;
+            if( this.txtboxLoginSenha.Text == "123")
+            {
+                this.logado = true;
+                this.usuario = this.txtboxLoginUsuario.Text;
+                this.formMain = new FormMain(this.usuario);
+                this.formMain.Show();
+                this.Hide();
+                
+            }
             
+
+
+
         }
     }
 }
