@@ -21,5 +21,16 @@ namespace DataStoreDesktop
         {
             this.ControlBox = false;
         }
+
+        private void btn_limpar_filtros_Click(object sender, EventArgs e)
+        {
+            this.txtboxServidor.Clear();
+            this.txtboxDatabase.Clear();
+            this.txtboxSchema.Clear();
+            this.txtboxName.Clear();
+            this.txtboxTipo.Clear();
+            this.txtboxClasse.Clear();
+            
+        }
     }
 }

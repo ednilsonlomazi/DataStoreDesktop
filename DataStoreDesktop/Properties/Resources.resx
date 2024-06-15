@@ -127,6 +127,9 @@
   <data name="círculo-preenchido-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\círculo-preenchido-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vassoura-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vassoura-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="círculo-preenchido-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\círculo-preenchido-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,14 +148,26 @@
   <data name="x-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pesquisar-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pesquisar-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banco-de-dados-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banco-de-dados-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrinho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrinho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="retangulo-arredondado-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\retangulo-arredondado-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carrinho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carrinho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vassoura-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vassoura-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vassoura-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vassoura-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="casa-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +178,7 @@
   <data name="pesquisar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pesquisar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="banco-de-dados-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banco-de-dados-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pesquisar-fill-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pesquisar-fill-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
