@@ -11,11 +11,12 @@ namespace DataStoreDesktop
         internal string usuario;
         
 
-        public FormMain(string usuario)
+        public FormMain(string usuario, FormLogin formLogin)
         {
             InitializeComponent();
             this.usuario = usuario;
             this.lbInfoSession.Text = usuario;
+            this.formLogin = formLogin;
             
         }
 
@@ -229,20 +230,9 @@ namespace DataStoreDesktop
         private void btn_logout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Logout efetuado com sucesso!");
-            formLogin.logado = false;
+            this.Hide();
+            this.formLogin.Show();
             
-            if (formLogin == null)
-            {
-                formLogin = new FormLogin();
-                formLogin.FormClosed += FormLogin_FormClosed;
-                formLogin.MdiParent = this;
-                formLogin.Dock = DockStyle.Fill;
-                formLogin.Show();
-            }
-            else
-            {
-                formLogin.Activate();
-            }
         }
 
         private void FormLogin_FormClosed(object? sender, FormClosedEventArgs e)

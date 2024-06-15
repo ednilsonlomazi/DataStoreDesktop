@@ -35,7 +35,7 @@ namespace DataStoreDesktop
             {
                 this.logado = true;
                 this.usuario = this.txtboxLoginUsuario.Text;
-                this.formMain = new FormMain(this.usuario);
+                this.formMain = new FormMain(this.usuario, this);
                 this.formMain.Show();
                 this.Hide();
                 
