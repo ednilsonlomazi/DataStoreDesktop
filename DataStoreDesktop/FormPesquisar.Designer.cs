@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             txtboxTipo = new TextBox();
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -63,7 +66,13 @@
             label2 = new Label();
             txtboxServidor = new TextBox();
             panel6 = new Panel();
-            dataGridView1 = new DataGridView();
+            dgvPesquisar = new DataGridView();
+            Servidor = new DataGridViewTextBoxColumn();
+            Database = new DataGridViewTextBoxColumn();
+            Schema = new DataGridViewTextBoxColumn();
+            Objeto = new DataGridViewTextBoxColumn();
+            Tipo = new DataGridViewTextBoxColumn();
+            Classe = new DataGridViewTextBoxColumn();
             flowLayoutPanel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel22.SuspendLayout();
@@ -79,7 +88,7 @@
             panel11.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
             SuspendLayout();
             // 
             // txtboxTipo
@@ -193,6 +202,7 @@
             btn_pesquisar_form_pesquisar.Text = "          Pesquisar";
             btn_pesquisar_form_pesquisar.TextAlign = ContentAlignment.MiddleLeft;
             btn_pesquisar_form_pesquisar.UseVisualStyleBackColor = false;
+            btn_pesquisar_form_pesquisar.Click += btn_pesquisar_form_pesquisar_Click;
             // 
             // panel19
             // 
@@ -536,14 +546,86 @@
             panel6.Size = new Size(259, 2);
             panel6.TabIndex = 6;
             // 
-            // dataGridView1
+            // dgvPesquisar
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 103);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 347);
-            dataGridView1.TabIndex = 13;
+            dgvPesquisar.AllowUserToAddRows = false;
+            dgvPesquisar.AllowUserToDeleteRows = false;
+            dgvPesquisar.AllowUserToResizeColumns = false;
+            dgvPesquisar.AllowUserToResizeRows = false;
+            dgvPesquisar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPesquisar.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvPesquisar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvPesquisar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvPesquisar.ColumnHeadersHeight = 28;
+            dgvPesquisar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvPesquisar.Columns.AddRange(new DataGridViewColumn[] { Servidor, Database, Schema, Objeto, Tipo, Classe });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle2.SelectionForeColor = Color.White;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvPesquisar.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvPesquisar.Dock = DockStyle.Fill;
+            dgvPesquisar.GridColor = Color.Black;
+            dgvPesquisar.Location = new Point(0, 103);
+            dgvPesquisar.Name = "dgvPesquisar";
+            dgvPesquisar.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.DarkSlateGray;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvPesquisar.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dgvPesquisar.RowHeadersVisible = false;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.BackColor = Color.White;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(23, 24, 29);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
+            dgvPesquisar.Size = new Size(800, 347);
+            dgvPesquisar.TabIndex = 13;
+            // 
+            // Servidor
+            // 
+            Servidor.HeaderText = "Servidor";
+            Servidor.Name = "Servidor";
+            // 
+            // Database
+            // 
+            Database.HeaderText = "Database";
+            Database.Name = "Database";
+            // 
+            // Schema
+            // 
+            Schema.HeaderText = "Schema";
+            Schema.Name = "Schema";
+            // 
+            // Objeto
+            // 
+            Objeto.HeaderText = "Objeto";
+            Objeto.Name = "Objeto";
+            // 
+            // Tipo
+            // 
+            Tipo.HeaderText = "Tipo";
+            Tipo.Name = "Tipo";
+            // 
+            // Classe
+            // 
+            Classe.HeaderText = "Classe";
+            Classe.Name = "Classe";
             // 
             // FormPesquisar
             // 
@@ -551,7 +633,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvPesquisar);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPesquisar";
@@ -578,7 +660,7 @@
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
             ResumeLayout(false);
         }
 
@@ -618,6 +700,12 @@
         private Button btn_limpar_filtros;
         private Button btn_pesquisar_form_pesquisar;
         private Panel panel22;
-        private DataGridView dataGridView1;
+        private DataGridView dgvPesquisar;
+        private DataGridViewTextBoxColumn Servidor;
+        private DataGridViewTextBoxColumn Database;
+        private DataGridViewTextBoxColumn Schema;
+        private DataGridViewTextBoxColumn Objeto;
+        private DataGridViewTextBoxColumn Tipo;
+        private DataGridViewTextBoxColumn Classe;
     }
 }

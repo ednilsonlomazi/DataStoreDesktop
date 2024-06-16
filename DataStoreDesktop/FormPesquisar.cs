@@ -30,7 +30,15 @@ namespace DataStoreDesktop
             this.txtboxName.Clear();
             this.txtboxTipo.Clear();
             this.txtboxClasse.Clear();
+
+        }
+
+        private void btn_pesquisar_form_pesquisar_Click(object sender, EventArgs e)
+        {
             
+            this.dgvPesquisar.Rows.Add("Local", "AdventureWorks1999", "product", "tab_produtos", "tabela", "Produtos");
+
+
         }
     }
 }
