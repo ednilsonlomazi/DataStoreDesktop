@@ -31,6 +31,7 @@
             label4 = new Label();
             label2 = new Label();
             panel1 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             panel22 = new Panel();
             btn_limpar_filtros = new Button();
@@ -73,6 +74,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(flowLayoutPanel1);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label4);
@@ -81,6 +83,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 450);
             panel1.TabIndex = 25;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.BackColor = Color.FromArgb(23, 24, 29);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 76);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 0);
+            flowLayoutPanel1.TabIndex = 26;
             // 
             // panel2
             // 
@@ -153,6 +165,7 @@
             Text = "FormCarrinho";
             Load += FormCarrinho_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel22.ResumeLayout(false);
             ResumeLayout(false);
@@ -166,5 +179,6 @@
         private Panel panel22;
         private Button btn_limpar_filtros;
         private Button btn_pesquisar_form_pesquisar;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
