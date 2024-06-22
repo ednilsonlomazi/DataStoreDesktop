@@ -21,5 +21,15 @@ namespace DataStoreDesktop
         {
             this.ControlBox = false;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_limpar_filtros_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

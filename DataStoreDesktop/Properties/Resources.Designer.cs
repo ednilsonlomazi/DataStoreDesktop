@@ -133,6 +133,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap enviar_16_azul {
+            get {
+                object obj = ResourceManager.GetObject("enviar-16-azul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximizar_16 {
             get {
                 object obj = ResourceManager.GetObject("maximizar-16", resourceCulture);

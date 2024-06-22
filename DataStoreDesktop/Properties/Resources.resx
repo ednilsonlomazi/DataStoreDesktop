@@ -139,6 +139,9 @@
   <data name="minimizar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimizar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tabela-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabela-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="banco-de-dados-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banco-de-dados-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,19 +169,19 @@
   <data name="vassoura-22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vassoura-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vassoura-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vassoura-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pesquisar-fill-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pesquisar-fill-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="casa-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabela-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabela-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vassoura-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vassoura-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pesquisar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pesquisar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pesquisar-fill-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pesquisar-fill-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="enviar-16-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enviar-16-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
