@@ -31,6 +31,9 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             tableLayoutPanel2 = new TableLayoutPanel();
             btn_pesquisar = new Button();
             panel29 = new Panel();
@@ -54,6 +57,13 @@
             txtboxName = new TextBox();
             label11 = new Label();
             dgvPesquisar = new DataGridView();
+            panel1 = new Panel();
+            dataGridView1 = new DataGridView();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            Cliente = new DataGridViewTextBoxColumn();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            selecao = new DataGridViewCheckBoxColumn();
             Servidor = new DataGridViewTextBoxColumn();
             Database = new DataGridViewTextBoxColumn();
             Schema = new DataGridViewTextBoxColumn();
@@ -69,6 +79,8 @@
             panel24.SuspendLayout();
             panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -381,7 +393,7 @@
             dgvPesquisar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvPesquisar.ColumnHeadersHeight = 28;
             dgvPesquisar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvPesquisar.Columns.AddRange(new DataGridViewColumn[] { Servidor, Database, Schema, Objeto, Tipo, Classe });
+            dgvPesquisar.Columns.AddRange(new DataGridViewColumn[] { selecao, Servidor, Database, Schema, Objeto, Tipo, Classe });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.White;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -391,6 +403,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvPesquisar.DefaultCellStyle = dataGridViewCellStyle2;
             dgvPesquisar.Dock = DockStyle.Fill;
+            dgvPesquisar.EnableHeadersVisualStyles = false;
             dgvPesquisar.GridColor = Color.Silver;
             dgvPesquisar.Location = new Point(0, 105);
             dgvPesquisar.Name = "dgvPesquisar";
@@ -412,6 +425,104 @@
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
             dgvPesquisar.Size = new Size(800, 345);
             dgvPesquisar.TabIndex = 33;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(394, 111);
+            panel1.TabIndex = 34;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.ColumnHeadersHeight = 28;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, Cliente });
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionForeColor = Color.White;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.Silver;
+            dataGridView1.Location = new Point(403, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.RowTemplate.DefaultCellStyle.BackColor = Color.White;
+            dataGridView1.RowTemplate.DefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
+            dataGridView1.Size = new Size(394, 111);
+            dataGridView1.TabIndex = 35;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.HeaderText = "Cod Carga";
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.HeaderText = "Emrpesa";
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // Cliente
+            // 
+            Cliente.HeaderText = "Cliente";
+            Cliente.Name = "Cliente";
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Controls.Add(dataGridView1, 1, 0);
+            tableLayoutPanel1.Dock = DockStyle.Bottom;
+            tableLayoutPanel1.Location = new Point(0, 333);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Size = new Size(800, 117);
+            tableLayoutPanel1.TabIndex = 36;
+            // 
+            // selecao
+            // 
+            selecao.HeaderText = "Seleção";
+            selecao.Name = "selecao";
+            selecao.Resizable = DataGridViewTriState.True;
+            selecao.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
             // Servidor
             // 
@@ -449,6 +560,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(dgvPesquisar);
             Controls.Add(tableLayoutPanel2);
             FormBorderStyle = FormBorderStyle.None;
@@ -470,6 +582,8 @@
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -496,12 +610,19 @@
         private TextBox txtboxName;
         private Label label11;
         private DataGridView dgvPesquisar;
+        private Button btn_pesquisar;
+        private Panel panel1;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn Cliente;
+        private TableLayoutPanel tableLayoutPanel1;
+        private DataGridViewCheckBoxColumn selecao;
         private DataGridViewTextBoxColumn Servidor;
         private DataGridViewTextBoxColumn Database;
         private DataGridViewTextBoxColumn Schema;
         private DataGridViewTextBoxColumn Objeto;
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Classe;
-        private Button btn_pesquisar;
     }
 }

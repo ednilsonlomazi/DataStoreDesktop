@@ -15,6 +15,7 @@ namespace DataStoreDesktop
         public FormPesquisar()
         {
             InitializeComponent();
+            
         }
 
         private void FormPesquisar_Load(object sender, EventArgs e)
@@ -36,7 +37,7 @@ namespace DataStoreDesktop
         private void btn_pesquisar_form_pesquisar_Click(object sender, EventArgs e)
         {
             
-            this.dgvPesquisar.Rows.Add("Local", "AdventureWorks1999", "product", "tab_produtos", "tabela", "Produtos");
+            this.dgvPesquisar.Rows.Add(false,  "Local", "AdventureWorks1999", "product", "tab_produtos", "tabela", "Produtos");
 
 
         }
