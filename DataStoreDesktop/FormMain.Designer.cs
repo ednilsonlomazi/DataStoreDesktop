@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            lbInfoSession = new Label();
             btn_minimizar = new Button();
             btn_maximizar = new Button();
             btn_sair = new Button();
@@ -48,7 +49,6 @@
             btn_logout = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
-            lbInfoSession = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
@@ -72,6 +72,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;
+            // 
+            // lbInfoSession
+            // 
+            lbInfoSession.Dock = DockStyle.Right;
+            lbInfoSession.ForeColor = Color.FromArgb(23, 24, 29);
+            lbInfoSession.Location = new Point(570, 0);
+            lbInfoSession.Margin = new Padding(0);
+            lbInfoSession.Name = "lbInfoSession";
+            lbInfoSession.Size = new Size(152, 28);
+            lbInfoSession.TabIndex = 7;
+            lbInfoSession.Text = "Data Store Desktop";
+            lbInfoSession.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btn_minimizar
             // 
@@ -322,18 +334,6 @@
             // 
             sideBarTransition.Interval = 10;
             sideBarTransition.Tick += sideBarTransition_Tick;
-            // 
-            // lbInfoSession
-            // 
-            lbInfoSession.Dock = DockStyle.Right;
-            lbInfoSession.ForeColor = Color.FromArgb(23, 24, 29);
-            lbInfoSession.Location = new Point(570, 0);
-            lbInfoSession.Margin = new Padding(0);
-            lbInfoSession.Name = "lbInfoSession";
-            lbInfoSession.Size = new Size(152, 28);
-            lbInfoSession.TabIndex = 7;
-            lbInfoSession.Text = "Data Store Desktop";
-            lbInfoSession.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormMain
             // 

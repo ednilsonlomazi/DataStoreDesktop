@@ -35,9 +35,7 @@
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             tableLayoutPanel2 = new TableLayoutPanel();
-            btn_pesquisar = new Button();
             panel29 = new Panel();
-            btn_limpar_filtros = new Button();
             panel28 = new Panel();
             txtboxTipo = new TextBox();
             label16 = new Label();
@@ -56,13 +54,18 @@
             panel25 = new Panel();
             txtboxName = new TextBox();
             label11 = new Label();
-            dgvPesquisar = new DataGridView();
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
             Cliente = new DataGridViewTextBoxColumn();
             tableLayoutPanel1 = new TableLayoutPanel();
+            panel3 = new Panel();
+            panel2 = new Panel();
+            btn_limpar = new Button();
+            btn_opcoes = new Button();
+            btn_pesquisar = new Button();
+            dgvPesquisar = new DataGridView();
             selecao = new DataGridViewCheckBoxColumn();
             Servidor = new DataGridViewTextBoxColumn();
             Database = new DataGridViewTextBoxColumn();
@@ -71,16 +74,17 @@
             Tipo = new DataGridViewTextBoxColumn();
             Classe = new DataGridViewTextBoxColumn();
             tableLayoutPanel2.SuspendLayout();
-            panel29.SuspendLayout();
             panel28.SuspendLayout();
             panel27.SuspendLayout();
             panel26.SuspendLayout();
             panel23.SuspendLayout();
             panel24.SuspendLayout();
             panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -91,7 +95,6 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Controls.Add(btn_pesquisar, 3, 1);
             tableLayoutPanel2.Controls.Add(panel29, 2, 1);
             tableLayoutPanel2.Controls.Add(panel28, 0, 1);
             tableLayoutPanel2.Controls.Add(panel27, 0, 1);
@@ -109,54 +112,13 @@
             tableLayoutPanel2.Size = new Size(800, 105);
             tableLayoutPanel2.TabIndex = 32;
             // 
-            // btn_pesquisar
-            // 
-            btn_pesquisar.BackColor = Color.FromArgb(23, 24, 29);
-            btn_pesquisar.BackgroundImageLayout = ImageLayout.Center;
-            btn_pesquisar.Dock = DockStyle.Top;
-            btn_pesquisar.FlatAppearance.BorderSize = 0;
-            btn_pesquisar.FlatStyle = FlatStyle.Flat;
-            btn_pesquisar.ForeColor = Color.White;
-            btn_pesquisar.Image = Properties.Resources.pesquisar_fill_16;
-            btn_pesquisar.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_pesquisar.Location = new Point(600, 60);
-            btn_pesquisar.Margin = new Padding(0);
-            btn_pesquisar.Name = "btn_pesquisar";
-            btn_pesquisar.Size = new Size(200, 24);
-            btn_pesquisar.TabIndex = 34;
-            btn_pesquisar.Text = "          Pesquisar";
-            btn_pesquisar.TextAlign = ContentAlignment.MiddleLeft;
-            btn_pesquisar.UseVisualStyleBackColor = false;
-            btn_pesquisar.Click += btn_pesquisar_form_pesquisar_Click;
-            // 
             // panel29
             // 
             panel29.BackColor = Color.FromArgb(23, 24, 29);
-            panel29.Controls.Add(btn_limpar_filtros);
             panel29.Location = new Point(403, 63);
             panel29.Name = "panel29";
             panel29.Size = new Size(194, 24);
             panel29.TabIndex = 32;
-            // 
-            // btn_limpar_filtros
-            // 
-            btn_limpar_filtros.BackColor = Color.FromArgb(23, 24, 29);
-            btn_limpar_filtros.BackgroundImageLayout = ImageLayout.Center;
-            btn_limpar_filtros.Dock = DockStyle.Top;
-            btn_limpar_filtros.FlatAppearance.BorderSize = 0;
-            btn_limpar_filtros.FlatStyle = FlatStyle.Flat;
-            btn_limpar_filtros.ForeColor = Color.White;
-            btn_limpar_filtros.Image = Properties.Resources.vassoura_16;
-            btn_limpar_filtros.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_limpar_filtros.Location = new Point(0, 0);
-            btn_limpar_filtros.Margin = new Padding(0);
-            btn_limpar_filtros.Name = "btn_limpar_filtros";
-            btn_limpar_filtros.Size = new Size(194, 24);
-            btn_limpar_filtros.TabIndex = 17;
-            btn_limpar_filtros.Text = "          Limpar";
-            btn_limpar_filtros.TextAlign = ContentAlignment.MiddleLeft;
-            btn_limpar_filtros.UseVisualStyleBackColor = false;
-            btn_limpar_filtros.Click += btn_limpar_filtros_Click;
             // 
             // panel28
             // 
@@ -374,58 +336,6 @@
             label11.TabIndex = 0;
             label11.Text = "Nome";
             // 
-            // dgvPesquisar
-            // 
-            dgvPesquisar.AllowUserToAddRows = false;
-            dgvPesquisar.AllowUserToDeleteRows = false;
-            dgvPesquisar.AllowUserToResizeColumns = false;
-            dgvPesquisar.AllowUserToResizeRows = false;
-            dgvPesquisar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvPesquisar.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvPesquisar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvPesquisar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvPesquisar.ColumnHeadersHeight = 28;
-            dgvPesquisar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvPesquisar.Columns.AddRange(new DataGridViewColumn[] { selecao, Servidor, Database, Schema, Objeto, Tipo, Classe });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle2.SelectionForeColor = Color.White;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvPesquisar.DefaultCellStyle = dataGridViewCellStyle2;
-            dgvPesquisar.Dock = DockStyle.Fill;
-            dgvPesquisar.EnableHeadersVisualStyles = false;
-            dgvPesquisar.GridColor = Color.Silver;
-            dgvPesquisar.Location = new Point(0, 105);
-            dgvPesquisar.Name = "dgvPesquisar";
-            dgvPesquisar.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = Color.DarkSlateGray;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvPesquisar.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dgvPesquisar.RowHeadersVisible = false;
-            dgvPesquisar.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvPesquisar.RowTemplate.DefaultCellStyle.BackColor = Color.White;
-            dgvPesquisar.RowTemplate.DefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(23, 24, 29);
-            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29);
-            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
-            dgvPesquisar.Size = new Size(800, 345);
-            dgvPesquisar.TabIndex = 33;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.White;
@@ -444,39 +354,39 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeight = 28;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, Cliente });
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = Color.White;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle5.SelectionForeColor = Color.White;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle2.SelectionForeColor = Color.White;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.Silver;
             dataGridView1.Location = new Point(403, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = Color.DarkSlateGray;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.DarkSlateGray;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.RowTemplate.DefaultCellStyle.BackColor = Color.White;
@@ -516,6 +426,143 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Size = new Size(800, 117);
             tableLayoutPanel1.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(23, 24, 29);
+            panel3.Controls.Add(panel2);
+            panel3.Controls.Add(tableLayoutPanel2);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(800, 139);
+            panel3.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(32, 33, 36);
+            panel2.Controls.Add(btn_limpar);
+            panel2.Controls.Add(btn_opcoes);
+            panel2.Controls.Add(btn_pesquisar);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 105);
+            panel2.Margin = new Padding(0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(800, 32);
+            panel2.TabIndex = 39;
+            // 
+            // btn_limpar
+            // 
+            btn_limpar.BackColor = Color.FromArgb(32, 33, 36);
+            btn_limpar.BackgroundImageLayout = ImageLayout.Center;
+            btn_limpar.Dock = DockStyle.Left;
+            btn_limpar.FlatAppearance.BorderSize = 0;
+            btn_limpar.FlatStyle = FlatStyle.Flat;
+            btn_limpar.ForeColor = Color.White;
+            btn_limpar.Image = Properties.Resources.vassoura_16;
+            btn_limpar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_limpar.Location = new Point(334, 0);
+            btn_limpar.Margin = new Padding(0);
+            btn_limpar.Name = "btn_limpar";
+            btn_limpar.Size = new Size(167, 32);
+            btn_limpar.TabIndex = 38;
+            btn_limpar.Text = "          Limpar";
+            btn_limpar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_limpar.UseVisualStyleBackColor = false;
+            btn_limpar.Click += btn_limpar_filtros_Click;
+            // 
+            // btn_opcoes
+            // 
+            btn_opcoes.BackColor = Color.FromArgb(32, 33, 36);
+            btn_opcoes.BackgroundImageLayout = ImageLayout.Center;
+            btn_opcoes.Dock = DockStyle.Left;
+            btn_opcoes.FlatAppearance.BorderSize = 0;
+            btn_opcoes.FlatStyle = FlatStyle.Flat;
+            btn_opcoes.ForeColor = Color.White;
+            btn_opcoes.Image = Properties.Resources.vassoura_16;
+            btn_opcoes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_opcoes.Location = new Point(167, 0);
+            btn_opcoes.Margin = new Padding(0);
+            btn_opcoes.Name = "btn_opcoes";
+            btn_opcoes.Size = new Size(167, 32);
+            btn_opcoes.TabIndex = 37;
+            btn_opcoes.Text = "          Opções";
+            btn_opcoes.TextAlign = ContentAlignment.MiddleLeft;
+            btn_opcoes.UseVisualStyleBackColor = false;
+            // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.BackColor = Color.FromArgb(32, 33, 36);
+            btn_pesquisar.BackgroundImageLayout = ImageLayout.Center;
+            btn_pesquisar.Dock = DockStyle.Left;
+            btn_pesquisar.FlatAppearance.BorderSize = 0;
+            btn_pesquisar.FlatStyle = FlatStyle.Flat;
+            btn_pesquisar.ForeColor = Color.White;
+            btn_pesquisar.Image = Properties.Resources.pesquisar_fill_16;
+            btn_pesquisar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_pesquisar.Location = new Point(0, 0);
+            btn_pesquisar.Margin = new Padding(0);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(167, 32);
+            btn_pesquisar.TabIndex = 36;
+            btn_pesquisar.Text = "          Pesquisar";
+            btn_pesquisar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_pesquisar.UseVisualStyleBackColor = false;
+            btn_pesquisar.Click += btn_pesquisar_form_pesquisar_Click;
+            // 
+            // dgvPesquisar
+            // 
+            dgvPesquisar.AllowUserToAddRows = false;
+            dgvPesquisar.AllowUserToDeleteRows = false;
+            dgvPesquisar.AllowUserToResizeColumns = false;
+            dgvPesquisar.AllowUserToResizeRows = false;
+            dgvPesquisar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPesquisar.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvPesquisar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvPesquisar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dgvPesquisar.ColumnHeadersHeight = 28;
+            dgvPesquisar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvPesquisar.Columns.AddRange(new DataGridViewColumn[] { selecao, Servidor, Database, Schema, Objeto, Tipo, Classe });
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionForeColor = Color.White;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dgvPesquisar.DefaultCellStyle = dataGridViewCellStyle5;
+            dgvPesquisar.Dock = DockStyle.Fill;
+            dgvPesquisar.EnableHeadersVisualStyles = false;
+            dgvPesquisar.GridColor = Color.Silver;
+            dgvPesquisar.Location = new Point(0, 139);
+            dgvPesquisar.Margin = new Padding(0);
+            dgvPesquisar.Name = "dgvPesquisar";
+            dgvPesquisar.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dgvPesquisar.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dgvPesquisar.RowHeadersVisible = false;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.BackColor = Color.White;
+            dgvPesquisar.RowTemplate.DefaultCellStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(23, 24, 29);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
+            dgvPesquisar.Size = new Size(800, 194);
+            dgvPesquisar.TabIndex = 39;
             // 
             // selecao
             // 
@@ -560,15 +607,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
-            Controls.Add(tableLayoutPanel1);
             Controls.Add(dgvPesquisar);
-            Controls.Add(tableLayoutPanel2);
+            Controls.Add(panel3);
+            Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPesquisar";
             Text = "FormPesquisar";
             Load += FormPesquisar_Load;
             tableLayoutPanel2.ResumeLayout(false);
-            panel29.ResumeLayout(false);
             panel28.ResumeLayout(false);
             panel28.PerformLayout();
             panel27.ResumeLayout(false);
@@ -581,16 +627,17 @@
             panel24.PerformLayout();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel29;
-        private Button btn_limpar_filtros;
         private Panel panel28;
         private TextBox txtboxTipo;
         private Label label16;
@@ -609,14 +656,18 @@
         private Panel panel25;
         private TextBox txtboxName;
         private Label label11;
-        private DataGridView dgvPesquisar;
-        private Button btn_pesquisar;
         private Panel panel1;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private DataGridViewTextBoxColumn Cliente;
         private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel3;
+        private Panel panel2;
+        private Button btn_limpar;
+        private Button btn_opcoes;
+        private Button btn_pesquisar;
+        private DataGridView dgvPesquisar;
         private DataGridViewCheckBoxColumn selecao;
         private DataGridViewTextBoxColumn Servidor;
         private DataGridViewTextBoxColumn Database;
