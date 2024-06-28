@@ -54,7 +54,8 @@
             panel25 = new Panel();
             txtboxName = new TextBox();
             label11 = new Label();
-            panel1 = new Panel();
+            pnInfoAdicional = new Panel();
+            lbInfoAdicional = new Label();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
@@ -80,6 +81,7 @@
             panel23.SuspendLayout();
             panel24.SuspendLayout();
             panel25.SuspendLayout();
+            pnInfoAdicional.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -336,14 +338,26 @@
             label11.TabIndex = 0;
             label11.Text = "Nome";
             // 
-            // panel1
+            // pnInfoAdicional
             // 
-            panel1.BackColor = Color.White;
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(394, 111);
-            panel1.TabIndex = 34;
+            pnInfoAdicional.BackColor = Color.White;
+            pnInfoAdicional.Controls.Add(lbInfoAdicional);
+            pnInfoAdicional.Dock = DockStyle.Fill;
+            pnInfoAdicional.Location = new Point(3, 3);
+            pnInfoAdicional.Name = "pnInfoAdicional";
+            pnInfoAdicional.Size = new Size(394, 111);
+            pnInfoAdicional.TabIndex = 34;
+            // 
+            // lbInfoAdicional
+            // 
+            lbInfoAdicional.Dock = DockStyle.Fill;
+            lbInfoAdicional.ForeColor = Color.Black;
+            lbInfoAdicional.Location = new Point(0, 0);
+            lbInfoAdicional.Margin = new Padding(10);
+            lbInfoAdicional.Name = "lbInfoAdicional";
+            lbInfoAdicional.Size = new Size(394, 111);
+            lbInfoAdicional.TabIndex = 0;
+            lbInfoAdicional.Text = "label1";
             // 
             // dataGridView1
             // 
@@ -417,7 +431,7 @@
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Controls.Add(pnInfoAdicional, 0, 0);
             tableLayoutPanel1.Controls.Add(dataGridView1, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Bottom;
             tableLayoutPanel1.Location = new Point(0, 333);
@@ -563,6 +577,7 @@
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
             dgvPesquisar.Size = new Size(800, 194);
             dgvPesquisar.TabIndex = 39;
+            dgvPesquisar.CellContentClick += dgvPesquisar_CellContentClick;
             // 
             // selecao
             // 
@@ -627,6 +642,7 @@
             panel24.PerformLayout();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
+            pnInfoAdicional.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -656,7 +672,7 @@
         private Panel panel25;
         private TextBox txtboxName;
         private Label label11;
-        private Panel panel1;
+        private Panel pnInfoAdicional;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
@@ -675,5 +691,6 @@
         private DataGridViewTextBoxColumn Objeto;
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Classe;
+        private Label lbInfoAdicional;
     }
 }

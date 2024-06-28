@@ -15,7 +15,7 @@ namespace DataStoreDesktop
         public FormPesquisar()
         {
             InitializeComponent();
-            
+
         }
 
         private void FormPesquisar_Load(object sender, EventArgs e)
@@ -36,8 +36,25 @@ namespace DataStoreDesktop
 
         private void btn_pesquisar_form_pesquisar_Click(object sender, EventArgs e)
         {
-            
-            this.dgvPesquisar.Rows.Add(false,  "Local", "AdventureWorks1999", "product", "tab_produtos", "tabela", "Produtos");
+
+            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product1", "tab_produtos", "tabela", "Produtos");
+            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product2", "tab_produtos", "tabela", "Produtos");
+            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product3", "tab_produtos", "tabela", "Produtos");
+
+        }
+
+        private void dgvPesquisar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+            Int32 selectedCellCount = dgvPesquisar.GetCellCount(DataGridViewElementStates.Selected);
+            if (selectedCellCount > 0)
+            {
+                var indice = dgvPesquisar.SelectedCells[0].RowIndex;
+                this.lbInfoAdicional.Text = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[4].Value.ToString();  
+            }
+
+
+
 
 
         }
