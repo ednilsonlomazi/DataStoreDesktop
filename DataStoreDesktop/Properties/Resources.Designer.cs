@@ -93,6 +93,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancelar_x_20 {
+            get {
+                object obj = ResourceManager.GetObject("cancelar-x-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrinho_16 {
             get {
                 object obj = ResourceManager.GetObject("carrinho-16", resourceCulture);
@@ -126,6 +136,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap círculo_preenchido_16 {
             get {
                 object obj = ResourceManager.GetObject("círculo-preenchido-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap confirmar_20 {
+            get {
+                object obj = ResourceManager.GetObject("confirmar-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
