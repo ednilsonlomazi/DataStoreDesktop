@@ -63,6 +63,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap acesso_16 {
+            get {
+                object obj = ResourceManager.GetObject("acesso-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap banco_de_dados_100 {
             get {
                 object obj = ResourceManager.GetObject("banco-de-dados-100", resourceCulture);
@@ -173,9 +183,39 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap olho_16 {
+            get {
+                object obj = ResourceManager.GetObject("olho-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap olho_16_branco {
+            get {
+                object obj = ResourceManager.GetObject("olho-16-branco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pesquisar_16 {
             get {
                 object obj = ResourceManager.GetObject("pesquisar-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pesquisar_16_new {
+            get {
+                object obj = ResourceManager.GetObject("pesquisar-16-new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +293,26 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap vassoura_16_new {
+            get {
+                object obj = ResourceManager.GetObject("vassoura-16-new", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vassoura_19 {
+            get {
+                object obj = ResourceManager.GetObject("vassoura-19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vassoura_22 {
             get {
                 object obj = ResourceManager.GetObject("vassoura-22", resourceCulture);
@@ -266,6 +326,26 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap vassoura_28 {
             get {
                 object obj = ResourceManager.GetObject("vassoura-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visível_16 {
+            get {
+                object obj = ResourceManager.GetObject("visível-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visível_19 {
+            get {
+                object obj = ResourceManager.GetObject("visível-19", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace DataStoreDesktop
 {
@@ -45,12 +46,16 @@ namespace DataStoreDesktop
 
         private void dgvPesquisar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
             Int32 selectedCellCount = dgvPesquisar.GetCellCount(DataGridViewElementStates.Selected);
             if (selectedCellCount > 0)
             {
                 var indice = dgvPesquisar.SelectedCells[0].RowIndex;
-                this.lbInfoAdicional.Text = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[4].Value.ToString();  
+                var objeto = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[4].Value.ToString();
+                var schema = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
+                var banco = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[2].Value.ToString();
+                var servidor = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[1].Value.ToString();
+                this.lbInfoAdicional.Text = objeto + "\n" + schema + "\n" + banco + "\n" + servidor;
             }
 
 
@@ -58,5 +63,104 @@ namespace DataStoreDesktop
 
 
         }
+
+        private void btnSolicitarAcesso_Click(object sender, EventArgs e)
+        {
+            List<string> lista = new List<string>();
+            foreach (DataGridViewRow row in dgvPesquisar.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[0].Value))
+                {
+
+                    // usse codigo sera usado futuramente quando estiver se
+                    // comunicando com a WebApi via JSON
+                    lista.Add(JsonSerializer.Serialize(new
+                    {
+
+                        index = row.Cells[0].RowIndex,
+                        servidor = dgvPesquisar.Rows[row.Index].Cells[1].Value.ToString(),
+                        banco = dgvPesquisar.Rows[row.Index].Cells[2].Value.ToString(),
+                        schema = dgvPesquisar.Rows[row.Index].Cells[3].Value.ToString(),
+                        objeto = dgvPesquisar.Rows[row.Index].Cells[4].Value.ToString()
+
+                    }));
+
+
+                }
+            }
+            if (lista.Count > 0)
+            {
+                MessageBox.Show("Legal, mas ainda estamos desenvolvendo isso.");
+            }
+            else
+            {
+                MessageBox.Show("Não existem itens selecionados");
+            }
+        }
+
+        private void btnVerPrimeirasLinhas_Click(object sender, EventArgs e)
+        {
+            List<string> lista = new List<string>();
+            foreach (DataGridViewRow row in dgvPesquisar.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[0].Value))
+                {
+
+                    // usse codigo sera usado futuramente quando estiver se
+                    // comunicando com a WebApi via JSON
+                    lista.Add(JsonSerializer.Serialize(new
+                    {
+
+                        index = row.Cells[0].RowIndex,
+                        servidor = dgvPesquisar.Rows[row.Index].Cells[1].Value.ToString(),
+                        banco = dgvPesquisar.Rows[row.Index].Cells[2].Value.ToString(),
+                        schema = dgvPesquisar.Rows[row.Index].Cells[3].Value.ToString(),
+                        objeto = dgvPesquisar.Rows[row.Index].Cells[4].Value.ToString()
+
+                    }));
+
+
+                }
+            }
+            if (lista.Count > 0)
+            {
+                MessageBox.Show("Legal, mas ainda estamos desenvolvendo isso.");
+            }
+            else
+            {
+                MessageBox.Show("Não existem itens selecionados");
+            }
+        }
+
+        //private void btn_opcoes_Click(object sender, EventArgs e)
+        //{
+        //    List<string> lista = new List<string>();
+        //    foreach (DataGridViewRow row in dgvPesquisar.Rows)
+        //    {
+        //        if (Convert.ToBoolean(row.Cells[0].Value))
+        //        {
+
+
+        //            lista.Add(JsonSerializer.Serialize(new{
+
+        //                    index = row.Cells[0].RowIndex,
+        //                    servidor = dgvPesquisar.Rows[row.Index].Cells[1].Value.ToString(),
+        //                    banco = dgvPesquisar.Rows[row.Index].Cells[2].Value.ToString(),
+        //                    schema = dgvPesquisar.Rows[row.Index].Cells[3].Value.ToString(),
+        //                    objeto = dgvPesquisar.Rows[row.Index].Cells[4].Value.ToString()
+
+        //            }));
+
+
+        //        }
+        //    }
+        //    if (lista.Count > 0) 
+        //    {
+        //        foreach (string x in lista)
+        //        {
+
+        //        }
+        //    }
+        //}
     }
 }

@@ -63,8 +63,9 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             panel3 = new Panel();
             panel2 = new Panel();
+            btnVerPrimeirasLinhas = new Button();
+            btnSolicitarAcesso = new Button();
             btn_limpar = new Button();
-            btn_opcoes = new Button();
             btn_pesquisar = new Button();
             dgvPesquisar = new DataGridView();
             selecao = new DataGridViewCheckBoxColumn();
@@ -456,8 +457,9 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(32, 33, 36);
+            panel2.Controls.Add(btnVerPrimeirasLinhas);
+            panel2.Controls.Add(btnSolicitarAcesso);
             panel2.Controls.Add(btn_limpar);
-            panel2.Controls.Add(btn_opcoes);
             panel2.Controls.Add(btn_pesquisar);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 105);
@@ -465,6 +467,46 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(800, 32);
             panel2.TabIndex = 39;
+            // 
+            // btnVerPrimeirasLinhas
+            // 
+            btnVerPrimeirasLinhas.BackColor = Color.FromArgb(32, 33, 36);
+            btnVerPrimeirasLinhas.BackgroundImageLayout = ImageLayout.Center;
+            btnVerPrimeirasLinhas.Dock = DockStyle.Left;
+            btnVerPrimeirasLinhas.FlatAppearance.BorderSize = 0;
+            btnVerPrimeirasLinhas.FlatStyle = FlatStyle.Flat;
+            btnVerPrimeirasLinhas.ForeColor = Color.White;
+            btnVerPrimeirasLinhas.Image = Properties.Resources.visível_19;
+            btnVerPrimeirasLinhas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVerPrimeirasLinhas.Location = new Point(501, 0);
+            btnVerPrimeirasLinhas.Margin = new Padding(0);
+            btnVerPrimeirasLinhas.Name = "btnVerPrimeirasLinhas";
+            btnVerPrimeirasLinhas.Size = new Size(167, 32);
+            btnVerPrimeirasLinhas.TabIndex = 40;
+            btnVerPrimeirasLinhas.Text = "          Ver Primeiras Linhas";
+            btnVerPrimeirasLinhas.TextAlign = ContentAlignment.MiddleLeft;
+            btnVerPrimeirasLinhas.UseVisualStyleBackColor = false;
+            btnVerPrimeirasLinhas.Click += btnVerPrimeirasLinhas_Click;
+            // 
+            // btnSolicitarAcesso
+            // 
+            btnSolicitarAcesso.BackColor = Color.FromArgb(32, 33, 36);
+            btnSolicitarAcesso.BackgroundImageLayout = ImageLayout.Center;
+            btnSolicitarAcesso.Dock = DockStyle.Left;
+            btnSolicitarAcesso.FlatAppearance.BorderSize = 0;
+            btnSolicitarAcesso.FlatStyle = FlatStyle.Flat;
+            btnSolicitarAcesso.ForeColor = Color.White;
+            btnSolicitarAcesso.Image = Properties.Resources.acesso_16;
+            btnSolicitarAcesso.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSolicitarAcesso.Location = new Point(334, 0);
+            btnSolicitarAcesso.Margin = new Padding(0);
+            btnSolicitarAcesso.Name = "btnSolicitarAcesso";
+            btnSolicitarAcesso.Size = new Size(167, 32);
+            btnSolicitarAcesso.TabIndex = 39;
+            btnSolicitarAcesso.Text = "          Solicitar Acesso";
+            btnSolicitarAcesso.TextAlign = ContentAlignment.MiddleLeft;
+            btnSolicitarAcesso.UseVisualStyleBackColor = false;
+            btnSolicitarAcesso.Click += btnSolicitarAcesso_Click;
             // 
             // btn_limpar
             // 
@@ -474,9 +516,9 @@
             btn_limpar.FlatAppearance.BorderSize = 0;
             btn_limpar.FlatStyle = FlatStyle.Flat;
             btn_limpar.ForeColor = Color.White;
-            btn_limpar.Image = Properties.Resources.vassoura_16;
+            btn_limpar.Image = Properties.Resources.vassoura_16_new;
             btn_limpar.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_limpar.Location = new Point(334, 0);
+            btn_limpar.Location = new Point(167, 0);
             btn_limpar.Margin = new Padding(0);
             btn_limpar.Name = "btn_limpar";
             btn_limpar.Size = new Size(167, 32);
@@ -486,25 +528,6 @@
             btn_limpar.UseVisualStyleBackColor = false;
             btn_limpar.Click += btn_limpar_filtros_Click;
             // 
-            // btn_opcoes
-            // 
-            btn_opcoes.BackColor = Color.FromArgb(32, 33, 36);
-            btn_opcoes.BackgroundImageLayout = ImageLayout.Center;
-            btn_opcoes.Dock = DockStyle.Left;
-            btn_opcoes.FlatAppearance.BorderSize = 0;
-            btn_opcoes.FlatStyle = FlatStyle.Flat;
-            btn_opcoes.ForeColor = Color.White;
-            btn_opcoes.Image = Properties.Resources.vassoura_16;
-            btn_opcoes.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_opcoes.Location = new Point(167, 0);
-            btn_opcoes.Margin = new Padding(0);
-            btn_opcoes.Name = "btn_opcoes";
-            btn_opcoes.Size = new Size(167, 32);
-            btn_opcoes.TabIndex = 37;
-            btn_opcoes.Text = "          Opções";
-            btn_opcoes.TextAlign = ContentAlignment.MiddleLeft;
-            btn_opcoes.UseVisualStyleBackColor = false;
-            // 
             // btn_pesquisar
             // 
             btn_pesquisar.BackColor = Color.FromArgb(32, 33, 36);
@@ -513,7 +536,7 @@
             btn_pesquisar.FlatAppearance.BorderSize = 0;
             btn_pesquisar.FlatStyle = FlatStyle.Flat;
             btn_pesquisar.ForeColor = Color.White;
-            btn_pesquisar.Image = Properties.Resources.pesquisar_fill_16;
+            btn_pesquisar.Image = Properties.Resources.pesquisar_16_new;
             btn_pesquisar.ImageAlign = ContentAlignment.MiddleLeft;
             btn_pesquisar.Location = new Point(0, 0);
             btn_pesquisar.Margin = new Padding(0);
@@ -681,7 +704,6 @@
         private Panel panel3;
         private Panel panel2;
         private Button btn_limpar;
-        private Button btn_opcoes;
         private Button btn_pesquisar;
         private DataGridView dgvPesquisar;
         private DataGridViewCheckBoxColumn selecao;
@@ -692,5 +714,7 @@
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Classe;
         private Label lbInfoAdicional;
+        private Button btnVerPrimeirasLinhas;
+        private Button btnSolicitarAcesso;
     }
 }
