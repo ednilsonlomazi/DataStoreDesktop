@@ -67,11 +67,15 @@ namespace DataStoreDesktop
         private void btnSolicitarAcesso_Click(object sender, EventArgs e)
         {
             List<string> lista = new List<string>();
+            List< DataGridViewRow > listadgv = new List< DataGridViewRow >();
             foreach (DataGridViewRow row in dgvPesquisar.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[0].Value))
                 {
+                    listadgv.Add(
+                        dgvPesquisar.Rows[row.Index]
 
+                    );
                     // usse codigo sera usado futuramente quando estiver se
                     // comunicando com a WebApi via JSON
                     lista.Add(JsonSerializer.Serialize(new
@@ -90,11 +94,14 @@ namespace DataStoreDesktop
             }
             if (lista.Count > 0)
             {
-                MessageBox.Show("Legal, mas ainda estamos desenvolvendo isso.");
+                FormSolicitaAcesso formSolicitaAcesso = new FormSolicitaAcesso();
+                formSolicitaAcesso.AtualizaDataGridViewItensParaAvaliar(listadgv);
+                formSolicitaAcesso.Show();
+                
             }
             else
             {
-                MessageBox.Show("Não existem itens selecionados");
+                MessageBox.Show("Selecione ao menos um item para solicitar permissão", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
             }
         }
 
@@ -128,7 +135,7 @@ namespace DataStoreDesktop
             }
             else
             {
-                MessageBox.Show("Não existem itens selecionados");
+                MessageBox.Show("Selecione ao menos um item para ver as primeiras linhas", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
             }
         }
 
