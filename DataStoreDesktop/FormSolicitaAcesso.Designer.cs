@@ -63,7 +63,7 @@
             radioButton1.ForeColor = Color.White;
             radioButton1.Location = new Point(3, 3);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(90, 19);
+            radioButton1.Size = new Size(94, 19);
             radioButton1.TabIndex = 1;
             radioButton1.TabStop = true;
             radioButton1.Text = "SELECT";
@@ -74,9 +74,9 @@
             radioButton2.AutoSize = true;
             radioButton2.Dock = DockStyle.Top;
             radioButton2.ForeColor = Color.White;
-            radioButton2.Location = new Point(99, 3);
+            radioButton2.Location = new Point(103, 3);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(90, 19);
+            radioButton2.Size = new Size(94, 19);
             radioButton2.TabIndex = 2;
             radioButton2.TabStop = true;
             radioButton2.Text = "UPDATE";
@@ -87,9 +87,9 @@
             radioButton3.AutoSize = true;
             radioButton3.Dock = DockStyle.Top;
             radioButton3.ForeColor = Color.White;
-            radioButton3.Location = new Point(195, 3);
+            radioButton3.Location = new Point(203, 3);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(90, 19);
+            radioButton3.Size = new Size(94, 19);
             radioButton3.TabIndex = 3;
             radioButton3.TabStop = true;
             radioButton3.Text = "DELETE";
@@ -100,9 +100,9 @@
             radioButton4.AutoSize = true;
             radioButton4.Dock = DockStyle.Top;
             radioButton4.ForeColor = Color.White;
-            radioButton4.Location = new Point(291, 3);
+            radioButton4.Location = new Point(303, 3);
             radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(90, 19);
+            radioButton4.Size = new Size(94, 19);
             radioButton4.TabIndex = 4;
             radioButton4.TabStop = true;
             radioButton4.Text = "ALTER";
@@ -116,8 +116,7 @@
             panel1.Location = new Point(0, 28);
             panel1.Margin = new Padding(0, 28, 0, 0);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(8, 30, 8, 30);
-            panel1.Size = new Size(400, 126);
+            panel1.Size = new Size(400, 67);
             panel1.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -132,21 +131,21 @@
             tableLayoutPanel1.Controls.Add(radioButton3, 2, 0);
             tableLayoutPanel1.Controls.Add(radioButton2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(8, 68);
+            tableLayoutPanel1.Location = new Point(0, 26);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(384, 28);
+            tableLayoutPanel1.Size = new Size(400, 41);
             tableLayoutPanel1.TabIndex = 6;
             // 
             // label2
             // 
+            label2.BackColor = Color.FromArgb(32, 33, 36);
             label2.Dock = DockStyle.Top;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(8, 30);
+            label2.Location = new Point(0, 0);
             label2.Name = "label2";
-            label2.Padding = new Padding(10);
-            label2.Size = new Size(384, 38);
+            label2.Size = new Size(400, 26);
             label2.TabIndex = 1;
             label2.Text = "Tipo da permissão";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -156,11 +155,11 @@
             panel2.BackColor = Color.FromArgb(23, 24, 29);
             panel2.Controls.Add(dgvIntesParaAvaliacao);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(0, 154);
+            panel2.Location = new Point(0, 95);
             panel2.Margin = new Padding(0);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(8, 30, 8, 0);
-            panel2.Size = new Size(400, 289);
+            panel2.Padding = new Padding(0, 40, 0, 0);
+            panel2.Size = new Size(400, 293);
             panel2.TabIndex = 6;
             // 
             // dgvIntesParaAvaliacao
@@ -237,12 +236,13 @@
             // 
             // label3
             // 
+            label3.BackColor = Color.FromArgb(32, 33, 36);
             label3.Dock = DockStyle.Top;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(8, 30);
+            label3.Location = new Point(0, 40);
+            label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Padding = new Padding(10);
-            label3.Size = new Size(384, 38);
+            label3.Size = new Size(400, 26);
             label3.TabIndex = 1;
             label3.Text = "Objetos Selecionados";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -260,7 +260,7 @@
             btnEnviarSolicitacao.Location = new Point(8, 0);
             btnEnviarSolicitacao.Margin = new Padding(0, 0, 8, 0);
             btnEnviarSolicitacao.Name = "btnEnviarSolicitacao";
-            btnEnviarSolicitacao.Size = new Size(184, 32);
+            btnEnviarSolicitacao.Size = new Size(184, 26);
             btnEnviarSolicitacao.TabIndex = 39;
             btnEnviarSolicitacao.Text = "          Concluir";
             btnEnviarSolicitacao.TextAlign = ContentAlignment.MiddleLeft;
@@ -280,7 +280,7 @@
             btnCancelarSolicitacao.Location = new Point(208, 0);
             btnCancelarSolicitacao.Margin = new Padding(8, 0, 0, 0);
             btnCancelarSolicitacao.Name = "btnCancelarSolicitacao";
-            btnCancelarSolicitacao.Size = new Size(184, 32);
+            btnCancelarSolicitacao.Size = new Size(184, 26);
             btnCancelarSolicitacao.TabIndex = 40;
             btnCancelarSolicitacao.Text = "          Cancelar";
             btnCancelarSolicitacao.TextAlign = ContentAlignment.MiddleLeft;
@@ -294,12 +294,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(btnCancelarSolicitacao, 1, 0);
             tableLayoutPanel2.Controls.Add(btnEnviarSolicitacao, 0, 0);
-            tableLayoutPanel2.Location = new Point(0, 446);
+            tableLayoutPanel2.Location = new Point(0, 391);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.Padding = new Padding(8, 0, 8, 0);
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(400, 42);
+            tableLayoutPanel2.Size = new Size(400, 26);
             tableLayoutPanel2.TabIndex = 41;
             // 
             // btn_sair
@@ -324,7 +324,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(400, 500);
+            ClientSize = new Size(400, 420);
             Controls.Add(btn_sair);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(panel2);
