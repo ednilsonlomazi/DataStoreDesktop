@@ -26,12 +26,12 @@ namespace DataStoreDesktop
 
         private void btn_limpar_filtros_Click(object sender, EventArgs e)
         {
-            this.txtboxServidor.Clear();
-            this.txtboxDatabase.Clear();
-            this.txtboxSchema.Clear();
-            this.txtboxName.Clear();
-            this.txtboxTipo.Clear();
-            this.txtboxClasse.Clear();
+            //this.txtboxServidor.Clear();
+            //this.txtboxDatabase.Clear();
+            //this.txtboxSchema.Clear();
+            //this.txtboxName.Clear();
+            //this.txtboxTipo.Clear();
+            //this.txtboxClasse.Clear();
 
         }
 
@@ -67,7 +67,7 @@ namespace DataStoreDesktop
         private void btnSolicitarAcesso_Click(object sender, EventArgs e)
         {
             List<string> lista = new List<string>();
-            List< DataGridViewRow > listadgv = new List< DataGridViewRow >();
+            List<DataGridViewRow> listadgv = new List<DataGridViewRow>();
             foreach (DataGridViewRow row in dgvPesquisar.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[0].Value))
@@ -97,7 +97,7 @@ namespace DataStoreDesktop
                 FormSolicitaAcesso formSolicitaAcesso = new FormSolicitaAcesso();
                 formSolicitaAcesso.AtualizaDataGridViewItensParaAvaliar(listadgv);
                 formSolicitaAcesso.Show();
-                
+
             }
             else
             {
@@ -137,6 +137,16 @@ namespace DataStoreDesktop
             {
                 MessageBox.Show("Selecione ao menos um item para ver as primeiras linhas", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bancárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         //private void btn_opcoes_Click(object sender, EventArgs e)

@@ -34,26 +34,6 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            panel29 = new Panel();
-            panel28 = new Panel();
-            txtboxTipo = new TextBox();
-            label16 = new Label();
-            panel27 = new Panel();
-            txtboxClasse = new TextBox();
-            label14 = new Label();
-            panel26 = new Panel();
-            txtboxServidor = new TextBox();
-            label15 = new Label();
-            panel23 = new Panel();
-            txtboxDatabase = new TextBox();
-            label10 = new Label();
-            panel24 = new Panel();
-            txtboxSchema = new TextBox();
-            label12 = new Label();
-            panel25 = new Panel();
-            txtboxName = new TextBox();
-            label11 = new Label();
             pnInfoAdicional = new Panel();
             lbInfoAdicional = new Label();
             dataGridView1 = new DataGridView();
@@ -62,11 +42,24 @@
             Cliente = new DataGridViewTextBoxColumn();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel3 = new Panel();
-            panel2 = new Panel();
+            panel5 = new Panel();
             btnVerPrimeirasLinhas = new Button();
             btnSolicitarAcesso = new Button();
             btn_limpar = new Button();
             btn_pesquisar = new Button();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            panel4 = new Panel();
+            comboBox3 = new ComboBox();
+            label4 = new Label();
+            panel2 = new Panel();
+            comboBox2 = new ComboBox();
+            label2 = new Label();
+            panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
+            panel27 = new Panel();
+            comboBox5 = new ComboBox();
+            label3 = new Label();
             dgvPesquisar = new DataGridView();
             selecao = new DataGridViewCheckBoxColumn();
             Servidor = new DataGridViewTextBoxColumn();
@@ -75,269 +68,18 @@
             Objeto = new DataGridViewTextBoxColumn();
             Tipo = new DataGridViewTextBoxColumn();
             Classe = new DataGridViewTextBoxColumn();
-            tableLayoutPanel2.SuspendLayout();
-            panel28.SuspendLayout();
-            panel27.SuspendLayout();
-            panel26.SuspendLayout();
-            panel23.SuspendLayout();
-            panel24.SuspendLayout();
-            panel25.SuspendLayout();
             pnInfoAdicional.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
+            panel5.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            panel4.SuspendLayout();
             panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            panel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
             SuspendLayout();
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.BackColor = Color.FromArgb(23, 24, 29);
-            tableLayoutPanel2.ColumnCount = 4;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Controls.Add(panel29, 2, 1);
-            tableLayoutPanel2.Controls.Add(panel28, 0, 1);
-            tableLayoutPanel2.Controls.Add(panel27, 0, 1);
-            tableLayoutPanel2.Controls.Add(panel26, 0, 0);
-            tableLayoutPanel2.Controls.Add(panel23, 1, 0);
-            tableLayoutPanel2.Controls.Add(panel24, 2, 0);
-            tableLayoutPanel2.Controls.Add(panel25, 3, 0);
-            tableLayoutPanel2.Dock = DockStyle.Top;
-            tableLayoutPanel2.Location = new Point(0, 0);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.Padding = new Padding(0, 15, 0, 0);
-            tableLayoutPanel2.RowCount = 2;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(800, 105);
-            tableLayoutPanel2.TabIndex = 32;
-            // 
-            // panel29
-            // 
-            panel29.BackColor = Color.FromArgb(23, 24, 29);
-            panel29.Location = new Point(403, 63);
-            panel29.Name = "panel29";
-            panel29.Size = new Size(194, 24);
-            panel29.TabIndex = 32;
-            // 
-            // panel28
-            // 
-            panel28.BackColor = Color.FromArgb(23, 24, 29);
-            panel28.Controls.Add(txtboxTipo);
-            panel28.Controls.Add(label16);
-            panel28.Dock = DockStyle.Top;
-            panel28.Location = new Point(0, 60);
-            panel28.Margin = new Padding(0);
-            panel28.Name = "panel28";
-            panel28.RightToLeft = RightToLeft.No;
-            panel28.Size = new Size(200, 23);
-            panel28.TabIndex = 41;
-            // 
-            // txtboxTipo
-            // 
-            txtboxTipo.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxTipo.BorderStyle = BorderStyle.None;
-            txtboxTipo.Dock = DockStyle.Left;
-            txtboxTipo.ForeColor = Color.White;
-            txtboxTipo.Location = new Point(51, 0);
-            txtboxTipo.Margin = new Padding(0);
-            txtboxTipo.Name = "txtboxTipo";
-            txtboxTipo.Size = new Size(167, 16);
-            txtboxTipo.TabIndex = 1;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Dock = DockStyle.Left;
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(0, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(51, 15);
-            label16.TabIndex = 0;
-            label16.Text = "       Tipo";
-            // 
-            // panel27
-            // 
-            panel27.BackColor = Color.FromArgb(23, 24, 29);
-            panel27.Controls.Add(txtboxClasse);
-            panel27.Controls.Add(label14);
-            panel27.Dock = DockStyle.Top;
-            panel27.Location = new Point(200, 60);
-            panel27.Margin = new Padding(0);
-            panel27.Name = "panel27";
-            panel27.RightToLeft = RightToLeft.No;
-            panel27.Size = new Size(200, 23);
-            panel27.TabIndex = 40;
-            // 
-            // txtboxClasse
-            // 
-            txtboxClasse.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxClasse.BorderStyle = BorderStyle.None;
-            txtboxClasse.Dock = DockStyle.Left;
-            txtboxClasse.ForeColor = Color.White;
-            txtboxClasse.Location = new Point(55, 0);
-            txtboxClasse.Margin = new Padding(0);
-            txtboxClasse.Name = "txtboxClasse";
-            txtboxClasse.Size = new Size(150, 16);
-            txtboxClasse.TabIndex = 1;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Dock = DockStyle.Left;
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(0, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(55, 15);
-            label14.TabIndex = 0;
-            label14.Text = "     Classe";
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.FromArgb(23, 24, 29);
-            panel26.Controls.Add(txtboxServidor);
-            panel26.Controls.Add(label15);
-            panel26.Dock = DockStyle.Top;
-            panel26.Location = new Point(0, 15);
-            panel26.Margin = new Padding(0);
-            panel26.Name = "panel26";
-            panel26.RightToLeft = RightToLeft.No;
-            panel26.Size = new Size(200, 23);
-            panel26.TabIndex = 36;
-            // 
-            // txtboxServidor
-            // 
-            txtboxServidor.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxServidor.BorderStyle = BorderStyle.None;
-            txtboxServidor.Dock = DockStyle.Left;
-            txtboxServidor.ForeColor = Color.White;
-            txtboxServidor.Location = new Point(50, 0);
-            txtboxServidor.Margin = new Padding(0);
-            txtboxServidor.Name = "txtboxServidor";
-            txtboxServidor.Size = new Size(150, 16);
-            txtboxServidor.TabIndex = 1;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Dock = DockStyle.Left;
-            label15.ForeColor = Color.White;
-            label15.Location = new Point(0, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(50, 15);
-            label15.TabIndex = 0;
-            label15.Text = "Servidor";
-            // 
-            // panel23
-            // 
-            panel23.BackColor = Color.FromArgb(23, 24, 29);
-            panel23.Controls.Add(txtboxDatabase);
-            panel23.Controls.Add(label10);
-            panel23.Dock = DockStyle.Top;
-            panel23.Location = new Point(200, 15);
-            panel23.Margin = new Padding(0);
-            panel23.Name = "panel23";
-            panel23.RightToLeft = RightToLeft.No;
-            panel23.Size = new Size(200, 23);
-            panel23.TabIndex = 37;
-            // 
-            // txtboxDatabase
-            // 
-            txtboxDatabase.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxDatabase.BorderStyle = BorderStyle.None;
-            txtboxDatabase.Dock = DockStyle.Left;
-            txtboxDatabase.ForeColor = Color.White;
-            txtboxDatabase.Location = new Point(55, 0);
-            txtboxDatabase.Margin = new Padding(0);
-            txtboxDatabase.Name = "txtboxDatabase";
-            txtboxDatabase.Size = new Size(150, 16);
-            txtboxDatabase.TabIndex = 1;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Dock = DockStyle.Left;
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(0, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(55, 15);
-            label10.TabIndex = 0;
-            label10.Text = "Database";
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.FromArgb(23, 24, 29);
-            panel24.Controls.Add(txtboxSchema);
-            panel24.Controls.Add(label12);
-            panel24.Dock = DockStyle.Top;
-            panel24.Location = new Point(400, 15);
-            panel24.Margin = new Padding(0);
-            panel24.Name = "panel24";
-            panel24.RightToLeft = RightToLeft.No;
-            panel24.Size = new Size(200, 23);
-            panel24.TabIndex = 38;
-            // 
-            // txtboxSchema
-            // 
-            txtboxSchema.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxSchema.BorderStyle = BorderStyle.None;
-            txtboxSchema.Dock = DockStyle.Left;
-            txtboxSchema.ForeColor = Color.White;
-            txtboxSchema.Location = new Point(49, 0);
-            txtboxSchema.Margin = new Padding(0);
-            txtboxSchema.Name = "txtboxSchema";
-            txtboxSchema.Size = new Size(150, 16);
-            txtboxSchema.TabIndex = 1;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Dock = DockStyle.Left;
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(0, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(49, 15);
-            label12.TabIndex = 0;
-            label12.Text = "Schema";
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.FromArgb(23, 24, 29);
-            panel25.Controls.Add(txtboxName);
-            panel25.Controls.Add(label11);
-            panel25.Dock = DockStyle.Top;
-            panel25.Location = new Point(600, 15);
-            panel25.Margin = new Padding(0);
-            panel25.Name = "panel25";
-            panel25.RightToLeft = RightToLeft.No;
-            panel25.Size = new Size(200, 23);
-            panel25.TabIndex = 39;
-            // 
-            // txtboxName
-            // 
-            txtboxName.BackColor = Color.FromArgb(23, 24, 29);
-            txtboxName.BorderStyle = BorderStyle.None;
-            txtboxName.Dock = DockStyle.Left;
-            txtboxName.ForeColor = Color.White;
-            txtboxName.Location = new Point(40, 0);
-            txtboxName.Margin = new Padding(0);
-            txtboxName.Name = "txtboxName";
-            txtboxName.Size = new Size(150, 16);
-            txtboxName.TabIndex = 1;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Dock = DockStyle.Left;
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(0, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(40, 15);
-            label11.TabIndex = 0;
-            label11.Text = "Nome";
             // 
             // pnInfoAdicional
             // 
@@ -445,28 +187,28 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(23, 24, 29);
-            panel3.Controls.Add(panel2);
+            panel3.Controls.Add(panel5);
             panel3.Controls.Add(tableLayoutPanel2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Margin = new Padding(0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(800, 139);
+            panel3.Size = new Size(800, 80);
             panel3.TabIndex = 38;
             // 
-            // panel2
+            // panel5
             // 
-            panel2.BackColor = Color.FromArgb(32, 33, 36);
-            panel2.Controls.Add(btnVerPrimeirasLinhas);
-            panel2.Controls.Add(btnSolicitarAcesso);
-            panel2.Controls.Add(btn_limpar);
-            panel2.Controls.Add(btn_pesquisar);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 105);
-            panel2.Margin = new Padding(0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(800, 32);
-            panel2.TabIndex = 39;
+            panel5.BackColor = Color.FromArgb(32, 33, 36);
+            panel5.Controls.Add(btnVerPrimeirasLinhas);
+            panel5.Controls.Add(btnSolicitarAcesso);
+            panel5.Controls.Add(btn_limpar);
+            panel5.Controls.Add(btn_pesquisar);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 50);
+            panel5.Margin = new Padding(0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(800, 28);
+            panel5.TabIndex = 41;
             // 
             // btnVerPrimeirasLinhas
             // 
@@ -481,7 +223,7 @@
             btnVerPrimeirasLinhas.Location = new Point(501, 0);
             btnVerPrimeirasLinhas.Margin = new Padding(0);
             btnVerPrimeirasLinhas.Name = "btnVerPrimeirasLinhas";
-            btnVerPrimeirasLinhas.Size = new Size(167, 32);
+            btnVerPrimeirasLinhas.Size = new Size(167, 28);
             btnVerPrimeirasLinhas.TabIndex = 40;
             btnVerPrimeirasLinhas.Text = "          Ver Primeiras Linhas";
             btnVerPrimeirasLinhas.TextAlign = ContentAlignment.MiddleLeft;
@@ -501,7 +243,7 @@
             btnSolicitarAcesso.Location = new Point(334, 0);
             btnSolicitarAcesso.Margin = new Padding(0);
             btnSolicitarAcesso.Name = "btnSolicitarAcesso";
-            btnSolicitarAcesso.Size = new Size(167, 32);
+            btnSolicitarAcesso.Size = new Size(167, 28);
             btnSolicitarAcesso.TabIndex = 39;
             btnSolicitarAcesso.Text = "          Solicitar Acesso";
             btnSolicitarAcesso.TextAlign = ContentAlignment.MiddleLeft;
@@ -521,7 +263,7 @@
             btn_limpar.Location = new Point(167, 0);
             btn_limpar.Margin = new Padding(0);
             btn_limpar.Name = "btn_limpar";
-            btn_limpar.Size = new Size(167, 32);
+            btn_limpar.Size = new Size(167, 28);
             btn_limpar.TabIndex = 38;
             btn_limpar.Text = "          Limpar";
             btn_limpar.TextAlign = ContentAlignment.MiddleLeft;
@@ -541,12 +283,176 @@
             btn_pesquisar.Location = new Point(0, 0);
             btn_pesquisar.Margin = new Padding(0);
             btn_pesquisar.Name = "btn_pesquisar";
-            btn_pesquisar.Size = new Size(167, 32);
+            btn_pesquisar.Size = new Size(167, 28);
             btn_pesquisar.TabIndex = 36;
             btn_pesquisar.Text = "          Pesquisar";
             btn_pesquisar.TextAlign = ContentAlignment.MiddleLeft;
             btn_pesquisar.UseVisualStyleBackColor = false;
             btn_pesquisar.Click += btn_pesquisar_form_pesquisar_Click;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.BackColor = Color.FromArgb(23, 24, 29);
+            tableLayoutPanel2.ColumnCount = 4;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel2.Controls.Add(panel4, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel2, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel27, 0, 0);
+            tableLayoutPanel2.Dock = DockStyle.Top;
+            tableLayoutPanel2.Location = new Point(0, 0);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new Size(800, 50);
+            tableLayoutPanel2.TabIndex = 40;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.White;
+            panel4.Controls.Add(comboBox3);
+            panel4.Controls.Add(label4);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(400, 0);
+            panel4.Margin = new Padding(0);
+            panel4.Name = "panel4";
+            panel4.RightToLeft = RightToLeft.No;
+            panel4.Size = new Size(200, 23);
+            panel4.TabIndex = 43;
+            // 
+            // comboBox3
+            // 
+            comboBox3.Dock = DockStyle.Left;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.FlatStyle = FlatStyle.Flat;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "SERVER123", "SERVERXYZ", "SERVERLEGAL" });
+            comboBox3.Location = new Point(80, 0);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(118, 23);
+            comboBox3.TabIndex = 46;
+            // 
+            // label4
+            // 
+            label4.Dock = DockStyle.Left;
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(0, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(80, 23);
+            label4.TabIndex = 45;
+            label4.Text = "Servidor";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(comboBox2);
+            panel2.Controls.Add(label2);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(600, 0);
+            panel2.Margin = new Padding(0);
+            panel2.Name = "panel2";
+            panel2.RightToLeft = RightToLeft.No;
+            panel2.Size = new Size(200, 23);
+            panel2.TabIndex = 42;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Dock = DockStyle.Left;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBox2.Location = new Point(80, 0);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(118, 23);
+            comboBox2.TabIndex = 46;
+            // 
+            // label2
+            // 
+            label2.Dock = DockStyle.Left;
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 23);
+            label2.TabIndex = 45;
+            label2.Text = "Database";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(0);
+            panel1.Name = "panel1";
+            panel1.RightToLeft = RightToLeft.No;
+            panel1.Size = new Size(200, 23);
+            panel1.TabIndex = 41;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Dock = DockStyle.Left;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FlatStyle = FlatStyle.Flat;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Pagamentos", "Compras", "Estoque", "Logística" });
+            comboBox1.Location = new Point(68, 0);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(132, 23);
+            comboBox1.TabIndex = 46;
+            // 
+            // label1
+            // 
+            label1.Dock = DockStyle.Left;
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 23);
+            label1.TabIndex = 45;
+            label1.Text = "Processo";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel27
+            // 
+            panel27.BackColor = Color.White;
+            panel27.Controls.Add(comboBox5);
+            panel27.Controls.Add(label3);
+            panel27.Dock = DockStyle.Top;
+            panel27.Location = new Point(200, 0);
+            panel27.Margin = new Padding(0);
+            panel27.Name = "panel27";
+            panel27.RightToLeft = RightToLeft.No;
+            panel27.Size = new Size(200, 23);
+            panel27.TabIndex = 40;
+            // 
+            // comboBox5
+            // 
+            comboBox5.Dock = DockStyle.Left;
+            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox5.FlatStyle = FlatStyle.Flat;
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "Tabela", "View", "Procedure" });
+            comboBox5.Location = new Point(79, 0);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(118, 23);
+            comboBox5.TabIndex = 46;
+            // 
+            // label3
+            // 
+            label3.Dock = DockStyle.Left;
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 23);
+            label3.TabIndex = 45;
+            label3.Text = "Tipo Objeto";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dgvPesquisar
             // 
@@ -579,7 +485,7 @@
             dgvPesquisar.Dock = DockStyle.Fill;
             dgvPesquisar.EnableHeadersVisualStyles = false;
             dgvPesquisar.GridColor = Color.Silver;
-            dgvPesquisar.Location = new Point(0, 139);
+            dgvPesquisar.Location = new Point(0, 80);
             dgvPesquisar.Margin = new Padding(0);
             dgvPesquisar.Name = "dgvPesquisar";
             dgvPesquisar.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -598,7 +504,7 @@
             dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(23, 24, 29);
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29);
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.White;
-            dgvPesquisar.Size = new Size(800, 194);
+            dgvPesquisar.Size = new Size(800, 253);
             dgvPesquisar.TabIndex = 39;
             dgvPesquisar.CellContentClick += dgvPesquisar_CellContentClick;
             // 
@@ -652,49 +558,21 @@
             Name = "FormPesquisar";
             Text = "FormPesquisar";
             Load += FormPesquisar_Load;
-            tableLayoutPanel2.ResumeLayout(false);
-            panel28.ResumeLayout(false);
-            panel28.PerformLayout();
-            panel27.ResumeLayout(false);
-            panel27.PerformLayout();
-            panel26.ResumeLayout(false);
-            panel26.PerformLayout();
-            panel23.ResumeLayout(false);
-            panel23.PerformLayout();
-            panel24.ResumeLayout(false);
-            panel24.PerformLayout();
-            panel25.ResumeLayout(false);
-            panel25.PerformLayout();
             pnInfoAdicional.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            panel4.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel27.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private TableLayoutPanel tableLayoutPanel2;
-        private Panel panel29;
-        private Panel panel28;
-        private TextBox txtboxTipo;
-        private Label label16;
-        private Panel panel27;
-        private TextBox txtboxClasse;
-        private Label label14;
-        private Panel panel26;
-        private TextBox txtboxServidor;
-        private Label label15;
-        private Panel panel23;
-        private TextBox txtboxDatabase;
-        private Label label10;
-        private Panel panel24;
-        private TextBox txtboxSchema;
-        private Label label12;
-        private Panel panel25;
-        private TextBox txtboxName;
-        private Label label11;
         private Panel pnInfoAdicional;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
@@ -702,9 +580,6 @@
         private DataGridViewTextBoxColumn Cliente;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel3;
-        private Panel panel2;
-        private Button btn_limpar;
-        private Button btn_pesquisar;
         private DataGridView dgvPesquisar;
         private DataGridViewCheckBoxColumn selecao;
         private DataGridViewTextBoxColumn Servidor;
@@ -714,7 +589,23 @@
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Classe;
         private Label lbInfoAdicional;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Panel panel27;
+        private Panel panel5;
         private Button btnVerPrimeirasLinhas;
         private Button btnSolicitarAcesso;
+        private Button btn_limpar;
+        private Button btn_pesquisar;
+        private Label label3;
+        private ComboBox comboBox5;
+        private Panel panel4;
+        private ComboBox comboBox3;
+        private Label label4;
+        private Panel panel2;
+        private ComboBox comboBox2;
+        private Label label2;
+        private Panel panel1;
+        private ComboBox comboBox1;
+        private Label label1;
     }
 }

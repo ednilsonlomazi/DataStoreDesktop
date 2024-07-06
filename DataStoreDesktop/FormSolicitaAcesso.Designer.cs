@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton4 = new RadioButton();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             panel1 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             label2 = new Label();
@@ -49,64 +45,16 @@
             btnCancelarSolicitacao = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
             btn_sair = new Button();
+            cbSelect = new CheckBox();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvIntesParaAvaliacao).BeginInit();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Dock = DockStyle.Top;
-            radioButton1.ForeColor = Color.White;
-            radioButton1.Location = new Point(3, 3);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 1;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "SELECT";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Dock = DockStyle.Top;
-            radioButton2.ForeColor = Color.White;
-            radioButton2.Location = new Point(103, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
-            radioButton2.TabIndex = 2;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "UPDATE";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Dock = DockStyle.Top;
-            radioButton3.ForeColor = Color.White;
-            radioButton3.Location = new Point(203, 3);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 3;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "DELETE";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Dock = DockStyle.Top;
-            radioButton4.ForeColor = Color.White;
-            radioButton4.Location = new Point(303, 3);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(94, 19);
-            radioButton4.TabIndex = 4;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "ALTER";
-            radioButton4.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -126,10 +74,10 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.Controls.Add(radioButton4, 3, 0);
-            tableLayoutPanel1.Controls.Add(radioButton1, 0, 0);
-            tableLayoutPanel1.Controls.Add(radioButton3, 2, 0);
-            tableLayoutPanel1.Controls.Add(radioButton2, 1, 0);
+            tableLayoutPanel1.Controls.Add(cbSelect, 0, 0);
+            tableLayoutPanel1.Controls.Add(checkBox1, 1, 0);
+            tableLayoutPanel1.Controls.Add(checkBox2, 2, 0);
+            tableLayoutPanel1.Controls.Add(checkBox3, 3, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 26);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -171,39 +119,39 @@
             dgvIntesParaAvaliacao.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvIntesParaAvaliacao.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvIntesParaAvaliacao.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvIntesParaAvaliacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvIntesParaAvaliacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvIntesParaAvaliacao.ColumnHeadersHeight = 28;
             dgvIntesParaAvaliacao.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvIntesParaAvaliacao.Columns.AddRange(new DataGridViewColumn[] { Servidor, Database, Schema, Objeto });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(23, 24, 29);
-            dataGridViewCellStyle2.SelectionForeColor = Color.White;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvIntesParaAvaliacao.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(23, 24, 29);
+            dataGridViewCellStyle5.SelectionForeColor = Color.White;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dgvIntesParaAvaliacao.DefaultCellStyle = dataGridViewCellStyle5;
             dgvIntesParaAvaliacao.EnableHeadersVisualStyles = false;
             dgvIntesParaAvaliacao.GridColor = Color.Silver;
             dgvIntesParaAvaliacao.Location = new Point(0, 65);
             dgvIntesParaAvaliacao.Margin = new Padding(0);
             dgvIntesParaAvaliacao.Name = "dgvIntesParaAvaliacao";
             dgvIntesParaAvaliacao.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = Color.DarkSlateGray;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvIntesParaAvaliacao.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dgvIntesParaAvaliacao.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dgvIntesParaAvaliacao.RowHeadersVisible = false;
             dgvIntesParaAvaliacao.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvIntesParaAvaliacao.RowTemplate.DefaultCellStyle.BackColor = Color.White;
@@ -319,6 +267,52 @@
             btn_sair.UseVisualStyleBackColor = false;
             btn_sair.Click += btn_sair_Click;
             // 
+            // cbSelect
+            // 
+            cbSelect.AutoSize = true;
+            cbSelect.Checked = true;
+            cbSelect.CheckState = CheckState.Checked;
+            cbSelect.ForeColor = Color.White;
+            cbSelect.Location = new Point(3, 3);
+            cbSelect.Name = "cbSelect";
+            cbSelect.Size = new Size(64, 19);
+            cbSelect.TabIndex = 5;
+            cbSelect.Text = "SELECT";
+            cbSelect.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.ForeColor = Color.White;
+            checkBox1.Location = new Point(103, 3);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(68, 19);
+            checkBox1.TabIndex = 6;
+            checkBox1.Text = "UPDATE";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.ForeColor = Color.White;
+            checkBox2.Location = new Point(203, 3);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(58, 19);
+            checkBox2.TabIndex = 7;
+            checkBox2.Text = "ALTER";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.ForeColor = Color.White;
+            checkBox3.Location = new Point(303, 3);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(64, 19);
+            checkBox3.TabIndex = 8;
+            checkBox3.Text = "DELETE";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
             // FormSolicitaAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -346,10 +340,6 @@
         }
 
         #endregion
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton4;
         private Panel panel1;
         private Label label2;
         private TableLayoutPanel tableLayoutPanel1;
@@ -364,5 +354,9 @@
         private Button btnCancelarSolicitacao;
         private TableLayoutPanel tableLayoutPanel2;
         private Button btn_sair;
+        private CheckBox cbSelect;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox3;
     }
 }
