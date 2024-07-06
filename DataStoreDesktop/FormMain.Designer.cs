@@ -69,6 +69,7 @@
             panel1.Controls.Add(btnSideBarExpand);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 28);
             panel1.TabIndex = 0;

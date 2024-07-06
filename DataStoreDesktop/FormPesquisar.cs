@@ -55,7 +55,7 @@ namespace DataStoreDesktop
                 var schema = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
                 var banco = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[2].Value.ToString();
                 var servidor = dgvPesquisar.Rows[dgvPesquisar.SelectedCells[0].RowIndex].Cells[1].Value.ToString();
-                this.lbInfoAdicional.Text = objeto + "\n" + schema + "\n" + banco + "\n" + servidor;
+                //this.lbInfoAdicional.Text = objeto + "\n" + schema + "\n" + banco + "\n" + servidor;
             }
 
 
