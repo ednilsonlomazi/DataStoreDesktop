@@ -21,5 +21,10 @@ namespace DataStoreDesktop
         {
             this.ControlBox = false;
         }
+
+        private void dgvPesquisar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -293,6 +293,26 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap seta_para_a_frente_18 {
+            get {
+                object obj = ResourceManager.GetObject("seta-para-a-frente-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seta_para_a_frente_20 {
+            get {
+                object obj = ResourceManager.GetObject("seta-para-a-frente-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tabela_16 {
             get {
                 object obj = ResourceManager.GetObject("tabela-16", resourceCulture);
