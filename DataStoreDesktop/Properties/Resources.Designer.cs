@@ -73,6 +73,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avaliacao_18 {
+            get {
+                object obj = ResourceManager.GetObject("avaliacao-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap banco_de_dados_100 {
             get {
                 object obj = ResourceManager.GetObject("banco-de-dados-100", resourceCulture);
