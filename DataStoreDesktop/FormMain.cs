@@ -4,7 +4,7 @@ namespace DataStoreDesktop
     {
         FormHome formHome;
         FormPesquisar formPesquisar;
-        FormCarrinho formCarrinho;
+        FormSolicitacoes formSolicitacoes;
         FormLogin formLogin;
         FormMeusObjetos formMeusObjetos;
         FormSolicitacoesRealizadas formSolicitacoesRealizadas;
@@ -166,21 +166,21 @@ namespace DataStoreDesktop
 
 
 
-        private void btnCarrinho_Click(object sender, EventArgs e)
+        private void btnSolicitacoes_Click(object sender, EventArgs e)
         {
             if (this.formLogin.logado)
             {
-                if (formCarrinho == null)
+                if (formSolicitacoes == null)
                 {
-                    formCarrinho = new FormCarrinho();
-                    formCarrinho.FormClosed += FormCarrinho_FormClosed;
-                    formCarrinho.MdiParent = this;
-                    formCarrinho.Dock = DockStyle.Fill;
-                    formCarrinho.Show();
+                    formSolicitacoes = new FormSolicitacoes();
+                    formSolicitacoes.FormClosed += FormCarrinho_FormClosed;
+                    formSolicitacoes.MdiParent = this;
+                    formSolicitacoes.Dock = DockStyle.Fill;
+                    formSolicitacoes.Show();
                 }
                 else
                 {
-                    formCarrinho.Activate();
+                    formSolicitacoes.Activate();
                 }
             }
 
@@ -188,7 +188,7 @@ namespace DataStoreDesktop
 
         private void FormCarrinho_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formCarrinho = null;
+            formSolicitacoes = null;
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)

@@ -103,6 +103,26 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caixa_de_selecao_marcada_16 {
+            get {
+                object obj = ResourceManager.GetObject("caixa-de-selecao-marcada-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancelar_16 {
+            get {
+                object obj = ResourceManager.GetObject("cancelar-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancelar_x_20 {
             get {
                 object obj = ResourceManager.GetObject("cancelar-x-20", resourceCulture);
@@ -176,6 +196,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap enviar_16_azul {
             get {
                 object obj = ResourceManager.GetObject("enviar-16-azul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap filtro_16 {
+            get {
+                object obj = ResourceManager.GetObject("filtro-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +346,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap seta_para_a_frente_20 {
             get {
                 object obj = ResourceManager.GetObject("seta-para-a-frente-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soma_16 {
+            get {
+                object obj = ResourceManager.GetObject("soma-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

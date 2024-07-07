@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DataStoreDesktop
 {
-    public partial class FormCarrinho : Form
+    public partial class FormSolicitacoes : Form
     {
-        public FormCarrinho()
+        public FormSolicitacoes()
         {
             InitializeComponent();
         }

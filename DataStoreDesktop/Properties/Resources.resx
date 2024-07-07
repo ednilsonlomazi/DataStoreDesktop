@@ -142,6 +142,12 @@
   <data name="banco-de-dados-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banco-de-dados-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="avaliacao-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avaliacao-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caixa-de-selecao-marcada-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caixa-de-selecao-marcada-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimizar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimizar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +156,9 @@
   </data>
   <data name="x-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filtro-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filtro-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="acesso-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\acesso-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +202,9 @@
   <data name="pesquisar-50-olive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pesquisar-50-olive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="soma-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soma-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vassoura-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vassoura-19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,7 +232,7 @@
   <data name="olho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\olho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avaliacao-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avaliacao-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancelar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1,6 +1,6 @@
 ﻿namespace DataStoreDesktop
 {
-    partial class FormCarrinho
+    partial class FormSolicitacoes
     {
         /// <summary>
         /// Required designer variable.
@@ -38,19 +38,17 @@
             DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             tableLayoutPanel3 = new TableLayoutPanel();
             button1 = new Button();
-            btnVerReferencias = new Button();
-            button4 = new Button();
             button3 = new Button();
             button2 = new Button();
+            btnVerReferencias = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
             dgvPesquisar = new DataGridView();
+            selecao = new DataGridViewCheckBoxColumn();
+            DataAbertura = new DataGridViewTextBoxColumn();
+            Objeto = new DataGridViewTextBoxColumn();
+            Permissao = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
             tableLayoutPanel1 = new TableLayoutPanel();
-            panel17 = new Panel();
-            textBox2 = new TextBox();
-            label6 = new Label();
-            panel18 = new Panel();
-            comboBox5 = new ComboBox();
-            label8 = new Label();
             panel23 = new Panel();
             comboBox4 = new ComboBox();
             label9 = new Label();
@@ -63,22 +61,16 @@
             panel26 = new Panel();
             comboBox2 = new ComboBox();
             label12 = new Label();
-            selecao = new DataGridViewCheckBoxColumn();
-            DataAbertura = new DataGridViewTextBoxColumn();
-            Objeto = new DataGridViewTextBoxColumn();
-            Permissao = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
             dataGridView1 = new DataGridView();
             DataInicio = new DataGridViewTextBoxColumn();
             Avaliador = new DataGridViewTextBoxColumn();
             Veredito = new DataGridViewTextBoxColumn();
             Justificativa = new DataGridViewTextBoxColumn();
+            Recurso = new DataGridViewTextBoxColumn();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
             tableLayoutPanel1.SuspendLayout();
-            panel17.SuspendLayout();
-            panel18.SuspendLayout();
             panel23.SuspendLayout();
             panel24.SuspendLayout();
             panel25.SuspendLayout();
@@ -88,6 +80,7 @@
             // 
             // tableLayoutPanel3
             // 
+            tableLayoutPanel3.BackColor = Color.FromArgb(32, 33, 36);
             tableLayoutPanel3.ColumnCount = 5;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
@@ -95,16 +88,15 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel3.Controls.Add(button1, 0, 0);
-            tableLayoutPanel3.Controls.Add(btnVerReferencias, 0, 0);
-            tableLayoutPanel3.Controls.Add(button4, 0, 0);
             tableLayoutPanel3.Controls.Add(button3, 0, 0);
             tableLayoutPanel3.Controls.Add(button2, 0, 0);
-            tableLayoutPanel3.Dock = DockStyle.Top;
+            tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(0, 0);
+            tableLayoutPanel3.Margin = new Padding(0);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(800, 28);
+            tableLayoutPanel3.Size = new Size(640, 28);
             tableLayoutPanel3.TabIndex = 48;
             // 
             // button1
@@ -115,54 +107,16 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.visível_19;
+            button1.Image = Properties.Resources.cancelar_16;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(480, 0);
+            button1.Location = new Point(256, 0);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
-            button1.Size = new Size(160, 28);
+            button1.Size = new Size(128, 28);
             button1.TabIndex = 42;
             button1.Text = "          Cancelar";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
-            // 
-            // btnVerReferencias
-            // 
-            btnVerReferencias.BackColor = Color.FromArgb(32, 33, 36);
-            btnVerReferencias.BackgroundImageLayout = ImageLayout.Center;
-            btnVerReferencias.Dock = DockStyle.Fill;
-            btnVerReferencias.FlatAppearance.BorderSize = 0;
-            btnVerReferencias.FlatStyle = FlatStyle.Flat;
-            btnVerReferencias.ForeColor = Color.White;
-            btnVerReferencias.Image = Properties.Resources.seta_para_a_frente_18;
-            btnVerReferencias.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVerReferencias.Location = new Point(640, 0);
-            btnVerReferencias.Margin = new Padding(0);
-            btnVerReferencias.Name = "btnVerReferencias";
-            btnVerReferencias.Size = new Size(160, 28);
-            btnVerReferencias.TabIndex = 41;
-            btnVerReferencias.Text = "          Ver Referências";
-            btnVerReferencias.TextAlign = ContentAlignment.MiddleLeft;
-            btnVerReferencias.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(32, 33, 36);
-            button4.BackgroundImageLayout = ImageLayout.Center;
-            button4.Dock = DockStyle.Fill;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.acesso_16;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(320, 0);
-            button4.Margin = new Padding(0);
-            button4.Name = "button4";
-            button4.Size = new Size(160, 28);
-            button4.TabIndex = 40;
-            button4.Text = "          Adicionar Recurso";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -172,14 +126,14 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.avaliacao_18;
+            button3.Image = Properties.Resources.soma_16;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 0);
+            button3.Location = new Point(128, 0);
             button3.Margin = new Padding(0);
             button3.Name = "button3";
-            button3.Size = new Size(160, 28);
+            button3.Size = new Size(128, 28);
             button3.TabIndex = 39;
-            button3.Text = "          Consultar Avaliação";
+            button3.Text = "          Recurso";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -191,16 +145,35 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.ForeColor = Color.White;
-            button2.Image = Properties.Resources.pesquisar_16_new;
+            button2.Image = Properties.Resources.caixa_de_selecao_marcada_16;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(160, 0);
+            button2.Location = new Point(0, 0);
             button2.Margin = new Padding(0);
             button2.Name = "button2";
-            button2.Size = new Size(160, 28);
+            button2.Size = new Size(128, 28);
             button2.TabIndex = 37;
-            button2.Text = "          Finalizar";
+            button2.Text = "          Selecionar";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            // 
+            // btnVerReferencias
+            // 
+            btnVerReferencias.BackColor = Color.FromArgb(32, 33, 36);
+            btnVerReferencias.BackgroundImageLayout = ImageLayout.Center;
+            btnVerReferencias.Dock = DockStyle.Fill;
+            btnVerReferencias.FlatAppearance.BorderSize = 0;
+            btnVerReferencias.FlatStyle = FlatStyle.Flat;
+            btnVerReferencias.ForeColor = Color.White;
+            btnVerReferencias.Image = Properties.Resources.filtro_16;
+            btnVerReferencias.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVerReferencias.Location = new Point(640, 0);
+            btnVerReferencias.Margin = new Padding(0);
+            btnVerReferencias.Name = "btnVerReferencias";
+            btnVerReferencias.Size = new Size(160, 28);
+            btnVerReferencias.TabIndex = 41;
+            btnVerReferencias.Text = "          Filtrar";
+            btnVerReferencias.TextAlign = ContentAlignment.MiddleLeft;
+            btnVerReferencias.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel2
             // 
@@ -208,15 +181,17 @@
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.Controls.Add(dgvPesquisar, 0, 0);
-            tableLayoutPanel2.Controls.Add(tableLayoutPanel1, 1, 0);
-            tableLayoutPanel2.Dock = DockStyle.Top;
-            tableLayoutPanel2.Location = new Point(0, 28);
+            tableLayoutPanel2.Controls.Add(dgvPesquisar, 0, 1);
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel1, 1, 1);
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
+            tableLayoutPanel2.Controls.Add(btnVerReferencias, 1, 0);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(0, 0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Size = new Size(800, 289);
+            tableLayoutPanel2.Size = new Size(800, 450);
             tableLayoutPanel2.TabIndex = 52;
             // 
             // dgvPesquisar
@@ -251,7 +226,7 @@
             dgvPesquisar.Dock = DockStyle.Fill;
             dgvPesquisar.EnableHeadersVisualStyles = false;
             dgvPesquisar.GridColor = Color.Silver;
-            dgvPesquisar.Location = new Point(0, 0);
+            dgvPesquisar.Location = new Point(0, 28);
             dgvPesquisar.Margin = new Padding(0);
             dgvPesquisar.Name = "dgvPesquisar";
             dgvPesquisar.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -275,237 +250,8 @@
             dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.Black;
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224);
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dgvPesquisar.Size = new Size(640, 289);
+            dgvPesquisar.Size = new Size(640, 422);
             dgvPesquisar.TabIndex = 39;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(panel17, 0, 5);
-            tableLayoutPanel1.Controls.Add(panel18, 0, 4);
-            tableLayoutPanel1.Controls.Add(panel23, 0, 3);
-            tableLayoutPanel1.Controls.Add(panel24, 0, 2);
-            tableLayoutPanel1.Controls.Add(panel25, 0, 1);
-            tableLayoutPanel1.Controls.Add(panel26, 0, 0);
-            tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(643, 3);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 6;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(154, 153);
-            tableLayoutPanel1.TabIndex = 40;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.White;
-            panel17.Controls.Add(textBox2);
-            panel17.Controls.Add(label6);
-            panel17.Dock = DockStyle.Fill;
-            panel17.Location = new Point(3, 133);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(148, 17);
-            panel17.TabIndex = 45;
-            // 
-            // textBox2
-            // 
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Location = new Point(69, 0);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(79, 23);
-            textBox2.TabIndex = 48;
-            // 
-            // label6
-            // 
-            label6.Dock = DockStyle.Left;
-            label6.ForeColor = Color.Black;
-            label6.Location = new Point(0, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(69, 17);
-            label6.TabIndex = 47;
-            label6.Text = "Objeto";
-            label6.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.White;
-            panel18.Controls.Add(comboBox5);
-            panel18.Controls.Add(label8);
-            panel18.Dock = DockStyle.Fill;
-            panel18.Location = new Point(3, 107);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(148, 20);
-            panel18.TabIndex = 44;
-            // 
-            // comboBox5
-            // 
-            comboBox5.Dock = DockStyle.Fill;
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox5.FlatStyle = FlatStyle.Flat;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox5.Location = new Point(69, 0);
-            comboBox5.Margin = new Padding(0);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(79, 23);
-            comboBox5.TabIndex = 48;
-            // 
-            // label8
-            // 
-            label8.Dock = DockStyle.Left;
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(0, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(69, 20);
-            label8.TabIndex = 47;
-            label8.Text = "Schema";
-            label8.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // panel23
-            // 
-            panel23.BackColor = Color.White;
-            panel23.Controls.Add(comboBox4);
-            panel23.Controls.Add(label9);
-            panel23.Dock = DockStyle.Fill;
-            panel23.Location = new Point(3, 81);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(148, 20);
-            panel23.TabIndex = 43;
-            // 
-            // comboBox4
-            // 
-            comboBox4.Dock = DockStyle.Fill;
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.FlatStyle = FlatStyle.Flat;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox4.Location = new Point(69, 0);
-            comboBox4.Margin = new Padding(0);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(79, 23);
-            comboBox4.TabIndex = 48;
-            // 
-            // label9
-            // 
-            label9.Dock = DockStyle.Left;
-            label9.ForeColor = Color.Black;
-            label9.Location = new Point(0, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(69, 20);
-            label9.TabIndex = 47;
-            label9.Text = "Database";
-            label9.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // panel24
-            // 
-            panel24.BackColor = Color.White;
-            panel24.Controls.Add(comboBox3);
-            panel24.Controls.Add(label10);
-            panel24.Dock = DockStyle.Fill;
-            panel24.Location = new Point(3, 55);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(148, 20);
-            panel24.TabIndex = 1;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Dock = DockStyle.Fill;
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FlatStyle = FlatStyle.Flat;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox3.Location = new Point(69, 0);
-            comboBox3.Margin = new Padding(0);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(79, 23);
-            comboBox3.TabIndex = 48;
-            // 
-            // label10
-            // 
-            label10.Dock = DockStyle.Left;
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(0, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(69, 20);
-            label10.TabIndex = 47;
-            label10.Text = "Servidor";
-            label10.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.White;
-            panel25.Controls.Add(comboBox1);
-            panel25.Controls.Add(label11);
-            panel25.Dock = DockStyle.Fill;
-            panel25.Location = new Point(3, 29);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(148, 20);
-            panel25.TabIndex = 41;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Dock = DockStyle.Fill;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox1.Location = new Point(69, 0);
-            comboBox1.Margin = new Padding(0);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(79, 23);
-            comboBox1.TabIndex = 48;
-            // 
-            // label11
-            // 
-            label11.Dock = DockStyle.Left;
-            label11.ForeColor = Color.Black;
-            label11.Location = new Point(0, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(69, 20);
-            label11.TabIndex = 47;
-            label11.Text = "Tipo";
-            label11.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // panel26
-            // 
-            panel26.BackColor = Color.White;
-            panel26.Controls.Add(comboBox2);
-            panel26.Controls.Add(label12);
-            panel26.Dock = DockStyle.Fill;
-            panel26.Location = new Point(3, 3);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(148, 20);
-            panel26.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Dock = DockStyle.Fill;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FlatStyle = FlatStyle.Flat;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox2.Location = new Point(69, 0);
-            comboBox2.Margin = new Padding(0);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(79, 23);
-            comboBox2.TabIndex = 48;
-            // 
-            // label12
-            // 
-            label12.Dock = DockStyle.Left;
-            label12.Font = new Font("Segoe UI", 9F);
-            label12.ForeColor = Color.Black;
-            label12.Location = new Point(0, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(69, 20);
-            label12.TabIndex = 47;
-            label12.Text = "Processo";
-            label12.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // selecao
             // 
@@ -534,6 +280,166 @@
             Status.HeaderText = "Status";
             Status.Name = "Status";
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(panel23, 0, 3);
+            tableLayoutPanel1.Controls.Add(panel24, 0, 2);
+            tableLayoutPanel1.Controls.Add(panel25, 0, 1);
+            tableLayoutPanel1.Controls.Add(panel26, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(643, 31);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.Size = new Size(154, 111);
+            tableLayoutPanel1.TabIndex = 40;
+            // 
+            // panel23
+            // 
+            panel23.BackColor = Color.White;
+            panel23.Controls.Add(comboBox4);
+            panel23.Controls.Add(label9);
+            panel23.Dock = DockStyle.Fill;
+            panel23.Location = new Point(3, 84);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(148, 24);
+            panel23.TabIndex = 43;
+            // 
+            // comboBox4
+            // 
+            comboBox4.Dock = DockStyle.Fill;
+            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox4.FlatStyle = FlatStyle.Flat;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBox4.Location = new Point(69, 0);
+            comboBox4.Margin = new Padding(0);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(79, 23);
+            comboBox4.TabIndex = 48;
+            // 
+            // label9
+            // 
+            label9.Dock = DockStyle.Left;
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(0, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(69, 24);
+            label9.TabIndex = 47;
+            label9.Text = "Avaliador";
+            label9.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel24
+            // 
+            panel24.BackColor = Color.White;
+            panel24.Controls.Add(comboBox3);
+            panel24.Controls.Add(label10);
+            panel24.Dock = DockStyle.Fill;
+            panel24.Location = new Point(3, 57);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(148, 21);
+            panel24.TabIndex = 1;
+            // 
+            // comboBox3
+            // 
+            comboBox3.Dock = DockStyle.Fill;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.FlatStyle = FlatStyle.Flat;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBox3.Location = new Point(69, 0);
+            comboBox3.Margin = new Padding(0);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(79, 23);
+            comboBox3.TabIndex = 48;
+            // 
+            // label10
+            // 
+            label10.Dock = DockStyle.Left;
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(0, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(69, 21);
+            label10.TabIndex = 47;
+            label10.Text = "Abertura";
+            label10.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel25
+            // 
+            panel25.BackColor = Color.White;
+            panel25.Controls.Add(comboBox1);
+            panel25.Controls.Add(label11);
+            panel25.Dock = DockStyle.Fill;
+            panel25.Location = new Point(3, 30);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(148, 21);
+            panel25.TabIndex = 41;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Dock = DockStyle.Fill;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FlatStyle = FlatStyle.Flat;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBox1.Location = new Point(69, 0);
+            comboBox1.Margin = new Padding(0);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(79, 23);
+            comboBox1.TabIndex = 48;
+            // 
+            // label11
+            // 
+            label11.Dock = DockStyle.Left;
+            label11.ForeColor = Color.Black;
+            label11.Location = new Point(0, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(69, 21);
+            label11.TabIndex = 47;
+            label11.Text = "Veredito";
+            label11.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel26
+            // 
+            panel26.BackColor = Color.White;
+            panel26.Controls.Add(comboBox2);
+            panel26.Controls.Add(label12);
+            panel26.Dock = DockStyle.Fill;
+            panel26.Location = new Point(3, 3);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(148, 21);
+            panel26.TabIndex = 0;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Dock = DockStyle.Fill;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBox2.Location = new Point(69, 0);
+            comboBox2.Margin = new Padding(0);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(79, 23);
+            comboBox2.TabIndex = 48;
+            // 
+            // label12
+            // 
+            label12.Dock = DockStyle.Left;
+            label12.Font = new Font("Segoe UI", 9F);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(0, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(69, 21);
+            label12.TabIndex = 47;
+            label12.Text = "Status";
+            label12.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
@@ -554,7 +460,7 @@
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dataGridView1.ColumnHeadersHeight = 28;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DataInicio, Avaliador, Veredito, Justificativa });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DataInicio, Avaliador, Veredito, Justificativa, Recurso });
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = Color.White;
             dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
@@ -563,10 +469,10 @@
             dataGridViewCellStyle6.SelectionForeColor = Color.White;
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Dock = DockStyle.Bottom;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.Silver;
-            dataGridView1.Location = new Point(0, 317);
+            dataGridView1.Location = new Point(0, 289);
             dataGridView1.Margin = new Padding(0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -590,7 +496,7 @@
             dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = Color.Black;
             dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224);
             dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.Size = new Size(800, 133);
+            dataGridView1.Size = new Size(800, 161);
             dataGridView1.TabIndex = 53;
             // 
             // DataInicio
@@ -613,7 +519,12 @@
             Justificativa.HeaderText = "Justificativa";
             Justificativa.Name = "Justificativa";
             // 
-            // FormCarrinho
+            // Recurso
+            // 
+            Recurso.HeaderText = "Recurso";
+            Recurso.Name = "Recurso";
+            // 
+            // FormSolicitacoes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -621,18 +532,14 @@
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Controls.Add(tableLayoutPanel2);
-            Controls.Add(tableLayoutPanel3);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormCarrinho";
+            Name = "FormSolicitacoes";
             Text = "FormCarrinho";
             Load += FormCarrinho_Load;
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
-            panel17.ResumeLayout(false);
-            panel17.PerformLayout();
-            panel18.ResumeLayout(false);
             panel23.ResumeLayout(false);
             panel24.ResumeLayout(false);
             panel25.ResumeLayout(false);
@@ -646,18 +553,11 @@
         private TableLayoutPanel tableLayoutPanel3;
         private Button button1;
         private Button btnVerReferencias;
-        private Button button4;
         private Button button3;
         private Button button2;
         private TableLayoutPanel tableLayoutPanel2;
         private DataGridView dgvPesquisar;
         private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel17;
-        private TextBox textBox2;
-        private Label label6;
-        private Panel panel18;
-        private ComboBox comboBox5;
-        private Label label8;
         private Panel panel23;
         private ComboBox comboBox4;
         private Label label9;
@@ -680,5 +580,6 @@
         private DataGridViewTextBoxColumn Avaliador;
         private DataGridViewTextBoxColumn Veredito;
         private DataGridViewTextBoxColumn Justificativa;
+        private DataGridViewTextBoxColumn Recurso;
     }
 }

@@ -44,7 +44,7 @@
             pnPesquisar = new FlowLayoutPanel();
             btnPesquisar = new Button();
             pnCarrinho = new FlowLayoutPanel();
-            btnCarrinho = new Button();
+            btnSolicitacoes = new Button();
             pnSair = new FlowLayoutPanel();
             btn_logout = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
@@ -275,29 +275,29 @@
             // pnCarrinho
             // 
             pnCarrinho.BackColor = Color.FromArgb(32, 33, 36);
-            pnCarrinho.Controls.Add(btnCarrinho);
+            pnCarrinho.Controls.Add(btnSolicitacoes);
             pnCarrinho.Location = new Point(3, 99);
             pnCarrinho.Name = "pnCarrinho";
             pnCarrinho.Size = new Size(167, 42);
             pnCarrinho.TabIndex = 4;
             // 
-            // btnCarrinho
+            // btnSolicitacoes
             // 
-            btnCarrinho.BackColor = Color.FromArgb(23, 24, 29);
-            btnCarrinho.BackgroundImageLayout = ImageLayout.Center;
-            btnCarrinho.FlatAppearance.BorderSize = 0;
-            btnCarrinho.FlatStyle = FlatStyle.Flat;
-            btnCarrinho.Image = Properties.Resources.carrinho_16;
-            btnCarrinho.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCarrinho.Location = new Point(0, 0);
-            btnCarrinho.Margin = new Padding(0);
-            btnCarrinho.Name = "btnCarrinho";
-            btnCarrinho.Size = new Size(167, 42);
-            btnCarrinho.TabIndex = 4;
-            btnCarrinho.Text = "          Carrinho";
-            btnCarrinho.TextAlign = ContentAlignment.MiddleLeft;
-            btnCarrinho.UseVisualStyleBackColor = false;
-            btnCarrinho.Click += btnCarrinho_Click;
+            btnSolicitacoes.BackColor = Color.FromArgb(23, 24, 29);
+            btnSolicitacoes.BackgroundImageLayout = ImageLayout.Center;
+            btnSolicitacoes.FlatAppearance.BorderSize = 0;
+            btnSolicitacoes.FlatStyle = FlatStyle.Flat;
+            btnSolicitacoes.Image = Properties.Resources.documento_16;
+            btnSolicitacoes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSolicitacoes.Location = new Point(0, 0);
+            btnSolicitacoes.Margin = new Padding(0);
+            btnSolicitacoes.Name = "btnSolicitacoes";
+            btnSolicitacoes.Size = new Size(167, 42);
+            btnSolicitacoes.TabIndex = 4;
+            btnSolicitacoes.Text = "          Solicitacoes";
+            btnSolicitacoes.TextAlign = ContentAlignment.MiddleLeft;
+            btnSolicitacoes.UseVisualStyleBackColor = false;
+            btnSolicitacoes.Click += btnSolicitacoes_Click;
             // 
             // pnSair
             // 
@@ -375,7 +375,7 @@
         private FlowLayoutPanel pnCarrinho;
         private FlowLayoutPanel pnSair;
         private Button btn_logout;
-        private Button btnCarrinho;
+        private Button btnSolicitacoes;
         private Button btnPesquisar;
         private Button btn_sair;
         private Button btn_maximizar;
