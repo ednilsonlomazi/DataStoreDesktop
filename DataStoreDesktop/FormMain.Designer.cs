@@ -35,7 +35,6 @@
             btn_maximizar = new Button();
             btn_sair = new Button();
             label1 = new Label();
-            btnSideBarExpand = new PictureBox();
             pannelSideBar = new FlowLayoutPanel();
             menuHomeContainer = new FlowLayoutPanel();
             btnMenuHome = new Button();
@@ -50,7 +49,6 @@
             timerMenuTransition = new System.Windows.Forms.Timer(components);
             sideBarTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).BeginInit();
             pannelSideBar.SuspendLayout();
             menuHomeContainer.SuspendLayout();
             pnPesquisar.SuspendLayout();
@@ -66,7 +64,6 @@
             panel1.Controls.Add(btn_maximizar);
             panel1.Controls.Add(btn_sair);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(btnSideBarExpand);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
@@ -145,25 +142,13 @@
             // 
             label1.Dock = DockStyle.Left;
             label1.ForeColor = Color.FromArgb(23, 24, 29);
-            label1.Location = new Point(37, 0);
+            label1.Location = new Point(0, 0);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(152, 28);
+            label1.Size = new Size(141, 28);
             label1.TabIndex = 1;
             label1.Text = "Data Store Desktop";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // btnSideBarExpand
-            // 
-            btnSideBarExpand.Dock = DockStyle.Left;
-            btnSideBarExpand.Image = Properties.Resources.menu_16;
-            btnSideBarExpand.Location = new Point(0, 0);
-            btnSideBarExpand.Name = "btnSideBarExpand";
-            btnSideBarExpand.Size = new Size(37, 28);
-            btnSideBarExpand.SizeMode = PictureBoxSizeMode.CenterImage;
-            btnSideBarExpand.TabIndex = 0;
-            btnSideBarExpand.TabStop = false;
-            btnSideBarExpand.Click += btnSideBarExpand_Click;
             // 
             // pannelSideBar
             // 
@@ -176,7 +161,7 @@
             pannelSideBar.Location = new Point(0, 28);
             pannelSideBar.Margin = new Padding(0);
             pannelSideBar.Name = "pannelSideBar";
-            pannelSideBar.Size = new Size(167, 422);
+            pannelSideBar.Size = new Size(141, 422);
             pannelSideBar.TabIndex = 1;
             pannelSideBar.Paint += pannelSideBar_Paint;
             // 
@@ -202,7 +187,7 @@
             btnMenuHome.Location = new Point(0, 0);
             btnMenuHome.Margin = new Padding(0);
             btnMenuHome.Name = "btnMenuHome";
-            btnMenuHome.Size = new Size(167, 42);
+            btnMenuHome.Size = new Size(138, 42);
             btnMenuHome.TabIndex = 3;
             btnMenuHome.Text = "          Home";
             btnMenuHome.TextAlign = ContentAlignment.MiddleLeft;
@@ -265,7 +250,7 @@
             btnPesquisar.Location = new Point(0, 0);
             btnPesquisar.Margin = new Padding(0);
             btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.Size = new Size(167, 42);
+            btnPesquisar.Size = new Size(138, 42);
             btnPesquisar.TabIndex = 4;
             btnPesquisar.Text = "          Pesquisar";
             btnPesquisar.TextAlign = ContentAlignment.MiddleLeft;
@@ -292,7 +277,7 @@
             btnSolicitacoes.Location = new Point(0, 0);
             btnSolicitacoes.Margin = new Padding(0);
             btnSolicitacoes.Name = "btnSolicitacoes";
-            btnSolicitacoes.Size = new Size(167, 42);
+            btnSolicitacoes.Size = new Size(138, 42);
             btnSolicitacoes.TabIndex = 4;
             btnSolicitacoes.Text = "          Solicitacoes";
             btnSolicitacoes.TextAlign = ContentAlignment.MiddleLeft;
@@ -319,7 +304,7 @@
             btn_logout.Location = new Point(0, 0);
             btn_logout.Margin = new Padding(0);
             btn_logout.Name = "btn_logout";
-            btn_logout.Size = new Size(167, 42);
+            btn_logout.Size = new Size(138, 42);
             btn_logout.TabIndex = 3;
             btn_logout.Text = "          Logout";
             btn_logout.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,7 +335,6 @@
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnSideBarExpand).EndInit();
             pannelSideBar.ResumeLayout(false);
             menuHomeContainer.ResumeLayout(false);
             pnPesquisar.ResumeLayout(false);
@@ -369,7 +353,6 @@
         private Button btnHomeSolicitacoes;
         private System.Windows.Forms.Timer timerMenuTransition;
         private System.Windows.Forms.Timer sideBarTransition;
-        private PictureBox btnSideBarExpand;
         private Label label1;
         private FlowLayoutPanel pnPesquisar;
         private FlowLayoutPanel pnCarrinho;

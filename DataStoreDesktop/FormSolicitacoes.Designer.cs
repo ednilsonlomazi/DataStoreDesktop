@@ -67,6 +67,7 @@
             Veredito = new DataGridViewTextBoxColumn();
             Justificativa = new DataGridViewTextBoxColumn();
             Recurso = new DataGridViewTextBoxColumn();
+            tableLayoutPanel4 = new TableLayoutPanel();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPesquisar).BeginInit();
@@ -76,6 +77,7 @@
             panel25.SuspendLayout();
             panel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tableLayoutPanel4.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel3
@@ -187,11 +189,12 @@
             tableLayoutPanel2.Controls.Add(btnVerReferencias, 1, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(0, 0);
+            tableLayoutPanel2.Margin = new Padding(0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(800, 450);
+            tableLayoutPanel2.Size = new Size(800, 315);
             tableLayoutPanel2.TabIndex = 52;
             // 
             // dgvPesquisar
@@ -250,7 +253,7 @@
             dgvPesquisar.RowTemplate.DefaultCellStyle.ForeColor = Color.Black;
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224);
             dgvPesquisar.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dgvPesquisar.Size = new Size(640, 422);
+            dgvPesquisar.Size = new Size(640, 287);
             dgvPesquisar.TabIndex = 39;
             // 
             // selecao
@@ -469,10 +472,10 @@
             dataGridViewCellStyle6.SelectionForeColor = Color.White;
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            dataGridView1.Dock = DockStyle.Bottom;
+            dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.Silver;
-            dataGridView1.Location = new Point(0, 289);
+            dataGridView1.Location = new Point(0, 315);
             dataGridView1.Margin = new Padding(0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -496,7 +499,7 @@
             dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = Color.Black;
             dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224);
             dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.Size = new Size(800, 161);
+            dataGridView1.Size = new Size(800, 135);
             dataGridView1.TabIndex = 53;
             // 
             // DataInicio
@@ -524,14 +527,29 @@
             Recurso.HeaderText = "Recurso";
             Recurso.Name = "Recurso";
             // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.ColumnCount = 1;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Controls.Add(dataGridView1, 0, 1);
+            tableLayoutPanel4.Controls.Add(tableLayoutPanel2, 0, 0);
+            tableLayoutPanel4.Dock = DockStyle.Fill;
+            tableLayoutPanel4.Location = new Point(0, 0);
+            tableLayoutPanel4.Margin = new Padding(0);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 2;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 70F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            tableLayoutPanel4.Size = new Size(800, 450);
+            tableLayoutPanel4.TabIndex = 54;
+            // 
             // FormSolicitacoes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
-            Controls.Add(tableLayoutPanel2);
+            Controls.Add(tableLayoutPanel4);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormSolicitacoes";
             Text = "FormCarrinho";
@@ -545,6 +563,7 @@
             panel25.ResumeLayout(false);
             panel26.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tableLayoutPanel4.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -581,5 +600,6 @@
         private DataGridViewTextBoxColumn Veredito;
         private DataGridViewTextBoxColumn Justificativa;
         private DataGridViewTextBoxColumn Recurso;
+        private TableLayoutPanel tableLayoutPanel4;
     }
 }
