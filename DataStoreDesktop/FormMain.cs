@@ -47,7 +47,18 @@ namespace DataStoreDesktop
 
         private void btnMenuHome_Click(object sender, EventArgs e)
         {
-            timerMenuTransition.Start();
+            if (formHome == null)
+            {
+                formHome = new FormHome();
+                formHome.FormClosed += FormHome_FormClosed;
+                formHome.MdiParent = this;
+                formHome.Dock = DockStyle.Fill;
+                formHome.Show();
+            }
+            else
+            {
+                formHome.Activate();
+            }
         }
         bool expandeMenu = false;
         private void timerMenuTransition_Tick(object sender, EventArgs e)

@@ -103,6 +103,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banco_de_dados_50_new {
+            get {
+                object obj = ResourceManager.GetObject("banco-de-dados-50-new", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caixa_de_selecao_marcada_16 {
             get {
                 object obj = ResourceManager.GetObject("caixa-de-selecao-marcada-16", resourceCulture);
@@ -206,6 +216,36 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap filtro_16 {
             get {
                 object obj = ResourceManager.GetObject("filtro-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_18 {
+            get {
+                object obj = ResourceManager.GetObject("info-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_20 {
+            get {
+                object obj = ResourceManager.GetObject("info-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap informações_16 {
+            get {
+                object obj = ResourceManager.GetObject("informações-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +373,36 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap servidores_100 {
+            get {
+                object obj = ResourceManager.GetObject("servidores-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servidores_50 {
+            get {
+                object obj = ResourceManager.GetObject("servidores-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servidores_80 {
+            get {
+                object obj = ResourceManager.GetObject("servidores-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seta_para_a_frente_18 {
             get {
                 object obj = ResourceManager.GetObject("seta-para-a-frente-18", resourceCulture);
@@ -366,6 +436,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap tabela_16 {
             get {
                 object obj = ResourceManager.GetObject("tabela-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tabela_50 {
+            get {
+                object obj = ResourceManager.GetObject("tabela-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
