@@ -73,6 +73,16 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apagar_contrato_50 {
+            get {
+                object obj = ResourceManager.GetObject("apagar-contrato-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avaliacao_18 {
             get {
                 object obj = ResourceManager.GetObject("avaliacao-18", resourceCulture);
@@ -156,6 +166,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap casa_16 {
             get {
                 object obj = ResourceManager.GetObject("casa-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check_document_50 {
+            get {
+                object obj = ResourceManager.GetObject("check-document-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +373,49 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap policy_document_50 {
+            get {
+                object obj = ResourceManager.GetObject("policy-document-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap porta_16 {
             get {
                 object obj = ResourceManager.GetObject("porta-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap propriedade_com_temporizador_50 {
+            get {
+                object obj = ResourceManager.GetObject("propriedade-com-temporizador-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recurso_reprovado_50 {
+            get {
+                object obj = ResourceManager.GetObject("recurso-reprovado-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recurso_reprovado_501 {
+            get {
+                object obj = ResourceManager.GetObject("recurso-reprovado-501", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +576,16 @@ namespace DataStoreDesktop.Properties {
         internal static System.Drawing.Bitmap visível_19 {
             get {
                 object obj = ResourceManager.GetObject("visível-19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizar_arquivo_50 {
+            get {
+                object obj = ResourceManager.GetObject("visualizar-arquivo-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
