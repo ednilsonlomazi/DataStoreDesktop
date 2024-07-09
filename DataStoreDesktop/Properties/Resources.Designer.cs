@@ -523,6 +523,36 @@ namespace DataStoreDesktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap white_banco_de_dados_50_new {
+            get {
+                object obj = ResourceManager.GetObject("white-banco-de-dados-50-new", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_servidores_50 {
+            get {
+                object obj = ResourceManager.GetObject("white-servidores-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_tabela_50 {
+            get {
+                object obj = ResourceManager.GetObject("white-tabela-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap x_16 {
             get {
                 object obj = ResourceManager.GetObject("x-16", resourceCulture);

@@ -133,12 +133,6 @@
   <data name="cancelar-x-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancelar-x-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="círculo-preenchido-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\círculo-preenchido-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="informações-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\informações-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="olho-16-branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\olho-16-branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +154,17 @@
   <data name="carrinho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carrinho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="white-servidores-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white-servidores-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="info-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="banco-de-dados-50-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banco-de-dados-50-new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="servidores-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\servidores-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="x-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,11 +172,11 @@
   <data name="filtro-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filtro-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="servidores-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\servidores-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="info-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="acesso-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\acesso-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +193,8 @@
   <data name="vassoura-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vassoura-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="banco-de-dados-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banco-de-dados-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="servidores-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\servidores-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="casa-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +202,14 @@
   <data name="visível-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\visível-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="círculo-preenchido-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\círculo-preenchido-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vassoura-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vassoura-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="servidores-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\servidores-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="círculo-preenchido-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\círculo-preenchido-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="retangulo-arredondado-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\retangulo-arredondado-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +232,11 @@
   <data name="soma-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soma-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="círculo-preenchido-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\círculo-preenchido-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banco-de-dados-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banco-de-dados-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="olho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\olho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="documento-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\documento-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +244,11 @@
   <data name="pesquisar-fill-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pesquisar-fill-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancelar-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancelar-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabela-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabela-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabela-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabela-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,10 +259,13 @@
   <data name="enviar-16-azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\enviar-16-azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="olho-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\olho-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white-banco-de-dados-50-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white-banco-de-dados-50-new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabela-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabela-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="informações-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\informações-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white-tabela-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white-tabela-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
