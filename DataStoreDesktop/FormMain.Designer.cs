@@ -43,7 +43,7 @@
             pnCarrinho = new FlowLayoutPanel();
             btnSolicitacoes = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Button();
+            btnSobre = new Button();
             pnSair = new FlowLayoutPanel();
             btn_logout = new Button();
             timerMenuTransition = new System.Windows.Forms.Timer(components);
@@ -251,28 +251,29 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = Color.FromArgb(32, 33, 36);
-            flowLayoutPanel1.Controls.Add(button1);
+            flowLayoutPanel1.Controls.Add(btnSobre);
             flowLayoutPanel1.Location = new Point(3, 147);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(171, 42);
             flowLayoutPanel1.TabIndex = 3;
             // 
-            // button1
+            // btnSobre
             // 
-            button1.BackColor = Color.FromArgb(23, 24, 29);
-            button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.info_18;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 0);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 42);
-            button1.TabIndex = 3;
-            button1.Text = "          Sobre";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = false;
+            btnSobre.BackColor = Color.FromArgb(23, 24, 29);
+            btnSobre.BackgroundImageLayout = ImageLayout.Center;
+            btnSobre.FlatAppearance.BorderSize = 0;
+            btnSobre.FlatStyle = FlatStyle.Flat;
+            btnSobre.Image = Properties.Resources.info_18;
+            btnSobre.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSobre.Location = new Point(0, 0);
+            btnSobre.Margin = new Padding(0);
+            btnSobre.Name = "btnSobre";
+            btnSobre.Size = new Size(171, 42);
+            btnSobre.TabIndex = 3;
+            btnSobre.Text = "          Sobre";
+            btnSobre.TextAlign = ContentAlignment.MiddleLeft;
+            btnSobre.UseVisualStyleBackColor = false;
+            btnSobre.Click += btnSobre_Click;
             // 
             // pnSair
             // 
@@ -354,6 +355,6 @@
         private Button btn_minimizar;
         private Label lbInfoSession;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Button button1;
+        private Button btnSobre;
     }
 }

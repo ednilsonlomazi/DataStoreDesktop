@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DataStoreDesktop
 {
-    public partial class FormSolicitacoesRealizadas : Form
+    public partial class FormSobre : Form
     {
-        public FormSolicitacoesRealizadas()
+        public FormSobre()
         {
             InitializeComponent();
         }

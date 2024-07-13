@@ -31,5 +31,10 @@ namespace DataStoreDesktop
         {
 
         }
+
+        private void tableLayoutPanel4_MouseHover(object sender, EventArgs e)
+        {
+            pnServidores.BackColor = SystemColors.ButtonHighlight;
+        }
     }
 }

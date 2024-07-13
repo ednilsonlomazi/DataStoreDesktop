@@ -7,9 +7,9 @@ namespace DataStoreDesktop
         FormSolicitacoes formSolicitacoes;
         FormLogin formLogin;
         FormMeusObjetos formMeusObjetos;
-        FormSolicitacoesRealizadas formSolicitacoesRealizadas;
+        FormSobre formSobre;
         internal string usuario;
-        
+
 
         public FormMain(string usuario, FormLogin formLogin)
         {
@@ -33,7 +33,7 @@ namespace DataStoreDesktop
 
         }
 
-        
+
 
         private void FormHome_FormClosed(object? sender, FormClosedEventArgs e)
         {
@@ -156,23 +156,23 @@ namespace DataStoreDesktop
 
         private void btnHomeSolicitacoes_Click(object sender, EventArgs e)
         {
-            if (formSolicitacoesRealizadas == null)
+            if (formSobre == null)
             {
-                formSolicitacoesRealizadas = new FormSolicitacoesRealizadas();
-                formSolicitacoesRealizadas.FormClosed += FormSolicitacoesRealizadas_FormClosed;
-                formSolicitacoesRealizadas.MdiParent = this;
-                formSolicitacoesRealizadas.Dock = DockStyle.Fill;
-                formSolicitacoesRealizadas.Show();
+                formSobre = new FormSobre();
+                formSobre.FormClosed += FormSolicitacoesRealizadas_FormClosed;
+                formSobre.MdiParent = this;
+                formSobre.Dock = DockStyle.Fill;
+                formSobre.Show();
             }
             else
             {
-                formSolicitacoesRealizadas.Activate();
+                formSobre.Activate();
             }
         }
 
         private void FormSolicitacoesRealizadas_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formSolicitacoesRealizadas = null;
+            formSobre = null;
         }
 
 
@@ -256,12 +256,33 @@ namespace DataStoreDesktop
             MessageBox.Show("Logout efetuado com sucesso!");
             this.Hide();
             this.formLogin.Show();
-            
+
         }
 
         private void FormLogin_FormClosed(object? sender, FormClosedEventArgs e)
         {
             formLogin = null;
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            if (formSobre == null)
+            {
+                formSobre = new FormSobre();
+                formSobre.FormClosed += FormSobre_FormClosed; ;
+                formSobre.MdiParent = this;
+                formSobre.Dock = DockStyle.Fill;
+                formSobre.Show();
+            }
+            else
+            {
+                formSobre.Activate();
+            }
+        }
+
+        private void FormSobre_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formSobre = null;
         }
     }
 }
