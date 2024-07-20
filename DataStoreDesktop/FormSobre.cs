@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataStoreDesktop
+namespace GUI
 {
     public partial class FormSobre : Form
     {

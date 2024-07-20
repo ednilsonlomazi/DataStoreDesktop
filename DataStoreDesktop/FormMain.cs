@@ -1,4 +1,4 @@
-namespace DataStoreDesktop
+namespace GUI
 {
     public partial class FormMain : Form
     {

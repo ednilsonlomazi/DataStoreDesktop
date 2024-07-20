@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
 
-namespace DataStoreDesktop
+namespace GUI
 {
     public partial class FormPesquisar : Form
     {

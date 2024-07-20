@@ -1,4 +1,4 @@
-﻿namespace DataStoreDesktop
+﻿namespace GUI
 {
     partial class FormSobre
     {

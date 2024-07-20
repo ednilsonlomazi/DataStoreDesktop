@@ -1,4 +1,4 @@
-namespace DataStoreDesktop
+namespace GUI
 {
     internal static class Program
     {
