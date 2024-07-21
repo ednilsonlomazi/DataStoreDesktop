@@ -9,7 +9,7 @@ namespace DAL
 {
 
     
-    internal class DALConexaoDatabase
+    public class DALConexaoDatabase
     {
         private String _stringConexao;
         private SqlConnection _sqlConnection;

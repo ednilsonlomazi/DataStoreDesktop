@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class DALTabStatusDocumento
+    public class DALTabStatusDocumento
     {
         private DALConexaoDatabase dalConexaoDatabase;
         public DALTabStatusDocumento(DALConexaoDatabase dalConexao)
