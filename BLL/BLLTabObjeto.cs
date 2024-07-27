@@ -20,5 +20,11 @@ namespace BLL
             DALTabObjeto dalTabObjeto = new DALTabObjeto(dalConexaoDatabase);
             return dalTabObjeto.SelectAll(dto);
         }
+
+        public DataTable SelectDistinctServername()
+        {
+            DALTabObjeto dalTabObjeto = new DALTabObjeto(dalConexaoDatabase);
+            return dalTabObjeto.SelectDistinctServername();
+        }
     }
 }

@@ -16,10 +16,19 @@ namespace GUI
 {
     public partial class FormPesquisar : Form
     {
+
+        private DALTabObjeto _dalTabObjeto;
+        private DALConexaoDatabase _dalConexaoDatabase;
         public FormPesquisar()
         {
             InitializeComponent();
 
+            //** populando combobox
+            this._dalConexaoDatabase = new DALConexaoDatabase(DadosConexaoDatabase.StringConexao);
+            this._dalTabObjeto = new DALTabObjeto(this._dalConexaoDatabase);
+            comboBoxServidor.DataSource = this._dalTabObjeto.SelectDistinctServername();
+            comboBoxServidor.DisplayMember = "serverName";
+            comboBoxServidor.ValueMember = "serverName";
         }
 
         private void FormPesquisar_Load(object sender, EventArgs e)

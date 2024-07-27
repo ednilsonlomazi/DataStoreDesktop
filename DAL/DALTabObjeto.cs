@@ -17,7 +17,7 @@ namespace DAL
             this.dalConexaoDatabase = dalConexao;
         }
 
- 
+
         public List<TabObjetoDTO> SelectAll(TabObjetoDTO dto)
         {
             TabObjetoDTO tabObjeto = new TabObjetoDTO();
@@ -30,7 +30,7 @@ namespace DAL
 
 
                 cmd.CommandText = "  SELECT tobj.serverName,\r\n\t     tobj.DatabaseName,\r\n\t\t tobj.desc_schema,\r\n\t\t tobj.ObjectName,\r\n\t\t UPPER(tobj.descricaoTipoObjeto) descricaoTipoObjeto,\r\n\t\t tco.DescricaoClasse\r\n\t\t \r\n  FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)\r\n\tINNER JOIN [dbdatastore].dbo.tabClasseObjeto tco WITH (NOLOCK)\r\n\t\tON tobj.idClasseObjeto = tco.IdClasse";
-                                  //"WHERE 1 = 1\r\n\tAND tobj.serverName = ISNULL(@serverName, tobj.serverName)\r\n\tAND tobj.DatabaseName = ISNULL(@DatabaseName, tobj.DatabaseName)\r\n\tAND tobj.desc_schema = ISNULL(@desc_schema, tobj.desc_schema) \r\n    AND tobj.ObjectName = ISNULL(@ObjectName, tobj.ObjectName)\r\n    AND tobj.descricaoTipoObjeto = ISNULL(@descricaoTipoObjeto, tobj.descricaoTipoObjeto)\r\n    AND tco.DescricaoClasse = ISNULL(@DescricaoClasse, tco.DescricaoClasse)";
+                //"WHERE 1 = 1\r\n\tAND tobj.serverName = ISNULL(@serverName, tobj.serverName)\r\n\tAND tobj.DatabaseName = ISNULL(@DatabaseName, tobj.DatabaseName)\r\n\tAND tobj.desc_schema = ISNULL(@desc_schema, tobj.desc_schema) \r\n    AND tobj.ObjectName = ISNULL(@ObjectName, tobj.ObjectName)\r\n    AND tobj.descricaoTipoObjeto = ISNULL(@descricaoTipoObjeto, tobj.descricaoTipoObjeto)\r\n    AND tco.DescricaoClasse = ISNULL(@DescricaoClasse, tco.DescricaoClasse)";
                 //cmd.Parameters.AddWithValue("@serverName", dto.serverName);
                 //cmd.Parameters.AddWithValue("@DatabaseName", dto.DatabaseName);
                 //cmd.Parameters.AddWithValue("@desc_schema", dto.desc_schema);
@@ -45,7 +45,7 @@ namespace DAL
                     while (reader.Read())
                     {
                         tabObjeto = new TabObjetoDTO();
-                        
+
                         tabObjeto.serverName = Convert.ToString(reader["serverName"]);
                         tabObjeto.DatabaseName = Convert.ToString(reader["DatabaseName"]);
                         tabObjeto.desc_schema = Convert.ToString(reader["desc_schema"]);
@@ -70,5 +70,17 @@ namespace DAL
 
             return listTabDocumento;
         }
+
+        public DataTable SelectDistinctServername()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT DISTINCT tobj.serverName FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            sqlDataAdapter.Fill(dt);
+            return dt;
+ 
+        
+        }
+
+
     }
 }
