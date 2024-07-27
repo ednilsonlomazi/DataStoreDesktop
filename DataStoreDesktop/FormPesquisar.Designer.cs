@@ -1,4 +1,5 @@
-﻿namespace GUI
+﻿using DAL;
+namespace GUI
 {
     partial class FormPesquisar
     {
@@ -49,22 +50,22 @@
             btnVerPrimeirasLinhas = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel17 = new Panel();
-            textBox2 = new TextBox();
+            textBoxObjeto = new TextBox();
             label6 = new Label();
             panel18 = new Panel();
-            comboBox5 = new ComboBox();
+            comboBoxSchema = new ComboBox();
             label8 = new Label();
             panel23 = new Panel();
-            comboBox4 = new ComboBox();
+            comboBoxDatabase = new ComboBox();
             label9 = new Label();
             panel24 = new Panel();
-            comboBox3 = new ComboBox();
+            comboBoxServidor = new ComboBox();
             label10 = new Label();
             panel25 = new Panel();
-            comboBox1 = new ComboBox();
+            comboBoxTipoObjeto = new ComboBox();
             label11 = new Label();
             panel26 = new Panel();
-            comboBox2 = new ComboBox();
+            comboBoxProcesso = new ComboBox();
             label12 = new Label();
             dgvPesquisar = new DataGridView();
             selecao = new DataGridViewCheckBoxColumn();
@@ -315,7 +316,7 @@
             // panel17
             // 
             panel17.BackColor = Color.White;
-            panel17.Controls.Add(textBox2);
+            panel17.Controls.Add(textBoxObjeto);
             panel17.Controls.Add(label6);
             panel17.Dock = DockStyle.Fill;
             panel17.Location = new Point(3, 133);
@@ -323,13 +324,13 @@
             panel17.Size = new Size(148, 17);
             panel17.TabIndex = 45;
             // 
-            // textBox2
+            // textBoxObjeto
             // 
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Location = new Point(69, 0);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(79, 23);
-            textBox2.TabIndex = 48;
+            textBoxObjeto.Dock = DockStyle.Fill;
+            textBoxObjeto.Location = new Point(69, 0);
+            textBoxObjeto.Name = "textBoxObjeto";
+            textBoxObjeto.Size = new Size(79, 23);
+            textBoxObjeto.TabIndex = 48;
             // 
             // label6
             // 
@@ -345,7 +346,7 @@
             // panel18
             // 
             panel18.BackColor = Color.White;
-            panel18.Controls.Add(comboBox5);
+            panel18.Controls.Add(comboBoxSchema);
             panel18.Controls.Add(label8);
             panel18.Dock = DockStyle.Fill;
             panel18.Location = new Point(3, 107);
@@ -353,18 +354,18 @@
             panel18.Size = new Size(148, 20);
             panel18.TabIndex = 44;
             // 
-            // comboBox5
+            // comboBoxSchema
             // 
-            comboBox5.Dock = DockStyle.Fill;
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox5.FlatStyle = FlatStyle.Flat;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox5.Location = new Point(69, 0);
-            comboBox5.Margin = new Padding(0);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(79, 23);
-            comboBox5.TabIndex = 48;
+            comboBoxSchema.Dock = DockStyle.Fill;
+            comboBoxSchema.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSchema.FlatStyle = FlatStyle.Flat;
+            comboBoxSchema.FormattingEnabled = true;
+            comboBoxSchema.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBoxSchema.Location = new Point(69, 0);
+            comboBoxSchema.Margin = new Padding(0);
+            comboBoxSchema.Name = "comboBoxSchema";
+            comboBoxSchema.Size = new Size(79, 23);
+            comboBoxSchema.TabIndex = 48;
             // 
             // label8
             // 
@@ -380,7 +381,7 @@
             // panel23
             // 
             panel23.BackColor = Color.White;
-            panel23.Controls.Add(comboBox4);
+            panel23.Controls.Add(comboBoxDatabase);
             panel23.Controls.Add(label9);
             panel23.Dock = DockStyle.Fill;
             panel23.Location = new Point(3, 81);
@@ -388,18 +389,18 @@
             panel23.Size = new Size(148, 20);
             panel23.TabIndex = 43;
             // 
-            // comboBox4
+            // comboBoxDatabase
             // 
-            comboBox4.Dock = DockStyle.Fill;
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.FlatStyle = FlatStyle.Flat;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox4.Location = new Point(69, 0);
-            comboBox4.Margin = new Padding(0);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(79, 23);
-            comboBox4.TabIndex = 48;
+            comboBoxDatabase.Dock = DockStyle.Fill;
+            comboBoxDatabase.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxDatabase.FlatStyle = FlatStyle.Flat;
+            comboBoxDatabase.FormattingEnabled = true;
+            comboBoxDatabase.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBoxDatabase.Location = new Point(69, 0);
+            comboBoxDatabase.Margin = new Padding(0);
+            comboBoxDatabase.Name = "comboBoxDatabase";
+            comboBoxDatabase.Size = new Size(79, 23);
+            comboBoxDatabase.TabIndex = 48;
             // 
             // label9
             // 
@@ -415,7 +416,7 @@
             // panel24
             // 
             panel24.BackColor = Color.White;
-            panel24.Controls.Add(comboBox3);
+            panel24.Controls.Add(comboBoxServidor);
             panel24.Controls.Add(label10);
             panel24.Dock = DockStyle.Fill;
             panel24.Location = new Point(3, 55);
@@ -423,18 +424,18 @@
             panel24.Size = new Size(148, 20);
             panel24.TabIndex = 1;
             // 
-            // comboBox3
+            // comboBoxServidor
             // 
-            comboBox3.Dock = DockStyle.Fill;
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FlatStyle = FlatStyle.Flat;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox3.Location = new Point(69, 0);
-            comboBox3.Margin = new Padding(0);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(79, 23);
-            comboBox3.TabIndex = 48;
+            comboBoxServidor.Dock = DockStyle.Fill;
+            comboBoxServidor.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxServidor.FlatStyle = FlatStyle.Flat;
+            comboBoxServidor.FormattingEnabled = true;
+            comboBoxServidor.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBoxServidor.Location = new Point(69, 0);
+            comboBoxServidor.Margin = new Padding(0);
+            comboBoxServidor.Name = "comboBoxServidor";
+            comboBoxServidor.Size = new Size(79, 23);
+            comboBoxServidor.TabIndex = 48;
             // 
             // label10
             // 
@@ -450,7 +451,7 @@
             // panel25
             // 
             panel25.BackColor = Color.White;
-            panel25.Controls.Add(comboBox1);
+            panel25.Controls.Add(comboBoxTipoObjeto);
             panel25.Controls.Add(label11);
             panel25.Dock = DockStyle.Fill;
             panel25.Location = new Point(3, 29);
@@ -458,18 +459,18 @@
             panel25.Size = new Size(148, 20);
             panel25.TabIndex = 41;
             // 
-            // comboBox1
+            // comboBoxTipoObjeto
             // 
-            comboBox1.Dock = DockStyle.Fill;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox1.Location = new Point(69, 0);
-            comboBox1.Margin = new Padding(0);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(79, 23);
-            comboBox1.TabIndex = 48;
+            comboBoxTipoObjeto.Dock = DockStyle.Fill;
+            comboBoxTipoObjeto.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTipoObjeto.FlatStyle = FlatStyle.Flat;
+            comboBoxTipoObjeto.FormattingEnabled = true;
+            comboBoxTipoObjeto.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBoxTipoObjeto.Location = new Point(69, 0);
+            comboBoxTipoObjeto.Margin = new Padding(0);
+            comboBoxTipoObjeto.Name = "comboBoxTipoObjeto";
+            comboBoxTipoObjeto.Size = new Size(79, 23);
+            comboBoxTipoObjeto.TabIndex = 48;
             // 
             // label11
             // 
@@ -485,7 +486,7 @@
             // panel26
             // 
             panel26.BackColor = Color.White;
-            panel26.Controls.Add(comboBox2);
+            panel26.Controls.Add(comboBoxProcesso);
             panel26.Controls.Add(label12);
             panel26.Dock = DockStyle.Fill;
             panel26.Location = new Point(3, 3);
@@ -493,18 +494,18 @@
             panel26.Size = new Size(148, 20);
             panel26.TabIndex = 0;
             // 
-            // comboBox2
+            // comboBoxProcesso
             // 
-            comboBox2.Dock = DockStyle.Fill;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FlatStyle = FlatStyle.Flat;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
-            comboBox2.Location = new Point(69, 0);
-            comboBox2.Margin = new Padding(0);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(79, 23);
-            comboBox2.TabIndex = 48;
+            comboBoxProcesso.Dock = DockStyle.Fill;
+            comboBoxProcesso.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxProcesso.FlatStyle = FlatStyle.Flat;
+            comboBoxProcesso.FormattingEnabled = true;
+            comboBoxProcesso.Items.AddRange(new object[] { "dbalgumacoisa", "dbmuitobom", "dbtrintaedois" });
+            comboBoxProcesso.Location = new Point(69, 0);
+            comboBoxProcesso.Margin = new Padding(0);
+            comboBoxProcesso.Name = "comboBoxProcesso";
+            comboBoxProcesso.Size = new Size(79, 23);
+            comboBoxProcesso.TabIndex = 48;
             // 
             // label12
             // 
@@ -667,22 +668,22 @@
         private Button btnVerPrimeirasLinhas;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel17;
-        private TextBox textBox2;
+        private TextBox textBoxObjeto;
         private Label label6;
         private Panel panel18;
-        private ComboBox comboBox5;
+        private ComboBox comboBoxSchema;
         private Label label8;
         private Panel panel23;
-        private ComboBox comboBox4;
+        private ComboBox comboBoxDatabase;
         private Label label9;
         private Panel panel24;
-        private ComboBox comboBox3;
+        private ComboBox comboBoxServidor;
         private Label label10;
         private Panel panel25;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxTipoObjeto;
         private Label label11;
         private Panel panel26;
-        private ComboBox comboBox2;
+        private ComboBox comboBoxProcesso;
         private Label label12;
         private DataGridView dgvPesquisar;
         private DataGridViewCheckBoxColumn selecao;

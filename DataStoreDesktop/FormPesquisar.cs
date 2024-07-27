@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
+using DAL;
+using BLL;
+using MODEL;
 
 namespace GUI
 {
@@ -37,11 +40,37 @@ namespace GUI
 
         private void btn_pesquisar_form_pesquisar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DALConexaoDatabase dALConexaoDatabase = new DALConexaoDatabase(DadosConexaoDatabase.StringConexao);
+                BLLTabObjeto bLLTabObjeto = new BLLTabObjeto(dALConexaoDatabase);
 
-            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product1", "tab_produtos", "tabela", "Produtos");
-            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product2", "tab_produtos", "tabela", "Produtos");
-            this.dgvPesquisar.Rows.Add(false, "Local", "AdventureWorks1999", "product3", "tab_produtos", "tabela", "Produtos");
+                TabObjetoDTO dto = new TabObjetoDTO();
+                dto.serverName = comboBoxServidor.Text;
+                dto.DatabaseName = comboBoxDatabase.Text;
+                dto.desc_schema = comboBoxSchema.Text;
+                dto.ObjectName = textBoxObjeto.Text;
+                dto.descricaoTipoObjeto = comboBoxTipoObjeto.Text;
+                dto.classeObjeto = comboBoxProcesso.Text;
 
+                List<TabObjetoDTO> listTabObjetoDTO = bLLTabObjeto.SelectAll(dto);
+
+                MessageBox.Show(comboBoxServidor.Text);
+
+                if(listTabObjetoDTO != null) 
+                {
+                    foreach (TabObjetoDTO todto in listTabObjetoDTO)
+                    {
+                        this.dgvPesquisar.Rows.Add(false, todto.serverName, todto.DatabaseName, todto.desc_schema, todto.ObjectName, todto.descricaoTipoObjeto, todto.classeObjeto);
+                    }
+                }
+                
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+             
         }
 
         private void dgvPesquisar_CellContentClick(object sender, DataGridViewCellEventArgs e)

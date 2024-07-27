@@ -74,24 +74,43 @@ namespace DAL
             return dt;
         }
 
-        public TabDocumento SelectAll()
+        public List<TabDocumento> SelectAll()
         {
             TabDocumento tabDocumento = new TabDocumento();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = dalConexaoDatabase.ObjetoConexao;
-            cmd.CommandText = "SELECT * FROM [dbdatastore].[dbo].[tabDocumentos] td WITH (NOLOCK) WHERE td.codigoDocumento <> 6;";
-            dalConexaoDatabase.Conectar();
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.HasRows)
+            List<TabDocumento> listTabDocumento = new List<TabDocumento>();
+
+            try
             {
-                reader.Read();
-                tabDocumento.idCliente = Convert.ToString(reader["idCliente"]);
-                tabDocumento.idAvaliador = Convert.ToString(reader["idAvaliador"]);
-                tabDocumento.codigoStatusDocumento = Convert.ToInt32(reader["codigoStatusDocumento"]);
-                tabDocumento.dataSolicitacao = Convert.ToDateTime(reader["dataSolicitacao"]);
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = dalConexaoDatabase.ObjetoConexao;
+                cmd.CommandText = "SELECT * FROM [dbdatastore].[dbo].[tabDocumento] td WITH (NOLOCK) WHERE td.codigoDocumento <> 6;";
+                dalConexaoDatabase.Conectar();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        tabDocumento = new TabDocumento();
+                        tabDocumento.idCliente = Convert.ToString(reader["idCliente"]);
+                        tabDocumento.idAvaliador = Convert.ToString(reader["idAvaliador"]);
+                        
+
+                        listTabDocumento.Add(tabDocumento);
+
+                    }
+                }
+                reader.Close();
             }
-            dalConexaoDatabase.Desconectar();
-            return tabDocumento;
+            catch (Exception ex) 
+            {
+                throw new Exception("Algo de errado na camada DAL\n" + ex.Message);
+            }
+            finally
+            {
+                dalConexaoDatabase.Desconectar();
+            }
+
+            return listTabDocumento;
         }
     }
 }

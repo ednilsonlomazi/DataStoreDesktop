@@ -43,7 +43,7 @@ namespace BLL
             return dalTabDocumento.SelectByCod(codigo);
         }
 
-        public TabDocumento SelectAll()
+        public List<TabDocumento> SelectAll()
         {
             DALTabDocumento dalTabDocumento = new DALTabDocumento(dalConexaoDatabase);
             return dalTabDocumento.SelectAll();
