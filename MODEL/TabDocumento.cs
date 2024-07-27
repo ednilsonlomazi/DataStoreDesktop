@@ -13,18 +13,15 @@ namespace MODEL
         public string idCliente { get; set; }
         public string? idAvaliador { get; set; }
         public int codigoStatusDocumento { get; set; }
-        public TabStatusDocumento tabStatusDocumento { get; set; }
-        public IdentityUser cliente { get; set; }
-        public IdentityUser? avaliador { get; set; }
         public DateTime dataSolicitacao { get; set; }
         public DateTime dataFinalizacaoAvaliacao { get; set; }
-        public List<TabItemDocumento> tabItemDocumento { get; set; } // foreigh key to item de documento
+       
 
         public TabDocumento()
         {
 
             this.dataSolicitacao = DateTime.Now;
-            this.tabItemDocumento = new List<TabItemDocumento>();
+       
 
 
         }
