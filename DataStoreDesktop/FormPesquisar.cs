@@ -17,7 +17,7 @@ namespace GUI
     public partial class FormPesquisar : Form
     {
 
-        private DALTabObjeto _dalTabObjeto;
+        private BLLTabObjeto _dalTabObjeto;
         private DALConexaoDatabase _dalConexaoDatabase;
         public FormPesquisar()
         {
@@ -25,10 +25,36 @@ namespace GUI
 
             //** populando combobox
             this._dalConexaoDatabase = new DALConexaoDatabase(DadosConexaoDatabase.StringConexao);
-            this._dalTabObjeto = new DALTabObjeto(this._dalConexaoDatabase);
+            this._dalTabObjeto = new BLLTabObjeto(this._dalConexaoDatabase);
+
+            this.PopulateCombobox();
+
+        }
+
+        private void PopulateCombobox()
+        {
             comboBoxServidor.DataSource = this._dalTabObjeto.SelectDistinctServername();
             comboBoxServidor.DisplayMember = "serverName";
             comboBoxServidor.ValueMember = "serverName";
+
+            comboBoxDatabase.DataSource = this._dalTabObjeto.SelectDistinctDatabaseName();
+            comboBoxDatabase.DisplayMember = "DatabaseName";
+            comboBoxDatabase.ValueMember = "DatabaseName";
+
+            comboBoxSchema.DataSource = this._dalTabObjeto.SelectDistinctSchema();
+            comboBoxSchema.DisplayMember = "desc_schema";
+            comboBoxSchema.ValueMember = "desc_schema";
+
+            comboBoxTipoObjeto.DataSource = this._dalTabObjeto.SelectDistinctTipoObjeto();
+            comboBoxTipoObjeto.DisplayMember = "descricaoTipoObjeto";
+            comboBoxTipoObjeto.ValueMember = "descricaoTipoObjeto";
+
+            comboBoxProcesso.DataSource = this._dalTabObjeto.SelectDistinctClasse();
+            comboBoxProcesso.DisplayMember = "DescricaoClasse";
+            comboBoxProcesso.ValueMember = "DescricaoClasse";
+
+
+
         }
 
         private void FormPesquisar_Load(object sender, EventArgs e)
@@ -49,6 +75,7 @@ namespace GUI
 
         private void btn_pesquisar_form_pesquisar_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 DALConexaoDatabase dALConexaoDatabase = new DALConexaoDatabase(DadosConexaoDatabase.StringConexao);
@@ -64,10 +91,13 @@ namespace GUI
 
                 List<TabObjetoDTO> listTabObjetoDTO = bLLTabObjeto.SelectAll(dto);
 
-                MessageBox.Show(comboBoxServidor.Text);
+                MessageBox.Show(textBoxObjeto.Text);
 
                 if(listTabObjetoDTO != null) 
                 {
+                    this.dgvPesquisar.Rows.Clear();
+                    this.dgvPesquisar.Refresh();
+
                     foreach (TabObjetoDTO todto in listTabObjetoDTO)
                     {
                         this.dgvPesquisar.Rows.Add(false, todto.serverName, todto.DatabaseName, todto.desc_schema, todto.ObjectName, todto.descricaoTipoObjeto, todto.classeObjeto);

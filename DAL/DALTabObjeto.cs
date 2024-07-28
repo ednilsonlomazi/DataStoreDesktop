@@ -29,14 +29,15 @@ namespace DAL
                 cmd.Connection = dalConexaoDatabase.ObjetoConexao;
 
 
-                cmd.CommandText = "  SELECT tobj.serverName,\r\n\t     tobj.DatabaseName,\r\n\t\t tobj.desc_schema,\r\n\t\t tobj.ObjectName,\r\n\t\t UPPER(tobj.descricaoTipoObjeto) descricaoTipoObjeto,\r\n\t\t tco.DescricaoClasse\r\n\t\t \r\n  FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)\r\n\tINNER JOIN [dbdatastore].dbo.tabClasseObjeto tco WITH (NOLOCK)\r\n\t\tON tobj.idClasseObjeto = tco.IdClasse";
-                //"WHERE 1 = 1\r\n\tAND tobj.serverName = ISNULL(@serverName, tobj.serverName)\r\n\tAND tobj.DatabaseName = ISNULL(@DatabaseName, tobj.DatabaseName)\r\n\tAND tobj.desc_schema = ISNULL(@desc_schema, tobj.desc_schema) \r\n    AND tobj.ObjectName = ISNULL(@ObjectName, tobj.ObjectName)\r\n    AND tobj.descricaoTipoObjeto = ISNULL(@descricaoTipoObjeto, tobj.descricaoTipoObjeto)\r\n    AND tco.DescricaoClasse = ISNULL(@DescricaoClasse, tco.DescricaoClasse)";
-                //cmd.Parameters.AddWithValue("@serverName", dto.serverName);
-                //cmd.Parameters.AddWithValue("@DatabaseName", dto.DatabaseName);
-                //cmd.Parameters.AddWithValue("@desc_schema", dto.desc_schema);
-                //cmd.Parameters.AddWithValue("@ObjectName", dto.ObjectName);
-                //cmd.Parameters.AddWithValue("@descricaoTipoObjeto", dto.descricaoTipoObjeto);
-                //cmd.Parameters.AddWithValue("@DescricaoClasse", dto.classeObjeto);
+                cmd.CommandText = "  SELECT tobj.serverName,\r\n\t     tobj.DatabaseName,\r\n\t\t tobj.desc_schema,\r\n\t\t tobj.ObjectName,\r\n\t\t UPPER(tobj.descricaoTipoObjeto) descricaoTipoObjeto,\r\n\t\t tco.DescricaoClasse\r\n\t\t \r\n  FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)\r\n\tINNER JOIN [dbdatastore].dbo.tabClasseObjeto tco WITH (NOLOCK)\r\n\t\tON tobj.idClasseObjeto = tco.IdClasse " +
+                                    "WHERE 1 = 1\r\n\tAND tobj.serverName = IIF(@serverName = ' ', tobj.serverName, @serverName)\r\n\tAND tobj.DatabaseName = IIF(@DatabaseName = ' ', tobj.DatabaseName, @DatabaseName)\r\n\tAND tobj.desc_schema = IIF(@desc_schema = ' ', tobj.desc_schema, @desc_schema) \r\n AND tobj.ObjectName = IIF(@ObjectName = ' ', tobj.ObjectName, @ObjectName) \r\n        AND tobj.descricaoTipoObjeto = IIF(@descricaoTipoObjeto = ' ', tobj.descricaoTipoObjeto, @descricaoTipoObjeto)\r\n    AND tco.DescricaoClasse = IIF(@DescricaoClasse = ' ', tco.DescricaoClasse, @DescricaoClasse)";
+                cmd.Parameters.AddWithValue("@serverName", dto.serverName);
+                cmd.Parameters.AddWithValue("@DatabaseName", dto.DatabaseName);
+                cmd.Parameters.AddWithValue("@desc_schema", dto.desc_schema);
+                if (dto.ObjectName == null) { dto.ObjectName = Convert.ToString(' '); };
+                cmd.Parameters.AddWithValue("@ObjectName", dto.ObjectName);
+                cmd.Parameters.AddWithValue("@descricaoTipoObjeto", dto.descricaoTipoObjeto);
+                cmd.Parameters.AddWithValue("@DescricaoClasse", dto.classeObjeto);
 
                 dalConexaoDatabase.Conectar();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -74,13 +75,43 @@ namespace DAL
         public DataTable SelectDistinctServername()
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT DISTINCT tobj.serverName FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT ' ' serverName UNION SELECT DISTINCT tobj.serverName FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
             sqlDataAdapter.Fill(dt);
             return dt;
  
         
         }
 
+        public DataTable SelectDistinctDatabaseName()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT ' ' DatabaseName UNION SELECT DISTINCT tobj.DatabaseName FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            sqlDataAdapter.Fill(dt);
+            return dt;
+        }
 
+        public DataTable SelectDistinctTipoObjeto()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT ' ' descricaoTipoObjeto UNION SELECT DISTINCT tobj.descricaoTipoObjeto FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            sqlDataAdapter.Fill(dt);
+            return dt;
+        }
+
+        public DataTable SelectDistinctSchema()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT ' ' desc_schema UNION SELECT DISTINCT tobj.desc_schema FROM [dbdatastore].dbo.tabObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            sqlDataAdapter.Fill(dt);
+            return dt;
+        }
+
+        public DataTable SelectDistinctClasse()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT ' ' DescricaoClasse UNION SELECT DISTINCT tobj.DescricaoClasse FROM [dbdatastore].dbo.tabClasseObjeto tobj WITH (NOLOCK)", dalConexaoDatabase.ObjetoConexao);
+            sqlDataAdapter.Fill(dt);
+            return dt;
+        }
     }
 }
