@@ -1,0 +1,13 @@
+name: Exemplo do primeiro workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  acao_inicial_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprime OLA
+        run: echo "Hello workspace!"
+      - name: Imprime Ateh Mais
+        run: echo "Ateh mais meu amigo"
